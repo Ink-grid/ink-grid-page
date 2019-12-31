@@ -1,0 +1,40 @@
+/** @format */
+.section#contact {
+	background-color: #212529 !important;
+	background-repeat: no-repeat;
+	background-position: 50%;
+}
+
+.btn-xl {
+	font-size: 18px;
+	padding: 20px 40px;
+}
+section#contact .section-heading {
+	color: #fff;
+}
+
+.form-row {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	margin-right: -5px;
+	margin-left: -5px;
+}
+section#contact .form-group input.form-control {
+	height: auto;
+}
+
+section#contact .form-group input,
+section#contact .form-group textarea {
+	padding: 20px;
+}
+
+section#contact .form-group textarea.form-control {
+	height: 248px;
+}
+
+section#contact .form-group input,
+section#contact .form-group textarea {
+	padding: 20px;
+}
