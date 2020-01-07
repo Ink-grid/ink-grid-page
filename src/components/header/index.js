@@ -12,103 +12,48 @@ const Hearder = () => {
 			// "url('https://www.ink-grid.com/wp-content/uploads/2019/09/001-1400x600.png')"
 			// }}>
 		>
-			<div className=''>
-				<br></br>
-				<br />
-				<br />
-				<br></br>
-				<br></br>
-				<br />
-				<br />
-				<br></br>
-
+			<br></br>
+			<br></br>
+			<br></br>
+			<div
+				style={{
+					padding: '1em',
+					backgroundImage:
+						"url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVZhd44ggtMy4yp0sATCvGqulYZpakJgg8TPGTJGNNXNUNkWqh&s')",
+					backgroundColor: '#cccccc',
+					backgroundRepeat: 'no-repeat',
+					backgroundSize: '100% 100%',
+					display: 'flex',
+					justifyContent: 'center',
+					alignItems: 'center',
+					height: '600px'
+				}}>
 				<div
-					id='carouselExampleIndicators'
-					className='carousel slide '
-					data-ride='carousel'>
-					<ol class='carousel-indicators'>
-						<li
-							data-target='#carouselExampleIndicators'
-							data-slide-to='0'
-							class='active'></li>
-						<li data-target='#carouselExampleIndicators' data-slide-to='1'></li>
-						<li data-target='#carouselExampleIndicators' data-slide-to='2'></li>
-					</ol>
-					<div class='carousel-inner'>
-						<div class='carousel-item active'>
-							<img
-								class='d-block w-100'
-								src='https://www.ink-grid.com/wp-content/uploads/2019/09/001-1400x600.png'
-								alt='First slide'
-							/>
-						</div>
-						<div class='carousel-item'>
-							<img
-								class='d-block w-100'
-								src='https://www.ink-grid.com/wp-content/uploads/2019/09/002-1400x600.png'
-								alt='Second slide'
-							/>
-						</div>
-						<div class='carousel-item'>
-							<img
-								class='d-block w-100'
-								src='https://www.ink-grid.com/wp-content/uploads/2019/09/Voluntariado_Programa-1400x600-1400x600.png'
-								alt='Third slide'
-							/>
-						</div>
-						<div class='carousel-item'>
-							<img
-								class='d-block w-100'
-								src='https://www.ink-grid.com/wp-content/uploads/2019/09/004-1400x600.png'
-								alt='First slide'
-							/>
-						</div>
-
-						<div class='carousel-item'>
-							<img
-								class='d-block w-100'
-								src='https://www.ink-grid.com/wp-content/uploads/2019/09/Empleos_InkGrid2-1400x600.png'
-								alt='First slide'
-							/>
-						</div>
-						<div class='carousel-item'>
-							<img
-								class='d-block w-100'
-								src='https://www.ink-grid.com/wp-content/uploads/2019/11/Gestion_de_Riesgos_slider-1400x600.png'
-								alt='First slide'
-							/>
-						</div>
-						<div class='carousel-item'>
-							<img
-								class='d-block w-100'
-								src='https://www.ink-grid.com/wp-content/uploads/2019/11/Gestion_Estratégica_de_Redes_Sociales_Slider22-1400x600.png'
-								alt='First slide'
-							/>
-						</div>
-						<div class='carousel-item'>
-							<img
-								class='d-block w-100'
-								src='https://www.ink-grid.com/wp-content/uploads/2019/11/procesosslider-1400x600.png'
-								alt='First slide'
-							/>
+					style={{
+						// background: 'blue',
+						padding: '1em',
+						width: '50%',
+						display: 'flex',
+						height: '100%',
+						justifyContent: 'space-between'
+					}}>
+					<div style={{ background: 'yellow' }}>
+						<div
+							style={{
+								borderStyle: 'groove',
+								borderColor: '#ffffff',
+								background: 'blue',
+								borderRadius: '75px',
+								alignItems: 'center',
+								justifyContent: 'center',
+								display: 'flex',
+								width: '150px',
+								height: '150px'
+							}}>
+							BBS <br /> Building block solutions
 						</div>
 					</div>
-					<a
-						class='carousel-control-prev'
-						href='#carouselExampleIndicators'
-						role='button'
-						data-slide='prev'>
-						<span class='carousel-control-prev-icon' aria-hidden='true'></span>
-						<span class='sr-only'>Previous</span>
-					</a>
-					<a
-						class='carousel-control-next'
-						href='#carouselExampleIndicators'
-						role='button'
-						data-slide='next'>
-						<span class='carousel-control-next-icon' aria-hidden='true'></span>
-						<span class='sr-only'>Next</span>
-					</a>
+					<div>BBB</div>
 				</div>
 			</div>
 		</header>

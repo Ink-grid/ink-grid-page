@@ -1,0 +1,27 @@
+/** @format */
+/* 250px
+display: flex; none
+imagen 300 y 150 */
+.titlesoluciones {
+	background-color: 'rgba(0, 114, 255, 0.5)';
+	width: '400px';
+	height: '330px';
+	color: '#ffffff';
+	padding: '1em';
+	text-align: 'initial';
+	position: 'absolute';
+	display: 'flex';
+	flex-direction: 'column';
+	justify-content: 'center';
+	left: '10%';
+}
+.portada {
+	background-color: '#cccccc';
+	background-repeat: 'no-repeat';
+	background-size: '100% 100%';
+	position: 'relative';
+	height: '300px';
+}
+
+@media (max-width: 767px) {
+}
