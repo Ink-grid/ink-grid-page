@@ -1,14 +1,69 @@
 /** @format */
 
-import React from 'react';
+import React,{useState} from 'react';
+import { makeStyles } from '@material-ui/core/styles';
 import { Link } from 'react-router-dom';
+import Drawer from '@material-ui/core/Drawer';
+import List from '@material-ui/core/List';
+import Divider from '@material-ui/core/Divider';
+import ListItem from '@material-ui/core/ListItem';
+import ListItemIcon from '@material-ui/core/ListItemIcon';
+import ListItemText from '@material-ui/core/ListItemText';
+import InboxIcon from '@material-ui/icons/MoveToInbox';
+import MailIcon from '@material-ui/icons/Mail';
+
+import ClearIcon from '@material-ui/icons/Clear';
+
 import './style.css';
+const useStyles = makeStyles({
+	list: {
+	  width: 250,
+	},
+	fullList: {
+	  width: 'auto',
+	},
+  });
 
 const Navbar = () => {
-	const prueba = () => {
-		const id = document.getElementById('prueba');
-		id.style.display = 'block';
-	};
+	const classes = useStyles();
+	const [state, setState] = useState(false);
+
+	  const toggleDrawer = (open) => event => {
+		if (event.type === 'keydown' && (event.key === 'Tab' || event.key === 'Shift')) {
+		  return;
+		}
+	
+		setState(open);
+	  };
+	  
+	  const sideList = side => (
+		<div
+		  className={classes.list}
+		  role="presentation"
+		  onClick={toggleDrawer(side, false)}
+		  onKeyDown={toggleDrawer(side, false)}
+		>
+		  <List>
+		 	<ClearIcon/>
+			 <Divider />
+			 <img 
+						width='100'
+						height='50'
+						src='https://www.ink-grid.com/wp-content/uploads/2019/09/cropped-logo_new.png'
+						alt='ink-grid'
+					/>
+		  </List>
+		  <Divider />
+		  <List>
+			{['All mail', 'Trash', 'Spam'].map((text, index) => (
+			  <ListItem button key={text}>
+				<ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
+				<ListItemText primary={text} />
+			  </ListItem>
+			))}
+		  </List>
+		</div>
+	  );
 
 	const segundo = () => {
 		const id = document.getElementById('prueba');
@@ -16,15 +71,19 @@ const Navbar = () => {
 	};
 
 	return (
+	
 		<nav
 			class='navbar navbar-light navbar-expand-lg fixed-top bg-light'
 			id='mainNav'>
 			<div class='container'>
-				<a class='navbar-brand' href='/'>
-					<i class='fas fa-bars'></i>
-				</a>
+				
+					<i 
+					onClick={toggleDrawer(true)}
+					class='fas fa-bars'></i>
+				
+				
 				<a class='navbar-brand' href='/#inkgrid'>
-					<img
+					<img 
 						width='100'
 						height='50'
 						src='https://www.ink-grid.com/wp-content/uploads/2019/09/cropped-logo_new.png'
@@ -49,7 +108,7 @@ const Navbar = () => {
 							role='presentation'
 							style={{ position: 'relative' }}>
 							<a class='nav-link js-scroll-trigger' href='#services'>
-								Servicios-bpo
+								Nosotros
 							</a>
 							<div id='prueba' class='dropdown-content'>
 								<p>hola mundo</p>
@@ -121,12 +180,21 @@ const Navbar = () => {
 						</li>
 						<li class='nav-item' role='presentation'>
 							<a class='nav-link js-scroll-trigger' href='#contact'>
+								Servicios 
+							</a>
+						</li>
+						<li class='nav-item' role='presentation'>
+							<a class='nav-link js-scroll-trigger' href='#contact'>
 								Contacto
 							</a>
 						</li>
 					</ul>
 				</div>
 			</div>
+			{/* DRAWER -- Menu de opciones */}
+			<Drawer open={state} onClose={toggleDrawer(false)}>
+        {sideList('left')}
+      </Drawer>
 		</nav>
 	);
 };
