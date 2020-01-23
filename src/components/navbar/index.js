@@ -9,20 +9,25 @@ import Divider from '@material-ui/core/Divider';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
-import InboxIcon from '@material-ui/icons/MoveToInbox';
-import MailIcon from '@material-ui/icons/Mail';
+
+import Typography from '@material-ui/core/Typography';
+import GroupIcon from '@material-ui/icons/Group';
+import DomainIcon from '@material-ui/icons/Domain';
+import ImportContactsIcon from '@material-ui/icons/ImportContacts';
+import FacebookIcon from '@material-ui/icons/Facebook';
+import TwitterIcon from '@material-ui/icons/Twitter';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
 
 import ClearIcon from '@material-ui/icons/Clear';
 
 import './style.css';
-const useStyles = makeStyles({
+const useStyles = makeStyles(theme => ({
 	list: {
 	  width: 250,
-	},
-	fullList: {
-	  width: 'auto',
-	},
-  });
+	 
+	}
+	
+  }));
 
 const Navbar = () => {
 	const classes = useStyles();
@@ -37,31 +42,98 @@ const Navbar = () => {
 	  };
 	  
 	  const sideList = side => (
-		<div
+		<div 
 		  className={classes.list}
 		  role="presentation"
-		  onClick={toggleDrawer(side, false)}
-		  onKeyDown={toggleDrawer(side, false)}
+		  
 		>
-		  <List>
-		 	<ClearIcon/>
-			 <Divider />
-			 <img 
+		  <List >
+			  <div style={{
+				  display: 'flex',
+				  justifyContent: 'space-between',
+
+
+			  }}>
+		 	<div style={{
+				 textAlign: 'center',
+				 borderRightStyle: 'groove',
+				 display:'flex',
+				 alignItems:'center',
+				 justifyContent:'center',
+				 width: '30%'
+
+			 }}
+			
+			 >
+				 <ClearIcon  onClick={()=>toggleDrawer(false)} style={{ fontSize: 40 }}/>
+			 </div>
+
+			 <div style={{width: '70%',textAlign:'center'
+				 }}>
+					 <img 
 						width='100'
 						height='50'
 						src='https://www.ink-grid.com/wp-content/uploads/2019/09/cropped-logo_new.png'
 						alt='ink-grid'
-					/>
+					/> 
+				 
+				 </div>
+			 </div>
+
 		  </List>
+
 		  <Divider />
+
+
 		  <List>
-			{['All mail', 'Trash', 'Spam'].map((text, index) => (
-			  <ListItem button key={text}>
-				<ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
-				<ListItemText primary={text} />
+			<Link to='/nosotros'>
+			  <ListItem button>
+				<ListItemIcon> <GroupIcon/></ListItemIcon>
+				<ListItemText primary="Nosotros" />
 			  </ListItem>
-			))}
+		  	</Link>
+
+			  <Link to='/hyper'>
+			  <ListItem button>
+				<ListItemIcon> <DomainIcon/></ListItemIcon>
+				<ListItemText primary="Hyper" />
+			  </ListItem>
+		  	</Link>
+
+			  <Link to='/blog'>
+			  <ListItem button>
+				<ListItemIcon> <ImportContactsIcon/></ListItemIcon>
+				<ListItemText primary="Blog" />
+			  </ListItem>
+			  </Link>
+
+			  
+			  <ListItem button>
+				<ListItemIcon> <FacebookIcon/></ListItemIcon>
+				<ListItemText primary="Facebook" />
+			  </ListItem>
+			 
+
+
+			 
+			  <ListItem button>
+				<ListItemIcon> <TwitterIcon/></ListItemIcon>
+				<ListItemText primary="Twiter" />
+			  </ListItem>
+			 
+
+			 
+			  <ListItem button>
+				<ListItemIcon> <LinkedInIcon/></ListItemIcon>
+				<ListItemText primary="Linkelding" />
+			  </ListItem>
+			 
+			
 		  </List>
+
+		  
+
+
 		</div>
 	  );
 
@@ -103,17 +175,7 @@ const Navbar = () => {
 				</button>
 				<div class='collapse navbar-collapse' id='navbarResponsive'>
 					<ul class='nav navbar-nav ml-auto text-uppercase'>
-						<li
-							class='nav-item'
-							role='presentation'
-							style={{ position: 'relative' }}>
-							<a class='nav-link js-scroll-trigger' href='#services'>
-								Nosotros
-							</a>
-							<div id='prueba' class='dropdown-content'>
-								<p>hola mundo</p>
-							</div>
-						</li>
+					
 						<li class='nav-item dropdown'>
 							<a
 								class='nav-link dropdown-toggle'
@@ -133,7 +195,7 @@ const Navbar = () => {
 									Mineria
 								</Link>
 								<Link to='/comercio-servicio' class='dropdown-item'>
-									Comercio y servicio
+									Comercio y servicio	
 								</Link>
 								<Link to='/turismo' class='dropdown-item'>
 									Turísmo
@@ -183,18 +245,15 @@ const Navbar = () => {
 								Servicios 
 							</a>
 						</li>
-						<li class='nav-item' role='presentation'>
-							<a class='nav-link js-scroll-trigger' href='#contact'>
-								Contacto
-							</a>
-						</li>
+						
 					</ul>
 				</div>
 			</div>
 			{/* DRAWER -- Menu de opciones */}
+			
 			<Drawer open={state} onClose={toggleDrawer(false)}>
-        {sideList('left')}
-      </Drawer>
+				{sideList('left')}
+			</Drawer>
 		</nav>
 	);
 };
