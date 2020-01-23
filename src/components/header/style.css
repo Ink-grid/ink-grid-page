@@ -29,3 +29,9 @@
 	margin-bottom: 50px;
 	font-family: Montserrat, Helvetica Neue, Helvetica, Arial, sans-serif;
 }
+
+.masthead .carousel .carousel-inner .carousel-item img{
+	width: 600px;
+	height: 600px;
+	object-fit: cover;
+}
