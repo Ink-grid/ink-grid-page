@@ -19,23 +19,21 @@ const Nosotros = ()=>{
 
 
     return (<div>
-        <br>
-        </br>
-        <br>
-        </br>
-        <br>
-        </br>
+        <br></br>
+        <br></br>
+        <br></br>
         
         <Carousel images={Imagenes}/>
         
         <Container maxWidth="sm">
         <Typography component="div" style={{ textAlign:'center',padding:'1em', lineHeight:'2em' }} >
-        We help organizations across the private, public, and social sectors create Change that Matters.
+            We help organizations across the private, public, and social sectors create Change that Matters.
 
-From the C-suite to the front line, we partner with our clients to transform their organizations in the ways that matter most to them. This requires embedding digital, analytics, and design into core processes and mind-sets, and building capabilities that help organizations and people to thrive in an ever-changing context.
+            From the C-suite to the front line, we partner with our clients to transform their organizations in the ways that matter most to them. This requires embedding digital, analytics, and design into core processes and mind-sets, and building capabilities that help organizations and people to thrive in an ever-changing context.
 
-Wit exceptional people in 65 countries, we combine global expertise and local insight to help you turn your ambitious goals into reality.
+            Wit exceptional people in 65 countries, we combine global expertise and local insight to help you turn your ambitious goals into reality.
         </Typography>
+
       </Container>
         </div>)
 

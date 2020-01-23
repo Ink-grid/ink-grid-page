@@ -4,6 +4,7 @@ import React from 'react';
 import './style.css';
 
 const Services = () => {
+	
 	return (
 		<section id='services'>
 			<div className='container '>
