@@ -23,9 +23,6 @@ const Hearder = () => {
 		<header
 			className='masthead'
 		>
-			<br></br>
-			<br></br>
-			<br></br>
 			
 			<Carousel images={Imagenes} />
 

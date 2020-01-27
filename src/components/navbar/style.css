@@ -35,6 +35,7 @@ nav .container #navbarResponsive li:hover > a {
   font-size: 1.8em;
   padding-right: 1em;
   display: block;
+  color:#fff !important;
 }
 
 .IconoX{
@@ -55,7 +56,6 @@ nav .container #navbarResponsive li:hover > a {
 .menu-toogable i:hover {
   -webkit-animation: latido;
   animation: latido .5s infinite;
-  cursor: pointer;
 }
 
 @keyframes latido {
@@ -63,3 +63,7 @@ nav .container #navbarResponsive li:hover > a {
     50% { transform: scale(1.4); }
     to { transform: none; }
 }
+
+
+
+

@@ -19,8 +19,9 @@ import TwitterIcon from "@material-ui/icons/Twitter";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 
 import ClearIcon from "@material-ui/icons/Clear";
-
 import "./style.css";
+import "./menu.css";
+
 const useStyles = makeStyles(theme => ({
   list: {
     width: 250
@@ -32,11 +33,15 @@ const Navbar = () => {
   const [state, setState] = useState(false);
 
   const toggleDrawer = open => event => {
+    
     if (
       event.type === "keydown" &&
       (event.key === "Tab" || event.key === "Shift")
-    ) {
+    ){
       return;
+    }else if(event.type ==="click"){
+      console.log(event.type);
+      
     }
 
     setState(open);
@@ -82,7 +87,7 @@ const Navbar = () => {
       </List>
 
       <Divider />
-
+      {/* Barra lateral */}
       <List>
         <Link to="/nosotros">
           <ListItem button>
@@ -113,31 +118,35 @@ const Navbar = () => {
             <ListItemText primary="Blog" />
           </ListItem>
         </Link>
-
-        <ListItem button>
-          <ListItemIcon>
-            {" "}
-            <FacebookIcon />
-          </ListItemIcon>
-          <ListItemText primary="Facebook" />
-        </ListItem>
-
-        <ListItem button>
-          <ListItemIcon>
-            {" "}
-            <TwitterIcon />
-          </ListItemIcon>
-          <ListItemText primary="Twiter" />
-        </ListItem>
-
-        <ListItem button>
-          <ListItemIcon>
-            {" "}
-            <LinkedInIcon />
-          </ListItemIcon>
-          <ListItemText primary="Linkelding" />
-        </ListItem>
+        <Link to="">
+          <ListItem button>
+            <ListItemIcon>
+              {" "}
+              <FacebookIcon />
+            </ListItemIcon>
+            <ListItemText primary="Facebook" />
+          </ListItem>
+        </Link>
+        <Link>
+          <ListItem button>
+            <ListItemIcon>
+              {" "}
+              <TwitterIcon />
+            </ListItemIcon>
+            <ListItemText primary="Twiter" />
+          </ListItem>
+        </Link>
+        <Link>
+          <ListItem button>
+            <ListItemIcon>
+              {" "}
+              <LinkedInIcon />
+            </ListItemIcon>
+            <ListItemText primary="Linkelding" />
+          </ListItem>
+        </Link>
       </List>
+    
     </div>
   );
 
@@ -147,14 +156,15 @@ const Navbar = () => {
   };
 
   return (
-    <nav
-      class="navbar navbar-light navbar-expand-lg fixed-top bg-light"
-      id="mainNav"
-    >
-      <div class="container menu-toogable">
-        <i onClick={toggleDrawer(true)} class="fas fa-bars"></i>
+    <nav>
+    <ul class="container ul-reset">
 
-        <a class="navbar-brand" href="/#inkgrid">
+      <li className="menu-toogable">
+      <i onClick={toggleDrawer(true)} class="fas fa-bars"></i>
+      </li>
+
+      <li>
+      <a class="navbar-brand" href="/#inkgrid">
           <img
             width="100"
             height="50"
@@ -162,101 +172,81 @@ const Navbar = () => {
             alt="ink-grid"
           />
         </a>
-        <button
-          data-toggle="collapse"
-          data-target="#navbarResponsive"
-          class="navbar-toggler navbar-toggler-right"
-          type="button"
-          data-toogle="collapse"
-          aria-controls="navbarResponsive"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <i class="fa fa-bars"></i>
-        </button>
-      
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="nav navbar-nav ml-auto text-uppercase">
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                id="navbarDropdown"
-                role="button"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-              >
-                Consultoria
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <Link to="/educacion" class="dropdown-item">
-                  Educación
-                </Link>
-                <Link to="/mineria" class="dropdown-item">
-                  Mineria
-                </Link>
-                <Link to="/comercio-servicio" class="dropdown-item">
-                  Comercio y servicio
-                </Link>
-                <Link to="/turismo" class="dropdown-item">
-                  Turísmo
-                </Link>
-                <Link to="/agua-energia" class="dropdown-item">
-                  Agua y energia
-                </Link>
-                <Link to="transporte" class="dropdown-item">
-                  Transporte
-                </Link>
-                <Link to="tecnologia" class="dropdown-item">
-                  Tecnologia
-                </Link>
-                <Link to="/logistica-explotacion" class="dropdown-item">
-                  Logistica y explotación
-                </Link>
-              </div>
-            </li>
+      </li>
 
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                id="navbarDropdown"
-                role="button"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                data-hover="dropdown"
-                aria-expanded="true"
-              >
-                Capacitacion
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">
-                  Action
-                </a>
-                <a class="dropdown-item" href="#">
-                  Another action
-                </a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">
-                  Something else here
-                </a>
-              </div>
-            </li>
-            <li class="nav-item" role="presentation">
-              <a class="nav-link js-scroll-trigger" href="#contact">
-                Servicios
-              </a>
-            </li>
-          </ul>
+      <li><a href='#'>Home</a></li>
+      <li class='droppable'>
+        <a href='#'>Industrias  </a>
+        <div class='mega-menu'>
+          <div class="container cf">
+            <ul class="ul-reset">
+              <h3>Heading 1</h3>
+              <li><a href='#'>Educación</a></li>
+              <li><a href='#'>Minería</a></li>
+              <li><a href='#'>Comercio y Servicio</a></li>
+              <li><a href='#'>Turismo</a></li>
+              <li><a href='#'>Agua y Energía</a></li>
+              <li><a href='#'>Transporte</a></li>
+             
+            </ul>
+            <ul class="ul-reset">
+              <h3>Opción 2</h3>
+              <li><a href='#'>Category One Sublink</a></li>
+              <li><a href='#'>Category One Sublink</a></li>
+             
+            </ul>
+            <ul class="ul-reset">
+              <h3>Opcion 3 3</h3>
+              <li><a href='#'>Category One Sublink</a></li>
+              <li><a href='#'>Category One Sublink</a></li>
+              
+            </ul>
+            <ul class="ul-reset">
+              <h3>Heading 4</h3>
+              <li><img src="http://placehold.it/205x172" /></li>
+            </ul>
+          </div>
         </div>
-      </div>
-      {/* DRAWER -- Menu de opciones */}
+      </li>
+      <li class='droppable'>
+        <a href='#'>Category Two</a>
+        <div class='mega-menu'>
+          <div class="container cf">
+            <ul class="ul-reset">
+              <h3>Heading 1</h3>
+              <li><a href='#'>Category Two Sublink</a></li>
+              <li><a href='#'>Category Two Sublink</a></li>
+              
+            </ul>
+            <ul class="ul-reset">
+              <h3>Heading 2</h3>
+              <li><a href='#'>Category Two Sublink</a></li>
+              
+            </ul>
+            <ul class="ul-reset">
+              <h3>Heading 3</h3>
+              <li><a href='#'>Category Two Sublink</a></li>
+              <li><a href='#'>Category Two Sublink</a></li>
+             
+            </ul>
+            <ul class="ul-reset">
+              <h3>Heading 4</h3>
+              <li><a href='#'>Category Two Sublink</a></li>
+              <li><a href='#'>Category Two Sublink</a></li>
+       
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li><a href='#'>Category Three</a></li>
+    </ul>
 
-      <Drawer open={state} onClose={toggleDrawer(false)}>
+    {/* DRAWER -- Menu de opciones */}
+
+    <Drawer open={state} onClose={toggleDrawer(false)}>
         {sideList("left")}
       </Drawer>
-    </nav>
+  </nav>
   );
 };
 
