@@ -19,41 +19,51 @@ import TwitterIcon from "@material-ui/icons/Twitter";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 
 import ClearIcon from "@material-ui/icons/Clear";
+
+import CastForEducationIcon from '@material-ui/icons/CastForEducation';
+import DepartureBoardIcon from '@material-ui/icons/DepartureBoard';
+import OpacityRoundedIcon from '@material-ui/icons/OpacityRounded';
+import LocalAirportRoundedIcon from '@material-ui/icons/LocalAirportRounded';
+import PhonelinkRoundedIcon from '@material-ui/icons/PhonelinkRounded';
+import RowingRoundedIcon from '@material-ui/icons/RowingRounded';
+import WhatshotRoundedIcon from '@material-ui/icons/WhatshotRounded';
+import DirectionsBoatRoundedIcon from '@material-ui/icons/DirectionsBoatRounded';
+
+import AccountCircleRoundedIcon from '@material-ui/icons/AccountCircleRounded';
+import WhatsAppIcon from '@material-ui/icons/WhatsApp';
+
+import logo from '../../../src/logo.png';
+import logoB from '../../../src/logo-dark.png';
 import "./style.css";
-import "./menu.css";
+import "./menu.css";  
 
 const useStyles = makeStyles(theme => ({
   list: {
-    width: 250
+    width: 250,
+   
   }
 }));
 
 const Navbar = () => {
   const classes = useStyles();
-  const [state, setState] = useState(false);
+  const [state, setOpen] = React.useState(false);
 
-  const toggleDrawer = open => event => {
-    
-    if (
-      event.type === "keydown" &&
-      (event.key === "Tab" || event.key === "Shift")
-    ){
-      return;
-    }else if(event.type ==="click"){
-      console.log(event.type);
-      
-    }
-
-    setState(open);
-  };
-
+  const handleDrawerOpen = () => {
+    setOpen(true);
+  }
+  const handleDrawerClose = () => {
+    setOpen(false);
+  }
+  
+  
   const sideList = side => (
     <div className={classes.list} role="presentation">
-      <List>
+      <List className="top-lista">
         <div
           style={{
             display: "flex",
-            justifyContent: "space-between"
+            justifyContent: "space-between",
+          
           }}
         >
           <div
@@ -66,11 +76,10 @@ const Navbar = () => {
               width: "30%"
             }}
           >
-
             {/* Boton del SideList 'X' */}
             <ClearIcon
-             style={{fontSize:'3em'}}
-              onClick={() => toggleDrawer(false)}
+              style={{ fontSize: "3em" }}
+              onClick={handleDrawerClose}
               className="IconoX"
             />
           </div>
@@ -79,7 +88,7 @@ const Navbar = () => {
             <img
               width="100"
               height="50"
-              src="https://www.ink-grid.com/wp-content/uploads/2019/09/cropped-logo_new.png"
+              src={logoB}
               alt="ink-grid"
             />
           </div>
@@ -89,64 +98,66 @@ const Navbar = () => {
       <Divider />
       {/* Barra lateral */}
       <List>
-        <Link to="/nosotros">
-          <ListItem button>
+        <Link to="/nosotros" className="item-enlaces">
+          <ListItem className="link_item"     onClick={handleDrawerClose} button>
             <ListItemIcon>
               {" "}
-              <GroupIcon />
+              <GroupIcon className="link_icono" />
             </ListItemIcon>
-            <ListItemText primary="Nosotros" />
+            <ListItemText className="link_text" primary="Nosotros" />
           </ListItem>
         </Link>
 
-        <Link to="/hyper">
-          <ListItem button>
+        <Link to="/hyper"  className="item-enlaces">
+        <ListItem className="link_item"  onClick={handleDrawerClose} button>
             <ListItemIcon>
               {" "}
-              <DomainIcon />
+              <DomainIcon className="link_icono" />
             </ListItemIcon>
-            <ListItemText primary="Hyper" />
+            <ListItemText className="link_text" primary="Hyper" />
           </ListItem>
         </Link>
 
-        <Link to="/blog">
-          <ListItem button>
+        <Link to="/blog" className="item-enlaces" >
+          <ListItem className="link_item"   onClick={handleDrawerClose} button>
             <ListItemIcon>
               {" "}
-              <ImportContactsIcon />
+              <ImportContactsIcon className="link_icono" />
             </ListItemIcon>
-            <ListItemText primary="Blog" />
+            <ListItemText className="link_text" primary="Blog" />
           </ListItem>
         </Link>
-        <Link to="">
-          <ListItem button>
+
+
+
+        <a href="https://www.facebook.com/InkGridx" target="_blank" className="item-enlaces">
+          <ListItem className="link_item"  onClick={handleDrawerClose} button>
             <ListItemIcon>
               {" "}
-              <FacebookIcon />
+              <FacebookIcon className="link_icono" />
             </ListItemIcon>
-            <ListItemText primary="Facebook" />
+            <ListItemText className="link_text" primary="Facebook" />
           </ListItem>
-        </Link>
-        <Link>
-          <ListItem button>
+        </a>
+        <a href="https://www.twitter.com" target="_blank" className="item-enlaces">
+          <ListItem className="link_item"  onClick={handleDrawerClose} button>
             <ListItemIcon>
               {" "}
-              <TwitterIcon />
+              <WhatsAppIcon className="link_icono" />
             </ListItemIcon>
-            <ListItemText primary="Twiter" />
+            <ListItemText className="link_text" primary="whatsapp" />
           </ListItem>
-        </Link>
-        <Link>
-          <ListItem button>
+        </a>
+        <a href="https://pe.linkedin.com" target="_blank" className="item-enlaces">
+          <ListItem className="link_item"  onClick={handleDrawerClose} button>
             <ListItemIcon>
               {" "}
-              <LinkedInIcon />
+              <LinkedInIcon className="link_icono" />
             </ListItemIcon>
-            <ListItemText primary="Linkelding" />
+            <ListItemText  className="link_text" primary="LinkedIn  " />
           </ListItem>
-        </Link>
+        </a>
       </List>
-    
     </div>
   );
 
@@ -156,97 +167,89 @@ const Navbar = () => {
   };
 
   return (
-    <nav>
-    <ul class="container ul-reset">
+    <div class="">
+      <nav class="nav-bar">
+        <ul class="d-flex justify-content-center">
 
-      <li className="menu-toogable">
-      <i onClick={toggleDrawer(true)} class="fas fa-bars"></i>
-      </li>
+          <li className="menu-toogable">
+            <i onClick={handleDrawerOpen} class="fas fa-bars"></i>
+          </li>
 
-      <li>
-      <a class="navbar-brand" href="/#inkgrid">
-          <img
-            width="100"
-            height="50"
-            src="https://www.ink-grid.com/wp-content/uploads/2019/09/cropped-logo_new.png"
-            alt="ink-grid"
-          />
-        </a>
-      </li>
+          <li class="">
+            <a class="logo-menu" href="/#inkgrid">
+              <img
+                width="100"
+                height="50"
+                src={logo}
+                alt="ink-grid"
+              />
+            </a>
+          </li>
 
-      <li><a href='#'>Home</a></li>
-      <li class='droppable'>
-        <a href='#'>Industrias  </a>
-        <div class='mega-menu'>
-          <div class="container cf">
-            <ul class="ul-reset">
-              <h3>Heading 1</h3>
-              <li><a href='#'>Educación</a></li>
-              <li><a href='#'>Minería</a></li>
-              <li><a href='#'>Comercio y Servicio</a></li>
-              <li><a href='#'>Turismo</a></li>
-              <li><a href='#'>Agua y Energía</a></li>
-              <li><a href='#'>Transporte</a></li>
-             
-            </ul>
-            <ul class="ul-reset">
-              <h3>Opción 2</h3>
-              <li><a href='#'>Category One Sublink</a></li>
-              <li><a href='#'>Category One Sublink</a></li>
-             
-            </ul>
-            <ul class="ul-reset">
-              <h3>Opcion 3 3</h3>
-              <li><a href='#'>Category One Sublink</a></li>
-              <li><a href='#'>Category One Sublink</a></li>
-              
-            </ul>
-            <ul class="ul-reset">
-              <h3>Heading 4</h3>
-              <li><img src="http://placehold.it/205x172" /></li>
-            </ul>
-          </div>
-        </div>
-      </li>
-      <li class='droppable'>
-        <a href='#'>Category Two</a>
-        <div class='mega-menu'>
-          <div class="container cf">
-            <ul class="ul-reset">
-              <h3>Heading 1</h3>
-              <li><a href='#'>Category Two Sublink</a></li>
-              <li><a href='#'>Category Two Sublink</a></li>
-              
-            </ul>
-            <ul class="ul-reset">
-              <h3>Heading 2</h3>
-              <li><a href='#'>Category Two Sublink</a></li>
-              
-            </ul>
-            <ul class="ul-reset">
-              <h3>Heading 3</h3>
-              <li><a href='#'>Category Two Sublink</a></li>
-              <li><a href='#'>Category Two Sublink</a></li>
-             
-            </ul>
-            <ul class="ul-reset">
-              <h3>Heading 4</h3>
-              <li><a href='#'>Category Two Sublink</a></li>
-              <li><a href='#'>Category Two Sublink</a></li>
-       
-            </ul>
-          </div>
-        </div>
-      </li>
-      <li><a href='#'>Category Three</a></li>
-    </ul>
+          <li>
+            Consultoría
+            <div class="mega-menu">
+              <div class="inner-mega-menu">
+                <Link to="/prueba"> <p><CastForEducationIcon/> Educación</p> </Link>
+                <p><WhatshotRoundedIcon />Minería</p>
+                <p><DirectionsBoatRoundedIcon />Comercio y Servicio</p>
+              </div>
+              <div class="inner-mega-menu">
+                <p><LocalAirportRoundedIcon />Turismo</p>
+                <p><OpacityRoundedIcon />Agua y Energía</p>
+                <p><DepartureBoardIcon />Transporte</p>
+              </div>
+              <div class="inner-mega-menu">
+                <p><PhonelinkRoundedIcon />Tecnología</p>
+                <p><RowingRoundedIcon />Logistica y Exportación</p>
+              </div>
+            </div>
+          </li>
+          <li>
+            Capacitación
+            <div class="mega-menu">
+              <div class="inner-mega-menu">
+                <p>Capacitación 1</p>
+                <p>Capacitación 2</p>
+                <p>Capacitación 3</p>
+              </div>
+              <div class="inner-mega-menu">
+                <p>Capacitación 1</p>
+                <p>Capacitación 2</p>
+                <p>Capacitación 3</p>
+              </div>
+              <div class="inner-mega-menu">
+                <p>Capacitación 1</p>
+              </div>
+            </div>
+          </li>
+          <li>
+            Servicios PRO
+            <div class="mega-menu">
+              <div class="inner-mega-menu">
+                <p>Servicio 1</p>
+              </div>
+              <div class="inner-mega-menu">
+                <p>Servicio 2</p>
+              </div>
+              <div class="inner-mega-menu">
+                <p>Servicio 3</p>
+              </div>
+            </div>
+          </li>
+          <li>blog</li>
 
-    {/* DRAWER -- Menu de opciones */}
+          <li class="icono-user"><AccountCircleRoundedIcon /></li>
+        </ul>
 
-    <Drawer open={state} onClose={toggleDrawer(false)}>
-        {sideList("left")}
-      </Drawer>
-  </nav>
+        {/* DRAWER -- Menu de opciones */}
+
+        <Drawer open={state} onClose={handleDrawerClose}>
+          {sideList("left")}
+        </Drawer>
+
+      </nav>
+    </div>
   );
 };
 

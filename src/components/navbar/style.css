@@ -31,16 +31,28 @@ nav .container #navbarResponsive li:hover > a {
   z-index: -1;
 }
 
+
+.logo-menu{
+  position: absolute;
+  left: 7em;
+  bottom: .8em;
+}
 .menu-toogable i {
   font-size: 1.8em;
   padding-right: 1em;
   display: block;
   color:#fff !important;
+  position: absolute;
+  left: 28px;
 }
 
 .IconoX{
   
   display: block;
+  color: #000;
+}
+.IconoX:hover{
+  color: #18bc9c;
 }
  .IconoX:hover{
     cursor: pointer;
@@ -67,3 +79,27 @@ nav .container #navbarResponsive li:hover > a {
 
 
 
+.top-lista{
+  background-color: #fff;
+}
+/* Fondo a la Lista */
+.MuiPaper-root{
+  background-color: #2C3E50 !important;
+
+}
+.MuiListItem-button:hover{
+  background-color: #18bc9c !important;
+}
+
+  /* color a la lista */
+  .item-enlaces .link_item{
+    color: #ffffff;
+  }
+  .item-enlaces .link_item .link_icono ,   .link_item .link_text{
+    color: #ffffff !important;
+  }
+
+  .item-enlaces{
+    text-decoration: none !important;
+    color: #ffffff;
+  }

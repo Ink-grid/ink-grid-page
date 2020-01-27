@@ -19,9 +19,6 @@ const Nosotros = ()=>{
 
 
     return (<div>
-        <br></br>
-        <br></br>
-        <br></br>
         
         <Carousel images={Imagenes}/>
         

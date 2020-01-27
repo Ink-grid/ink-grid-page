@@ -1,90 +1,130 @@
-.container {
-	margin: auto;
-	width: 940px;
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+ 
+*{
+  margin: 0;
+  padding: 0;
 }
-.ul-reset {
-	padding-left: 0;
-   margin-top: 0;
-   margin-bottom: 0;
-	list-style: none;
+ 
+body{
+  font-family: 'Open Sans', sans-serif;
+}
+ 
+.nav-bar{
+  width: 100%;
+  height: 75px;
+  background: #2c3e50;
+  /*padding: 10px 0;*/
+  padding-top: 5px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #1a252f;
+}
+ 
+.nav-bar ul{
+  list-style: none;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px;
+  position: relative;
 }
 
+.MuiSvgIcon-root{
+	margin-right: 5px;
+}
+.nav-bar ul li{
+  margin-right: 10px;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  /* border-radius: 10px; */
+  transition: all 0.4s ease;
+}
+ 
+.nav-bar ul li:last-child{
+  margin-right: 0;
+}
+ 
+.nav-bar ul li:hover{
+  color: #18bc9c;
+  display: block;
+  border-bottom: 3px solid #fff;
+  padding-bottom: 5px;
+}
+ 
+.nav-bar ul li:hover .mega-menu{
+  color: #fff;
+}
 
-nav {
-	background: #424242;
-	font-size: 0;
-	position: relative;
+.nav-bar ul li .mega-menu p{
+  font-weight: 100 !important;
+  font-size: 12;
+  
 }
-nav > ul > li {
-	display: inline-block;
-  	font-size: 14px;
-  	padding: 0 15px;
-  	position: relative;
+.nav-bar ul li .mega-menu p:hover{
+   color: #18bc9c;
 }
-nav > ul > li:first-child {padding-left: 0;}
-nav > ul > li:last-child {padding-right: 0;}
-nav > ul > li > a {
+ 
+
+
+ /*------------*/
+.mega-menu{
+  position: absolute;
+  top: 65px;
+  z-index: 99999;
+  /* left: 100px; */
+  /* right: 0; */
+  width: auto;
+  height: auto;
+  background: #2c3e50;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.4s ease;
+  box-sizing: border-box;
+  margin-top: 5px;
+  padding: 20px;
+}
+ 
+.nav-bar ul li:hover .mega-menu{
+  opacity: 1;
+  visibility: visible;
+}
+ 
+.inner-mega-menu{
+  width: 32%;
+  float: left;
+  margin-right: 1%;
+}
+ 
+.inner-mega-menu p{
+  padding: 5px 0;
+  transition: all 0.4s ease;
+  display: block;
+}
+ 
+.inner-mega-menu:last-child{ 
+  margin-right: 0%;
+}
+/**/
+.mega-menu .inner-mega-menu p{
+	text-align: left;
+}
+
+/* icono de usuario */
+.icono-user{
+	position: absolute;
+	right: 15px;
+}
+
+.icono-user .MuiSvgIcon-root{
 	color: #fff;
-  	display: block;
-  	position: relative;
-  	padding: 20px 0;
-  	border-bottom: 3px solid transparent;
-}
-nav > ul > li:hover > a {
-	color: #69aae0; 
-  	border-bottom: 3px solid #69aae0;
 }
 
-
-
-/* #Mega Menu Styles
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-.mega-menu {
-	background: #f0f0f0;
-  	display: none;
-  	left: 0;
-  	position: absolute;
-  	text-align: left;
-  	width: 100%;
+.icono-user .MuiSvgIcon-root:hover{
+	/* background-color: red; */
 }
-.mega-menu h3 {color: #444;}
-.mega-menu ul {
-	float: left;
-  	margin-bottom: 20px;
-  	margin-right: 40px;
-  	width: 205px;
-}
-.mega-menu ul:last-child {margin-right: 0;}
-.mega-menu a {
-	border-bottom: 1px solid #ddd;
-  	color: #4ea3d8;
-  	display: block;
-  	padding: 10px 0;
-}
-.mega-menu a:hover {color: #2d6a91;}
-
-
-
-/* #Droppable Class Styles
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-.droppable {position: static;}
-.droppable > a:after {
-	content: "\f107";
-  	font-family: FontAwesome;
-  	font-size: 12px;
-  	padding-left: 6px;
-  	position: relative;
-  	top: -1px;
-}
-.droppable:hover .mega-menu {display: block;}
-
-
-
-/* #Browser Clearfix
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-.cf:before,
-.cf:after {
-	content: " "; /* 1 */
-   display: table; /* 2 */
-}
-.cf:after {clear: both;}
