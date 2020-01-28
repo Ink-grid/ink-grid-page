@@ -11,31 +11,11 @@
   color: #006489;
 }
 
-nav .container #navbarResponsive li:hover > a {
-  padding-bottom: 0.5em !important;
-  color: blue !important;
-  border-bottom-color: blue !important;
-  border-bottom-style: groove !important;
-}
-
-.dropdown-content {
-  display: none;
-  top: 110%;
-  right: -150%;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  width: 400px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  padding: 12px 16px;
-  z-index: -1;
-}
-
 
 .logo-menu{
   position: absolute;
   left: 7em;
-  bottom: .8em;
+  bottom: .2em;
 }
 .menu-toogable i {
   font-size: 1.8em;
@@ -68,6 +48,7 @@ nav .container #navbarResponsive li:hover > a {
 .menu-toogable i:hover {
   -webkit-animation: latido;
   animation: latido .5s infinite;
+  cursor: pointer;
 }
 
 @keyframes latido {
@@ -103,3 +84,5 @@ nav .container #navbarResponsive li:hover > a {
     text-decoration: none !important;
     color: #ffffff;
   }
+
+/* menu */
