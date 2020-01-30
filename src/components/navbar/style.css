@@ -24,6 +24,8 @@
   color:#fff !important;
   position: absolute;
   left: 28px;
+  top: 10px;
+  
 }
 
 .IconoX{
@@ -36,7 +38,8 @@
 }
  .IconoX:hover{
     cursor: pointer;
-    animation: girar 3s infinite;
+    animation: girar 2s infinite;
+    
 }
 @keyframes girar {
   from { transform: rotate(0deg); }
@@ -53,7 +56,7 @@
 
 @keyframes latido {
 	from { transform: none; }
-    50% { transform: scale(1.4); }
+    50% { transform: scale(1.3); }
     to { transform: none; }
 }
 

@@ -28,6 +28,7 @@ import DirectionsBusIcon from '@material-ui/icons/DirectionsBus';
 import ThumbsUpDownIcon from '@material-ui/icons/ThumbsUpDown';
 import BusinessTwoToneIcon from '@material-ui/icons/BusinessTwoTone';
 import WhatsAppIcon from "@material-ui/icons/WhatsApp";
+import AccountCircleRoundedIcon from "@material-ui/icons/AccountCircleRounded"
 
 import logo from "../../../src/logo.png";
 import logoB from "../../../src/logo-dark.png";
@@ -52,11 +53,16 @@ const Navbar = () => {
   };
 
   const menuR = () => {
-    let btnmenu = document.getElementById("btn-menu");
-    let menu = document.getElementById("nav");
+    let menu = document.getElementById("menu-wrapper");
 
-    menu.classList.toggle("contenedor-menu");
+    menu.classList.toggle("aktif");
   };
+
+  const esconderMenu = () => {
+    let subMenu=document.getElementById("megaMenu");
+    subMenu.style.display="none";
+  }
+  
 
   const sideList = side => (
     <div className={classes.list} role="presentation">
@@ -78,16 +84,16 @@ const Navbar = () => {
             }}
           >
             {/* Boton del SideList 'X' */}
-        
+
             <ClearIcon
               style={{ fontSize: "3em" }}
               onClick={handleDrawerClose}
               className="IconoX"
             />
-           </div>
+          </div>
 
           <div style={{ width: "70%", textAlign: "center" }}>
-            <img width="100" height="50" src={logoB} alt="ink-grid" />
+            <img width="100" height="50" src={logoB} alt="Ink-grid" />
           </div>
         </div>
       </List>
@@ -141,7 +147,7 @@ const Navbar = () => {
         <a
           href="https://www.twitter.com"
           target="_blank"
-          className="item-enlaces"
+          className="item-enlaces"  
         >
           <ListItem className="link_item" onClick={handleDrawerClose} button>
             <ListItemIcon>
@@ -174,154 +180,144 @@ const Navbar = () => {
   };
 
   return (
-    <div class="">
-      {/* habur */}
-      <div class="wrapper-burger" onClick={menuR} id="btn-menu">
-        <div class="burger"></div>
+    <header id="headerblanter">
+      <a href="#" id="showjalantikus" onClick={menuR} title="Show Navigation"><i class="material-icons"></i></a>
+      <a href="#" id="showkacatikus" title="Show Search"><AccountCircleRoundedIcon /></a>
+
+      <div className="header2 section" id="header2">
+        <div class="widget Header" data-version="1" id="Header1">
+          <div id="header-inner">
+
+            <Link to="/" className="my-0 px-5" style={{ display: "block", paddingBottom: '200px' }}>
+              <img alt="ink-grid" height="48px" className="mb-2" id="Header1_headerimg" src={logo} />
+            </Link>
+          </div>
+        </div>
       </div>
-      {/* fin hamb */}
 
-      <ul id="nav" class="contenedor-menu">
-        {/* logo-X */}
-        <li className="menu-toogable d-none d-sm-block">
-            <i onClick={handleDrawerOpen} class="fas fa-bars"></i>
-          </li>
 
-          <li class="d-none d-lg-block">
-            <a class="logo-menu" href="/#inkgrid">
-              <img
-                width="100"
-                height="50"
-                src={logo}
-                alt="ink-grid"
-              />
-            </a>
-          </li>
+      <div id="menu-wrapper">
 
-        {/* fin logo-x */}
-        <li class="aparecer-menu">
-          <Link to="/nosotros"> <GroupIcon />Nosotros </Link>
-        </li>
+        <div id="navigation">
 
-        <li class="aparecer-menu">
-        <Link to="/hyper"> <DomainIcon />Hyper</Link>
-        </li>
-
-        <li>
-        <Link to="/blog"> <ImportContactsIcon />BLog</Link>
-        </li>
-
-        {/*  */}
-        <li>
-          <a href="#s2"><CastForEducationIcon />Capacitaciones</a>
-          <span id="s2"></span>
-          <ul class="subs">
+          <ul>
             <li>
-              {/* <a href="#" className="bg-dark">Opciones 1</a> */}
-              <ul>
-                <li>
-                  <Link to="/capacitacion1"> <CastForEducationIcon />Capacitación 1</Link>
-                </li>
-              
-              </ul>
+              <a className="blanter-nav" href="#" itemprop="url" title="industrias"><span itemprop="name">INDUSTRIAS</span></a>
+              <div className="mega-wrapper" id="megaMenu">
+                <div className="megamenu">
+                  <ul className="taglabel">
+                    {/*  */}
+                    <Link to="/educacion" onClick={menuR} className="m-0 p-0 link-sub">
+                      <li className="clearfix">
+                        <img alt="Ink-Grid" title="Sub menu 1xD" className="tagpost_thumb" src="https://www.bbva.com/wp-content/uploads/2015/12/bbva-educacion-e1464704439593-1024x424.jpg" />
+                        <a className="blanco">Educación</a>
+                      </li>
+                    </Link>
+                    {/*  */}
+
+                    <Link to="/mineria" onClick={menuR} className="m-0 p-0 link-sub">
+                      <li className="clearfix">
+                        <img alt="Ink-Grid" className="tagpost_thumb" src="https://exsasoluciones.pe/wp-content/uploads/2018/06/Es-viable-la-miner%C3%ADa-sostenible-en-Per%C3%BA-800x445.jpg" />
+                        <a className="blanco">Minería</a>
+                      </li>
+                    </Link>
+                    {/*  */}
+                    
+                    <Link to="/comercio-servicio" onClick={menuR} className="m-0 p-0 link-sub">
+                      <li className="clearfix">
+                        <img alt="Ink-Grid" className="tagpost_thumb" src="https://st2.depositphotos.com/3623347/12076/v/950/depositphotos_120768024-stock-illustration-vector-delivery-service-concept-background.jpg" />
+                        <a className="blanco">Comercio y Servicio</a>
+                      </li>
+                    </Link>
+                    {/*  */}
+                    
+                    <Link to="/turismo" onClick={menuR} className="m-0 p-0 link-sub">
+                      <li className="clearfix">
+                        <img alt="Ink-Grid" className="tagpost_thumb" src="https://e.rpp-noticias.io/xlarge/2017/08/30/090909_472927.jpg" />
+                        <a className="blanco">Turísmo</a>
+                      </li>
+                    </Link>
+                    {/*  */}
+                    <Link to="/agua-energia" onClick={menuR} className="m-0 p-0 link-sub">
+                      <li className="clearfix">
+                        <img alt="Ink-Grid" className="tagpost_thumb" src="https://www.proyectofse.mx/wp-content/uploads/2019/01/n5_ene_19-03-759x500.png" />
+                        <a className="blanco">Agua y Energía</a>
+                      </li>
+                    </Link>
+                    {/*  */}
+                    <Link to="/transporte" onClick={menuR} className="m-0 p-0 link-sub">
+                      <li className="clearfix">
+                        <img alt="Ink-Grid" className="tagpost_thumb" src="https://www.elsoldemexico.com.mx/metropoli/valle-de-mexico/xy7ja9-transporte-horario-especial.jpg/ALTERNATES/LANDSCAPE_400/transporte-horario-especial.jpg" />
+                        <a className="blanco">transporte</a>
+                      </li>
+                    </Link>
+                    {/*  */}
+                    
+                    <Link to="/tecnologia" onClick={menuR} className="m-0 p-0 link-sub">
+                      <li className="clearfix">
+                        <img alt="Ink-Grid" className="tagpost_thumb" src="https://cdn-3.expansion.mx/dims4/default/abad06d/2147483647/strip/true/crop/1000x667+0+0/resize/800x534!/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2Ff0%2F1d%2Fd0b7fd994e67a9f48564db5f7507%2Fistock-856757428-copy.jpg" />
+                        <a className="blanco">Tecnología</a>
+                      </li>
+                    </Link>
+                    {/*  */}
+                    <Link to="/logistica-exportacion" onClick={menuR} className="m-0 p-0 link-sub">
+                      <li class="clearfix">
+                        <img alt="Ink-Grid" class="tagpost_thumb" src="https://encolombia.com/wp-content/uploads/2013/01/Exportaci%C3%B3n-de-Servicios.jpg" />
+                        <a className="blanco">Logística y Exportación</a>
+                      </li>
+                    </Link>
+                    {/*  */}
+
+
+                  </ul>
+                </div>
+              </div>
+            </li>
+
+            {/*  */}
+            {/*  */}
+            {/*  */}
+            <li>
+              <a className="blanter-nav" href="#" itemprop="url" title="Games">
+                <span itemprop="name">In Company</span>
+              </a>
+              <div className="mega-wrapper">
+
+
+              </div>
+            </li>
+
+            {/*  */}
+            {/*  */}
+            {/*  */}
+
+            <li>
+              <a className="blanter-nav" href="#" itemprop="url" title="Tips &amp; Trik">
+                <span itemprop="name">Servicios BPO</span>
+              </a>
+              <div className="mega-wrapper">
+
+
+              </div>
             </li>
             <li>
-              {/* <a href="#">Opciones 1</a> */}
-              <ul>
-                <li>
-                  <Link to="/capacitacion2"><CastForEducationIcon />Capacitación 2</Link>
-                </li>
-                
-              </ul>
+              <a className="blanter-nav" href="#" itemprop="url" title="Gadget"><span itemprop="name">Proyectos</span></a>
             </li>
             <li>
-              {/* <a href="#">Opciones 1</a> */}
-              <ul>
-                <li>
-                  <Link to="/capacitacion3"><CastForEducationIcon />Capacitación 3</Link>
-                </li>
-              
-              </ul>
-            </li>
-
-          </ul>
-        </li>
-        {/*  */}
- 
-        
-        {/*  */}
-        <li>
-          <a href="#s1"><BusinessTwoToneIcon />Industria</a>
-          <span id="s1"></span>
-          <ul class="subs">
-            <li>
-              {/* <a href="#" className="bg-dark">Opciones 1</a> */}
-              <ul>
-                <li>
-                  <Link to="/educación"> <SchoolIcon />Educación</Link>
-                </li>
-                <li>
-                <Link to="/minería"> <FastfoodIcon />Minería</Link>
-                </li>
-                <li>
-                <Link to="/comercio-servicio"><ThumbsUpDownIcon />Comercio y Servicios</Link>
-                </li>
-              </ul>
-            </li>
-            <li>
-              {/* <a href="#">Opciones 1</a> */}
-              <ul>
-                <li>
-                  <Link to="/turismo"><LocalAirportRoundedIcon />Turismo</Link>
-                </li>
-                <li>
-                <Link to="/agua-energia"><OpacityRoundedIcon />Agua y Energía</Link>
-                </li>
-                <li>
-                <Link to="/transporte"><DirectionsBusIcon />Transporte</Link>
-                </li>
-              </ul>
-            </li>
-            <li>
-              {/* <a href="#">Opciones 1</a> */}
-              <ul>
-                <li>
-                  <Link to="/tecnología"><PhonelinkRoundedIcon />Tecnología</Link>
-                </li>
-                <li>
-                <Link to="/logística-exportación"><RowingRoundedIcon />Logística y Exportación</Link>
-                </li>
-              </ul>
+              <Link to="/blog" onClick={menuR}><span itemprop="name">Blog</span></Link>
             </li>
 
           </ul>
-        </li>
-        {/*  */}
-        
-        
-        <li class="aparecer-menu">
-          <a href="https://www.facebook.com/InkGridx"
-          target="_blank" ><FacebookIcon />fb</a>
-        </li>
-       
-        <li class="aparecer-menu">
-          <a href="#"><LinkedInIcon />linked In</a>
-        </li>
-        <li class="aparecer-menu">
-          <a href="#"><WhatsAppIcon />whatsapp</a>
-        </li>
 
-        {/* <li class="icono-user"><AccountCircleRoundedIcon /></li> */}
-      </ul>
 
-      {/*  */}
+        </div>
+        <div id="menu-kiri" className="mx-0 mx-lg-5">
+          <a className="blanter" href="javascript:;" id="showsearch" target="_blank" title="Show Search"><AccountCircleRoundedIcon /></a>
 
-      <Drawer open={state} onClose={handleDrawerClose}>
-          {sideList("left")}
-        </Drawer>
-
-        {/*  */}
-    </div>
+          
+        </div>
+      </div>
+    </header>
   );
 };
 
