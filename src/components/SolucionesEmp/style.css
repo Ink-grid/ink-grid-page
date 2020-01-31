@@ -94,6 +94,7 @@ section .btn-ver:hover{
 	text-align: center;
 	overflow: hidden;
 	position: relative;
+	transition: all .2s ease-in;
   }
   
   .card-education .picture {
@@ -148,6 +149,17 @@ section .btn-ver:hover{
 	box-shadow: 0 0 0 14px #f7f5ec;
 	transform: scale(0.7);
   }
+
+  .card-education {
+	  border:2px solid #1369ce;
+  }
+  .card-education .lista:hover li p:nth-child(2n){
+	color:blue;
+	font-weight: 500;
+  }
+  .card-education .lista:hover li p :nth-child(2n) i{
+	  color: black !important;
+  }
   
   .card-education .title {
 	display: block;
@@ -156,7 +168,7 @@ section .btn-ver:hover{
 	text-transform: capitalize;
   }
 .card-education .lista{
-	text-align: left;
+	text-align: center;
 	list-style: none;
 }
 .card-education .lista p{

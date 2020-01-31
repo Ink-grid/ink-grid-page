@@ -281,9 +281,18 @@ const Navbar = () => {
               <a className="blanter-nav" href="#" itemprop="url" title="Games">
                 <span itemprop="name">In Company</span>
               </a>
-              <div className="mega-wrapper">
-
-
+              <div className="mega-wrapper" id="megaMenu">
+                <div className="megamenu">
+                  <ul className="taglabel">
+                    {/*  */}
+                    <Link to="/educacion" onClick={menuR} className="m-0 p-0 link-sub">
+                      <li className="clearfix">
+                        {/* <img alt="Ink-Grid" title="Sub menu 1xD" className="tagpost_thumb" src="https://www.bbva.com/wp-content/uploads/2015/12/bbva-educacion-e1464704439593-1024x424.jpg" /> */}
+                        <a className="blanco">Educación</a>
+                      </li>
+                    </Link>
+                  </ul>
+                </div>
               </div>
             </li>
 
@@ -302,6 +311,19 @@ const Navbar = () => {
             </li>
             <li>
               <a className="blanter-nav" href="#" itemprop="url" title="Gadget"><span itemprop="name">Proyectos</span></a>
+              <div className="mega-wrapper" id="megaMenu">
+                <div className="megamenu">
+                  <ul className="taglabel">
+                    {/*  */}
+                    <Link to="/educacion" onClick={menuR} className="m-0 p-0 link-sub">
+                      <li className="clearfix">
+                        <img alt="Ink-Grid" title="Sub menu 1xD" className="tagpost_thumb" src="https://www.bbva.com/wp-content/uploads/2015/12/bbva-educacion-e1464704439593-1024x424.jpg" />
+                        <a className="blanco">Educación</a>
+                      </li>
+                    </Link>
+                  </ul>
+                </div>
+              </div>
             </li>
             <li>
               <Link to="/blog" onClick={menuR}><span itemprop="name">Blog</span></Link>

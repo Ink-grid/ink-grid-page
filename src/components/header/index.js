@@ -24,7 +24,8 @@ const Hearder = () => {
 			className='masthead'
 		>
 			
-			<Carousel images={Imagenes} />
+			{/* <Carousel images={Imagenes} /> */}
+			<Carousel />
 
 		</header>
 	);

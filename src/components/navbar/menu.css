@@ -12,12 +12,31 @@ a:link{text-decoration:none!important}
     transition:all .5s ease-in-out;
     background-color: #282D32;
 }
-.mega-wrapper{background:#fff;
+.mega-wrapper{
+    background:#fff;
+    /* width: 80%; */
     overflow:hidden;
-    left:0;right:0;top:65px;position:absolute;padding:20px;-webkit-transition:.2s linear;-o-transition:.2s linear;transition:.2s linear;-webkit-box-shadow:0 12px 50px rgba(0,0,0,0.17);box-shadow:0 12px 50px rgba(0,0,0,0.17);transform:scaleY(0);-webkit-transform-origin:top;-ms-transform-origin:top;transform-origin:top;-webkit-transform:scaleY(0);-ms-transform:scaleY(0)}
+    left:0;right:0;
+    top:65px;
+    position:absolute;
+    padding:20px;
+    -webkit-transition:.2s linear;
+    -o-transition:.2s linear;
+    transition:.2s linear;
+    -webkit-box-shadow:0 12px 50px rgba(0,0,0,0.17);
+    box-shadow:0 12px 50px rgba(0,0,0,0.17);
+    transform:scaleY(0);
+    -webkit-transform-origin:top;
+    -ms-transform-origin:top;
+    transform-origin:top;
+    -webkit-transform:scaleY(0);
+    -ms-transform:scaleY(0)
+}
 #navigation ul li:hover .mega-wrapper{
     transform:scaleY(1);
+
     -webkit-transform:scaleY(1);
+
      -ms-transform:scaleY(1)} 
 #showkacatikus{color:#fff;
     position:fixed;top:12px;right:10px;display:none}
@@ -98,7 +117,7 @@ a.blanter:hover{color:#fff!important}
 } */
 
 @media screen and (min-width:891px){
-    .mega-wrapper li{width:20%!important;height:130px}
+    .mega-wrapper li{width:18%!important;height:130px}
 
 }
 
@@ -109,6 +128,7 @@ a.blanter:hover{color:#fff!important}
 #search-box .fa-arrow-left,.blanter-back{display:block}
 #header2{width:220px;height:60px;overflow:hidden;float:none;margin:8px auto}
 a#showsearch{visibility:hidden}
+/* # de opciones */
 .mega-wrapper li{width:23%!important;height:100px}
 #search-blanter{background:#fff;padding:0}
 #bsearchbox{width:auto}
@@ -142,12 +162,12 @@ li.clearfix:nth-child(n+7),button.bsearchbtn,
     .mega-wrapper li{width:30%!important;height:100px}
 
 }
-@media screen and (max-width:576px){
+@media screen (min-width:501px) and (max-width:576px){
     .mega-wrapper li{width:47%!important;height:80px}
 
 }
 @media screen and (max-width:500px){
-    .mega-wrapper li{width:43%!important;height:80px}
+    .mega-wrapper li{width:42%!important;height:80px}
 
 }
 

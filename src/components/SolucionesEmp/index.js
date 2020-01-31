@@ -285,7 +285,7 @@ const SolucionesEmp = props => {
                     <ul className="lista">
                       <li>
                         {props.datas.AO.map((data, index) => (
-                          <p className="card-text" key={index}>
+                          <p className="card-text pr-5" key={index}>
                            <i className="fas fa-check"> </i>  {data}
                           </p>
                         ))}
@@ -310,7 +310,7 @@ const SolucionesEmp = props => {
                     <ul className="lista">
                       <li>
                         {props.datas.AE.map((data, index) => (
-                          <p className="card-text" key={index}>
+                          <p className="card-text pr-5" key={index}>
                             <i className="fas fa-check"> </i> {data}
                           </p>
                         ))}
@@ -333,7 +333,7 @@ const SolucionesEmp = props => {
                     <ul className="lista">
                       <li>
                         {props.datas.AR.map((data, index) => (
-                          <p className="card-text" key={index}>
+                          <p className="card-text pr-5" key={index}>
                            <i className="fas fa-check"> </i>  {data}
                           </p>
                         ))}
