@@ -1,12 +1,12 @@
 .portada-home {
     background-color: blue;
-    height: 100vh;
+    height: 100vh;   /* % - vh*/
     width: 100vw;
-    position: relative;
+    margin:0;
 }
 
 .portada-home img {
-    height: 100vh;
+    height: 100vh;   /* % - vh*/
     width: 100vw;
 }
 
@@ -44,7 +44,7 @@
     }
 }
 .contenedor-texto .logo img{
-    height: 45vh!important;
+    height: 45vh important;   /* % - vh*/
     width: 30vw !important;
 }
 /* scroll texto */

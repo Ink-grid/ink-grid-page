@@ -20,14 +20,12 @@ const Hearder = () => {
 	
 
 	return (
-		<header
-			className='masthead'
-		>
-			
-			{/* <Carousel images={Imagenes} /> */}
+		
+			<div className="contenido-home">
+		
 			<Carousel />
-
-		</header>
+			</div>
+		
 	);
 };
 
