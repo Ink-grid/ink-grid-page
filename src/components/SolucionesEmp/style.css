@@ -2,7 +2,7 @@
 /* 250px
 display: flex; none
 imagen 300 y 150 */
-.titlesoluciones {
+/* .titlesoluciones {
 	background-color: 'rgba(0, 114, 255, 0.5)';
 	width: '400px';
 	height: '330px';
@@ -14,15 +14,17 @@ imagen 300 y 150 */
 	flex-direction: 'column';
 	justify-content: 'center';
 	left: '10%';
-}
-.portada {
+} */
+/* .solucioneEmpresariales {
 	background-color: '#cccccc';
 	background-repeat: 'no-repeat';
 	background-size: '100% 100%';
 	position: 'relative';
 	height: '300px';
+} */
+.solucioneEmpresariales{
+	margin-top: 150px;
 }
-
 .img-portada{
 	height: 300px;
 	width: 100%;
@@ -38,17 +40,33 @@ imagen 300 y 150 */
 }
 .section-subheading{
 	padding-left: 5em;
-	background-color: #282D32;
+	background-color: rgba(5,28,44,.6);
 	padding: .4em .8em;
+	/* color: #282D32; */
 	color: white;
 	/* clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%); */
 	transition: all .2s ease-in;
-	border-radius: 30px;
+	border-radius: 15px;
+	font-size: 1.5rem;
 }
-.section-subheading:hover{
+ .section-subheading .MuiSvgIcon-root{
+	
+	margin: 0;
+	padding: 0;
+	width: 40px;
+	height: 30px;
+
+}
+
+@media (max-width:600px){
+	.section-subheading{
+		font-size: 1.2rem;
+	}
+}
+/* .section-subheading:hover{
 	background-color: #0062cc;
 	font-weight: bold;
-}
+} */
 
 .img-industria{
 	width: 100%;
@@ -61,7 +79,7 @@ imagen 300 y 150 */
 }
 @media (min-width: 577px) and (max-width:992px) {
 	.section-heading{
-		font-size: 1.2em;
+		font-size: 1.6em;
 	}	
 }
 @media (max-width: 576px) {
@@ -69,9 +87,15 @@ imagen 300 y 150 */
 		width: 80%;
 	}
 	.section-heading{
-		font-size: 1em;
+		font-size: 1.4em;
 	}
 	
+	
+}
+@media (max-width: 767px) {
+	.section-subh{
+		font-size: 1.2rem !important;
+	}
 }
 
 
@@ -79,6 +103,7 @@ imagen 300 y 150 */
 section .btn-ver{
 	background-color: #282D32 !important;
 	color: white;
+	font-size: 1.5rem;
 }
 
 section .btn-ver:hover{
@@ -86,7 +111,11 @@ section .btn-ver:hover{
 	color: white;
 }
 
+.section-subh{
+	font-size: 1.4rem;
+}
 
+/*  */
 .card-education{
 	padding: 30px 0 40px;
 	margin-bottom: 30px;
@@ -153,13 +182,13 @@ section .btn-ver:hover{
   .card-education {
 	  border:2px solid #1369ce;
   }
-  .card-education .lista:hover li p:nth-child(2n){
+  /* .card-education .lista:hover li p:nth-child(2n){
 	color:blue;
 	font-weight: 500;
   }
   .card-education .lista:hover li p :nth-child(2n) i{
 	  color: black !important;
-  }
+  } */
   
   .card-education .title {
 	display: block;
@@ -170,7 +199,13 @@ section .btn-ver:hover{
 .card-education .lista{
 	text-align: center;
 	list-style: none;
+
 }
 .card-education .lista p{
-	text-align: justify;
+	text-align: center;
+	font-size: 1.3rem;
+	display: flex;
+}
+.card-education .lista p .fas{
+	margin:0 15px;;
 }

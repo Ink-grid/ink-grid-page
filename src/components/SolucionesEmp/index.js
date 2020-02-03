@@ -17,7 +17,7 @@ const SolucionesEmp = props => {
   };
 
   return (
-    <section>
+    <section className="solucioneEmpresariales">
       <div className="container">
         <div className="row">
           <div className="col-lg-12 text-center px-5">
@@ -72,9 +72,9 @@ const SolucionesEmp = props => {
             }}
             className="row"
           >
-            <div className="col-12 col-lg-6 text-left pl-1 pl-sm-5">
+            <div className="col-12 col-lg-6 text-left pl-1 pl-sm-5 EducacionS">
               <p className=" section-subheading">
-                <DoneOutlineIcon /> Gestión del talento humano.
+                <DoneOutlineIcon /> <span> Gestión del talento humano.</span>
               </p>
 
               <p className="section-subheading">
@@ -120,7 +120,7 @@ const SolucionesEmp = props => {
         <button
           onClick={() => activeEducation()}
           type="button"
-          class="btn btn-ver"
+          class="btn btn-ver p-3"
         >
           {estado}
         </button>
@@ -322,7 +322,7 @@ const SolucionesEmp = props => {
 
                 {/*  */}
                 {/*  */}
-                <div className="col col-12 col-sm-6 col-md-4">
+                <div className="col col-12 col-sm-6 offset-sm-3 offset-md-0 col-md-4">
                   <div className="card-education">
                     <div className="picture">
                       <img className="img-fluid" src="https://www.fundaciontelefonica.com.ar/wp-content/uploads/2016/04/ITSitio_210316_Img_Bilinkis-1-1.png" />
@@ -348,7 +348,7 @@ const SolucionesEmp = props => {
             </div>
           </div>
           <div style={{ padding: "1em" }}>
-            <button type="button" className="btn btn-primary">
+            <button type="button" className="btn btn-primary btn-ver">
               contactar
             </button>
           </div>

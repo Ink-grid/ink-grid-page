@@ -31,7 +31,14 @@ const Navbar = () => {
 		//
 		menu.classList.toggle("mostrar-menu");
 		header.classList.toggle("fijar-header");
-
+	};
+	
+	const Cmenu = () => {
+		let menu = document.getElementById('Idmenu');
+		let header = document.getElementById('header-m');
+		//
+		menu.classList.remove("mostrar-menu");
+		header.classList.remove("fijar-header");
 	};
 
 	return (
@@ -42,10 +49,10 @@ const Navbar = () => {
 						<MenuIcon className="hamburguesa" />
 						
 					</div>
-					<Link to="/" className="logo"> <img src={logo} /> </Link>
+					<Link to="/" className="logo" onClick={Cmenu}> <img src={logo} /> </Link>
 
 					<ul class="nav-list" id="Idmenu">
-						<li>
+						<li onClick={Cmenu}>
 							<Link to="/"><Home />Nosotros</Link>
 						</li>
 						<li>
@@ -53,21 +60,21 @@ const Navbar = () => {
 							{/* <!-- 11111 --> */}
 							<ul class="sub-menu">
 								<div className="row">
-									<div className="col-4 col-lg-12">
-										<li> <Link to="/educacion"><Educacion />Educación</Link> </li>
-										<li> <Link to="/educacion"><Mineria />Minería</Link> </li>
-										<li> <Link to="/educacion"><CyS />Comercio y Servicios</Link> </li>
+									<div className="col-4 col12">
+										<li onClick={Cmenu}> <Link to="/educacion"><Educacion />Educación</Link> </li>
+										<li onClick={Cmenu}> <Link to="/educacion"><Mineria />Minería</Link> </li>
+										<li onClick={Cmenu}> <Link to="/educacion"><CyS />Comercio y Servicios</Link> </li>
 
 									</div>
-									<div className="col-4 col-lg-12">
-										<li> <Link to="/educacion"><Turismo />Turismo</Link> </li>
-										<li> <Link to="/educacion"><AyE />Agua y energía</Link> </li>
-										<li> <Link to="/educacion"><DirectionsBusIcon />Transporte</Link> </li>
+									<div className="col-4 col12">
+										<li onClick={Cmenu}> <Link to="/educacion"><Turismo />Turismo</Link> </li>
+										<li onClick={Cmenu}> <Link to="/educacion"><AyE />Agua y energía</Link> </li>
+										<li onClick={Cmenu}> <Link to="/educacion"><DirectionsBusIcon />Transporte</Link> </li>
 
 									</div>
-									<div className="col-4 col-lg-12">
-										<li> <Link to="/educacion"><Tecnologia />Tecnología</Link> </li>
-										<li> <Link to="/educacion"><LyE />Logística y Exportación</Link> </li>
+									<div className="col-4 col12">
+										<li onClick={Cmenu}> <Link to="/educacion"><Tecnologia />Tecnología</Link> </li>
+										<li onClick={Cmenu}> <Link to="/educacion"><LyE />Logística y Exportación</Link> </li>
 								
 									</div>
 
@@ -82,8 +89,8 @@ const Navbar = () => {
 							<ul class="sub-menu">
 								<div className="row">
 									<div className="col-4 col-lg-12">
-										<li> <Link to="/educacion">Educación</Link> </li>
-										<li> <Link to="/educacion">Educación</Link> </li>
+										<li onClick={Cmenu}> <Link to="/educacion">opcion 1</Link> </li>
+										<li onClick={Cmenu}> <Link to="/educacion">opcion 2</Link> </li>
 									</div>
 								</div>
 
