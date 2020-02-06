@@ -12,7 +12,9 @@
 section#contact .section-heading {
 	color: #fff;
 }
-
+.header-contacto {
+	margin-top: 50px;
+}
 .form-row {
 	display: -ms-flexbox;
 	display: flex;
@@ -37,4 +39,11 @@ section#contact .form-group textarea.form-control {
 section#contact .form-group input,
 section#contact .form-group textarea {
 	padding: 20px;
+}
+
+
+mostrar-menu{
+	display: none !important;
+	height: 0;
+	max-height: 0;
 }

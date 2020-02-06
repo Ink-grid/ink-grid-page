@@ -31,6 +31,7 @@ const Navbar = () => {
 		//
 		menu.classList.toggle("mostrar-menu");
 		header.classList.toggle("fijar-header");
+		
 	};
 	
 	const Cmenu = () => {
@@ -49,7 +50,7 @@ const Navbar = () => {
 						<MenuIcon className="hamburguesa" />
 						
 					</div>
-					<Link to="/" className="logo" onClick={Cmenu}> <img src={logo} /> </Link>
+					<Link to="/" className="logo" onClick={Cmenu}> <img src={logo} id="logo-dark"/> </Link>
 
 					<ul class="nav-list" id="Idmenu">
 						<li onClick={Cmenu}>

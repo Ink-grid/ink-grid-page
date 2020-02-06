@@ -1,9 +1,16 @@
 /** @format */
 
-import React from 'react';
+import React,{useEffect} from 'react';
 import './style.css';
+import logo from "../../../src/logo.png";
 
 const Contacto = () => {
+
+	useEffect(() => {
+		document.getElementById('logo-dark').src =logo;
+	  },[]
+	  );
+
 	return (
 		<section
 			id='contact'
@@ -11,12 +18,12 @@ const Contacto = () => {
 				backgroundColor: '#212529',
 				backgroundRepeat: 'no-repeat',
 				backgroundPosition: '50%;',
-				paddingTop: '250px',
-				paddingBottom: '200px'
+				paddingTop: '120px',
+				paddingBottom: '100px'
 			}}>
 			<div class='container'>
 				<div class='row'>
-					<div class='col-lg-12 text-center'>
+					<div class='col-lg-12 header-contacto text-center'>
 						<h2 class='text-uppercase section-heading'>CONTACTANOS</h2>
 						<h3 class='section-subheading text-muted'>
 							Dirección: Av. Javier Prado Este 410, Cercado de Lima 15046

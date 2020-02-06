@@ -12,31 +12,32 @@
 
 .contenedor-texto {
     position: absolute;
-    top: 15%; /* tamaño contenido*/
+    /*top: 15%; /* tamaño contenido*/
 
 }
 @media (max-width:764px){
     .contenedor-texto {
-        top: 10% !important; /* tamaño contenido*/
+        top: 8% !important; /* tamaño contenido*/
     
     }
 }
 @media (min-width:765px){
     .contenedor-texto {
-        top: 25%; /* tamaño contenido*/
+        top: 15%; /* tamaño contenido*/
     
     }
 }
-
-.border-contenido {
-    /* border: 4px dashed #fff; */
-    margin: 0 40px;
+@media (max-width:500px){
+    .contenedor-texto {
+        top: 5%; /* tamaño contenido*/
+    
+    }
 }
 
 .contenedor-texto span {
     font-size: 20px;
     text-align: left;
-    color:rgb(132, 52, 238);
+    color:white;
 }
 
 .contenedor-texto h1 {
@@ -44,7 +45,7 @@
     font-size: 100px;
 }
 .contenedor-texto .contenido-texto{
-    color:rgb(132, 52, 238)!important;
+    color:white!important;
     font-size: 15px;
     
 }
@@ -333,4 +334,92 @@
 #card-user:hover .avatar {
     background-color: #efefef;
     transition: all 0.6s ease;
+}
+
+.servicios{
+    /* display: flex;
+    justify-content: center; */
+    background-color: white;
+    font-size: 35px;
+    text-align: center;
+    width: 50%;
+    margin: 0 auto!important;
+    color: blue;   
+    font-weight: 800;
+    /* clip-path: polygon(90% 0, 100% 49%, 100% 49%, 90% 100%, 2% 100%, 6% 49%, 0 0); */
+}
+@media (max-width:650px){
+    .servicios{
+        width:95%;
+    }
+}
+
+/* -*************************************** */
+
+/* -*************************************** */
+.sobresalir {
+	transition: all .6s ease-in-out;
+	overflow: hidden;
+	height: 100px;
+	/* margin: 2px; */
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: white;
+}
+
+.sobresalir:hover {
+	-webkit-box-shadow: 5px 5px 15px 5px rgba(44, 62, 80, .5);
+	box-shadow: 5px 5px 15px 5px rgba(44, 62, 80, .5);
+	cursor: pointer;
+	transition: all .4s ease-in;
+}
+
+
+/* section-subheading */
+.section-subheading {
+	padding-left: 5em;
+	padding: .4em .8em;
+	transition: all .2s ease-in;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	font-size: 21px;
+	letter-spacing: -1.4px;
+	word-spacing: 2px;
+	color: black;
+	font-weight: 100;
+	font-style: italic;
+}
+
+.section-subheading {
+
+	padding-top: 20px;
+	text-align: center;
+}
+
+.section-subheading .MuiSvgIcon-root {
+
+	margin: 0;
+	padding: 0;
+	width: 40px;
+	height: 30px;
+
+}
+
+
+
+@media (max-width:600px) {
+	.section-subheading {
+		font-size: 1.3rem;
+    }
+    .sobresalir{
+        height: 50px !important;
+    }
+}
+
+@media (max-width:500px) {
+    
+    .sobresalir{
+        justify-content: start;
+    }
 }

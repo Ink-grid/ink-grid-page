@@ -1,11 +1,18 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import './style.css';
-
+import Ubicacion from './../Ubicacion';
 import logo from "../../../src/logo.png";
-import logoB from "../../../src/logo-dark.png";
+import DoneOutlineIcon from '@material-ui/icons/DoneOutline';
 
 
 const Carousel = props => {
+
+
+  useEffect(() => {
+    document.getElementById('Idmenu').classList.remove('cambiar-fondo-menu');
+    document.getElementById('logo-dark').src =logo;
+  },[]
+  );
   return (
     <React.Fragment>
 
@@ -13,11 +20,11 @@ const Carousel = props => {
       <div className="portada-home">
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQF3Fr2Ph9--j7D_a78tvqlJLQ9eaLvNFev77TDPqRpw6iH-y4U&s" alt="Ink Grid" />
         <div className="row contenedor-texto container">
-          <div className="col-10 col-md-6 pl-3 pl-lg-5 py-4 border-contenido my-3">
+          <div className="col-10 col-md-6 pl-3 pl-lg-5 py-4 border-contenido my-0">
             <div className="container text-left ">
               <span>Bienvenido a </span>
               <h1 className="text-left text-light">Ink Grid </h1>
-              <p className="contenido-texto text-justify pt-3 pl-3">
+              <p className="d-none d-sm-block contenido-texto text-justify pt-3 pl-3">
                 Trabajamos con las más exitosas compañías de Perú para conducir un crecimiento de largo plazo, transformar las operaciones y las organizaciones, así como nutrir el talento
             </p>
             </div>
@@ -67,21 +74,94 @@ const Carousel = props => {
             <p>proyectos</p>
             <span>emprendidos por Ink Grid en Perú</span>
           </div>
-          <div className="datosEspecificos col-12 col-md-4">
+          <div className="datosEspecificos col-12 col-md-4 text-center">
             <h1 className="p-3 text-center">+70</h1>
             <p>por ciento</p>
             <span>de las grandes corporaciones de Perú servidas</span>
-            <div className="linea lineaI d-none d-md-block">
-
-            </div>
+            <div className="linea lineaI d-none d-md-block">  </div>
           </div>
 
         </div>
 
       </div>
 
+      <div className="servicios p-3 m-5">Diseñamos y Operamos Soluciones Empresariales para mejorar tus Activos Organizacionales</div>
+
+      {/*  educacion Plus */}
+      
+      <div className="container-fluid">
+          <div
+            style={{
+              display: "flex",
+              color: "#0062cc",
+              justifyContent: "center",
+              textAlign: "initial"
+            }}
+            className="row"
+          >
+            <div className="col-12 col-md-5 m-4 sobresalir">
+              <p className=" section-subheading">
+                <DoneOutlineIcon />  Gestión del talento humano
+               
+               
+              </p>
+            </div>
+            <div className="col-12 col-md-5 m-4 sobresalir">
+              <p className="section-subheading">
+                <DoneOutlineIcon /> Diseño organizacional.
+               
+              </p>
+            </div>
+            <div className="col-12 col-md-5 m-4 sobresalir">
+              <p className="section-subheading">
+                <DoneOutlineIcon /> Gestión de los grupos de interés.
+               
+              </p>
+            </div>
+            <div className="col-12 col-md-5 m-4 sobresalir">
+              <p className="section-subheading">
+                <DoneOutlineIcon /> Inversión y finanzas.
+               
+              </p>
+            </div>
+            <div className="col-12 col-md-5 m-4 sobresalir">
+              <p className="section-subheading">
+                <DoneOutlineIcon /> Gestión del ecosistema.
+               
+              </p>
+            </div>
+            <div className="col-12 col-md-5 m-4 sobresalir">
+              <p className="section-subheading">
+                <DoneOutlineIcon /> Liderazgo y gobernanza.
+               
+              </p>
+            </div>
+            <div className="col-12 col-md-5 m-4 sobresalir">
+              <p className="section-subheading">
+                <DoneOutlineIcon /> Habilitación de la fuerza laboral.
+               
+              </p>
+            </div>
+            <div className="col-12 col-md-5 m-4 sobresalir">
+              <p className="section-subheading">
+                <DoneOutlineIcon /> Gest. inteligente y adap. de procesos.
+               
+              </p>
+            </div>
+            <div className="col-12 col-md-5 m-4 sobresalir">
+              <p className="section-subheading">
+                <DoneOutlineIcon /> Estándares y maduréz de los equipos. de gestión.
+               
+              </p>
+            </div>
+
+
+          </div>
+        </div>
 
       {/*  */}
+
+      <Ubicacion />
 
     </React.Fragment>
   );

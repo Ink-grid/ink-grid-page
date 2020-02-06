@@ -13,6 +13,7 @@ import Transporte from '../pages/Transporte';
 import Turismo from '../pages/Turismo';
 import Home from '../pages/home';
 import Nosotros from '../pages/Nosotros';
+import Contacto from '../components/contacto';
 
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
@@ -33,6 +34,7 @@ const Ruote = () => {
 					<Route path='/transporte' component={Transporte} />
 					<Route path='/turismo' component={Turismo} />
 					<Route path='/nosotros' component={Nosotros} />
+					<Route path='/contacto' component={Contacto} />
 					
 					{/* <Route path='/blogs' component={BLogs} />
 					<Route path='/login' component={Login} />

@@ -43,7 +43,7 @@ nav {
 .logo {
   width: 18rem;
   height: 8rem;
-  background-color: #eb3007;
+  background-color: transparent;
   display: flex;
   /* border-radius: 100%; */
   clip-path: polygon(18% 0, 100% 0%, 79% 100%, 0% 100%);
@@ -67,15 +67,7 @@ nav {
 /* anima menu */
 
 @media screen and (min-width: 851px) {
-  .anima-menu {
-    position: fixed;
-    background-color: #191919;
-    color: #051c2c;
-    top: 5px;
-    margin: 0;
-    padding: 0 50px;
-    border:2px inset white;
-  }
+  
   .nav-list {
     justify-content: center;
   }
@@ -120,12 +112,12 @@ nav {
 
 /* para los primeros enlaces -menu */
 .nav-list a:hover {
-  color: #eb3007;
+  color: #18bc9c;
   border-bottom: none;
 }
 @media screen and (min-width: 850px) {
     .nav-list a:hover {
-        border-bottom: 2px solid #eb3007;
+        border-bottom: 2px solid #18bc9c;
     }
     .nav-list #Idmenu{
         top:70px;
@@ -151,7 +143,7 @@ nav {
   width: 20rem;
   display: block;
   position: absolute;
-  border-top: 3px solid #eb3007;
+  border-top: 3px solid #18bc9c;
   background-color: #f6f6f6; /*color de los submenus */
   z-index: 100;
   top: 16rem;
@@ -195,7 +187,7 @@ nav {
 }
 
 .nav-list li .sub-menu a:hover {
-  border-left: 2px solid #eb3007;
+  border-left: 2px solid #18bc9c;
   margin-left: 5px;
 }
 
@@ -205,7 +197,7 @@ nav {
   top: -2.5rem;
   left: 3rem;
   border: 1.2rem solid transparent;
-  border-bottom-color: #eb3007;
+  border-bottom-color: #18bc9c;
 }
 
 
@@ -249,7 +241,7 @@ nav {
   .sub-menu {
     position: initial;
     border: 3px solid transparent;
-    border-left-color: #eb3007;
+    border-left-color: #18bc9c;
     margin-left: 1rem;
     max-height: 0;
   }
@@ -277,7 +269,7 @@ nav {
     justify-content: center;
     height: 50px;
     width: 50px;
-    color: cornsilk;
+    color: #18bc9c;/*color menu */
     z-index: 10000;
     /* position: fixed; */
   }
@@ -288,7 +280,7 @@ nav {
   .menu-icons .MuiSvgIcon-root{
     height: 40px;
     width: 40px;
-    border: 1px solid white;
+    border: 1px solid #18bc9c;
   }
   
   .ion-md-close {
@@ -329,3 +321,9 @@ box-shadow: 0px 10px 13px -7px #000000, -32px 41px 26px 20px rgba(127,127,127,0)
         top:20px;
     }
 }
+
+.cambiar-fondo-menu{
+  background-color:#14133D;
+  border-radius: 0px !important;
+}
+
