@@ -36,7 +36,7 @@ const Contacto = () => {
 				<div class='row'>
 					<div class='col-lg-12'>
 						<form id='contactForm' name='contactForm' novalidate='novalidate'>
-							<div class='form-row'>
+							<div class='form-row bg-light'>
 								<div class='col col-md-6'>
 									<div class='form-group'>
 										<input
@@ -46,7 +46,8 @@ const Contacto = () => {
 											placeholder='Tu Nombre *'
 											required=''
 										/>
-										<small class='form-text text-danger flex-grow-1 help-block lead'></small>
+										<small class='form-text text-danger
+										 flex-grow-1 help-block lead'></small>
 									</div>
 									<div class='form-group'>
 										<input
