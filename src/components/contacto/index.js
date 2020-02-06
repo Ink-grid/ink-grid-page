@@ -4,7 +4,7 @@ import React,{useEffect} from 'react';
 import './style.css';
 import logo from "../../../src/logo.png";
 import logoB from "../../../src/logo-dark.png";
- 
+import Ubicacion from "../Ubicacion"
 const Contacto = () => {
 
 	useEffect(() => {
@@ -15,10 +15,9 @@ const Contacto = () => {
 
 	  },[]
 	  );
-
-
-
 	return (
+		<React.Fragment>
+		
 		<section
 			id='contact'
 			style={{
@@ -78,7 +77,7 @@ const Contacto = () => {
 										<textarea
 											class='form-control'
 											id='message'
-											placeholder='Tu mensaje *'
+											placeholder='Escriba aquí sus inquietudes o envianos una nota para poder ayudarlo *'
 											required></textarea>
 										<small class='form-text text-danger help-block lead'></small>
 									</div>
@@ -101,6 +100,9 @@ const Contacto = () => {
 				</div>
 			</div>
 		</section>
+
+		<Ubicacion />
+		</React.Fragment>
 	);
 };
 

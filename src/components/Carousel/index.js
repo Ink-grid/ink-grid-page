@@ -18,7 +18,7 @@ const Carousel = props => {
 
       {/* Portada Home */}
       <div className="portada-home">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQF3Fr2Ph9--j7D_a78tvqlJLQ9eaLvNFev77TDPqRpw6iH-y4U&s" alt="Ink Grid" />
+        <img src="https://images.pexels.com/photos/355952/pexels-photo-355952.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Ink Grid" />
         <div className="row contenedor-texto container">
           <div className="col-10 col-md-6 pl-3 pl-lg-5 py-4 border-contenido my-0">
             <div className="container text-left ">

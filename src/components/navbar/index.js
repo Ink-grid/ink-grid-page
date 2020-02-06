@@ -53,8 +53,8 @@ const Navbar = () => {
 					<Link to="/" className="logo" onClick={Cmenu}> <img src={logo} id="logo-dark"/> </Link>
 
 					<ul class="nav-list" id="Idmenu">
-						<li onClick={Cmenu}>
-							<Link to="/"><Home />Nosotros</Link>
+						<li>
+							<Link to="/"><Home />Nosotros <ArrowDropDownSharpIcon /></Link>
 							<ul class="sub-menu">
 								<div className="row">
 									<div className="col-6">
@@ -109,10 +109,10 @@ const Navbar = () => {
 
 							</ul>
 						</li>
-						<li>
+						<li  onClick={Cmenu}>
 						<Link to="/servicios">BPO <ArrowDropDownSharpIcon /></Link>
 						</li>
-						<li>
+						<li  onClick={Cmenu}>
 							<a href="#">Blog</a>
 						</li>
 					</ul>
