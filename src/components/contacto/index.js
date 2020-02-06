@@ -3,22 +3,26 @@
 import React,{useEffect} from 'react';
 import './style.css';
 import logo from "../../../src/logo.png";
+import logoB from "../../../src/logo-dark.png";
  
 const Contacto = () => {
 
 	useEffect(() => {
-		document.getElementById('logo-dark').src =logo;
-
+		document.getElementById('logo-dark').src =logoB;
+		document.getElementById('Idmenu').classList.add('cambiar-fondo-menu');
+		
 		window.scrollTo(0, 0);
 
 	  },[]
 	  );
 
+
+
 	return (
 		<section
 			id='contact'
 			style={{
-				backgroundColor: '#212529',
+				backgroundColor: 'transparent',
 				backgroundRepeat: 'no-repeat',
 				backgroundPosition: '50%;',
 				paddingTop: '120px',
@@ -36,7 +40,7 @@ const Contacto = () => {
 				<div class='row'>
 					<div class='col-lg-12'>
 						<form id='contactForm' name='contactForm' novalidate='novalidate'>
-							<div class='form-row bg-light'>
+							<div class='form-row'>
 								<div class='col col-md-6'>
 									<div class='form-group'>
 										<input
