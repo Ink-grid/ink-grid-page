@@ -10,8 +10,9 @@ const Layout = props => {
 			<Navbar />
 			{props.children}
 			<Footer />
+
 		</div>
 	);
 };
-
+		
 export default Layout;

@@ -69,6 +69,17 @@ const Footer = () => {
           <p>© 2020 Ink Grid</p>
         </div>
       </div>
+
+      {/*  */}
+
+      <div className="cm-up" id="cm-up">
+        <input type="button" className="cm-text-up" value="Subir al Inicio" />
+        <span className="cm-icon">
+          <i className="fas fa-chevron-up"></i>
+        </span>
+      </div>
+
+  {/*  */}
     </div>
   );
 };
