@@ -73,7 +73,7 @@ const Footer = () => {
       {/*  */}
 
       <div className="cm-up" id="cm-up">
-        <input type="button" className="cm-text-up" value="Subir al Inicio" />
+        <input type="button" className="cm-text-up" value="Volver al Inicio" />
         <span className="cm-icon">
           <i className="fas fa-chevron-up"></i>
         </span>

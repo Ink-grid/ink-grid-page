@@ -33,7 +33,7 @@ const SolucionesEmp = props => {
             <div
               style={{
                 backgroundColor: "rgba(0,50,105)",
-                // opacity: 0.6,
+                marginLeft:"15px",
                 width: "370px",
                 height: "135px",
                 color: "#ffffff",

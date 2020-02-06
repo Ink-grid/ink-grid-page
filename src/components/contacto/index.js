@@ -3,11 +3,14 @@
 import React,{useEffect} from 'react';
 import './style.css';
 import logo from "../../../src/logo.png";
-
+ 
 const Contacto = () => {
 
 	useEffect(() => {
 		document.getElementById('logo-dark').src =logo;
+
+		window.scrollTo(0, 0);
+
 	  },[]
 	  );
 

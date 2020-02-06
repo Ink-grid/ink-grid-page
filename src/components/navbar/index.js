@@ -55,9 +55,21 @@ const Navbar = () => {
 					<ul class="nav-list" id="Idmenu">
 						<li onClick={Cmenu}>
 							<Link to="/"><Home />Nosotros</Link>
+							<ul class="sub-menu">
+								<div className="row">
+									<div className="col-6">
+										<li onClick={Cmenu}> <Link to="/empresa">Conócenos</Link> </li>
+										<li onClick={Cmenu}> <Link to="/educacion">Reserva</Link> </li>
+										<li onClick={Cmenu}> <Link to="/educacion">Comentarios</Link> </li>
+
+									</div>
+									
+
+								</div>
+							</ul>
 						</li>
 						<li>
-							<Link to="/"><Servicio />Servicios <ArrowDropDownSharpIcon /></Link>
+							<Link to="/"><Servicio />Portafolio <ArrowDropDownSharpIcon /></Link>
 							{/* <!-- 11111 --> */}
 							<ul class="sub-menu">
 								<div className="row">
@@ -98,14 +110,11 @@ const Navbar = () => {
 							</ul>
 						</li>
 						<li>
-						<Link to="/servicios">Servicios BPO <ArrowDropDownSharpIcon /></Link>
+						<Link to="/servicios">BPO <ArrowDropDownSharpIcon /></Link>
 						</li>
 						<li>
 							<a href="#">Blog</a>
 						</li>
-						{/* <li class="logoB d-none d-lg-block">
-							<img src={logo} />
-						</li> */}
 					</ul>
 
 					<div className="contactanos py-4 px-2 d-none d-md-block">
