@@ -3,7 +3,7 @@
 import React from 'react';
 import SolucionesEmp from '../../components/SolucionesEmp/';
 
-const Educación = () => {
+const Educación = () => { 
 	const data = {
 		title: 'EDUCACIÓN',
 		insights1: [

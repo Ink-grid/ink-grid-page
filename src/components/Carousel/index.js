@@ -11,6 +11,7 @@ const Carousel = props => {
   useEffect(() => {
     document.getElementById('Idmenu').classList.remove('cambiar-fondo-menu');
     document.getElementById('logo-dark').src =logo;
+    document.getElementById('redes-contacto').classList.remove('mostrar');
   },[]
   );
   return (

@@ -21,6 +21,10 @@ import Tecnologia from '@material-ui/icons/Laptop';
 import LyE from '@material-ui/icons/LocalShipping';
 import Servicio from '@material-ui/icons/RoomService';
 import "./style.css";
+import LinkedInIcon from "@material-ui/icons/LinkedIn";
+import WhatsAppIcon from '@material-ui/icons/WhatsApp';
+import FacebookIcon from "@material-ui/icons/Facebook";
+import User from '@material-ui/icons/PermIdentity';
 
 const Navbar = () => {
 	
@@ -52,6 +56,9 @@ const Navbar = () => {
 					</div>
 					<Link to="/" className="logo" onClick={Cmenu}> <img src={logo} id="logo-dark"/> </Link>
 
+
+
+
 					<ul class="nav-list" id="Idmenu">
 						<li>
 							<Link to="/"><Home />Nosotros <ArrowDropDownSharpIcon /></Link>
@@ -75,19 +82,19 @@ const Navbar = () => {
 								<div className="row">
 									<div className="col-4 col12">
 										<li onClick={Cmenu}> <Link to="/educacion"><Educacion />Educación</Link> </li>
-										<li onClick={Cmenu}> <Link to="/educacion"><Mineria />Minería</Link> </li>
-										<li onClick={Cmenu}> <Link to="/educacion"><CyS />Comercio y Servicios</Link> </li>
+										<li onClick={Cmenu}> <Link to="/mineria"><Mineria />Minería</Link> </li>
+										<li onClick={Cmenu}> <Link to="/comercio"><CyS />Comercio y Servicios</Link> </li>
 
 									</div>
 									<div className="col-4 col12">
-										<li onClick={Cmenu}> <Link to="/educacion"><Turismo />Turismo</Link> </li>
-										<li onClick={Cmenu}> <Link to="/educacion"><AyE />Agua y energía</Link> </li>
-										<li onClick={Cmenu}> <Link to="/educacion"><DirectionsBusIcon />Transporte</Link> </li>
+										<li onClick={Cmenu}> <Link to="/turismo"><Turismo />Turismo</Link> </li>
+										<li onClick={Cmenu}> <Link to="/agua-energia"><AyE />Agua y energía</Link> </li>
+										<li onClick={Cmenu}> <Link to="/transporte"><DirectionsBusIcon />Transporte</Link> </li>
 
 									</div>
 									<div className="col-4 col12">
-										<li onClick={Cmenu}> <Link to="/educacion"><Tecnologia />Tecnología</Link> </li>
-										<li onClick={Cmenu}> <Link to="/educacion"><LyE />Logística y Exportación</Link> </li>
+										<li onClick={Cmenu}> <Link to="/tecnologia"><Tecnologia />Tecnología</Link> </li>
+										<li onClick={Cmenu}> <Link to="/logistica"><LyE />Logística y Exportación</Link> </li>
 								
 									</div>
 
@@ -115,14 +122,31 @@ const Navbar = () => {
 						<li  onClick={Cmenu}>
 							<a href="#">Blog</a>
 						</li>
+
+						{/*  */}
+						<li  className="icon-usuario">
+						<Link to="/servicios"><User /></Link>
+						</li>
+						{/*  */}
 					</ul>
 
 					<div className="contactanos py-4 px-2 d-none d-md-block">
 					LLÁMANOS : <span>+51 962-711-999</span>
 					</div>
+
+					<div className="icon-usuario-header">
+					<Link to="/login" className="user"> <User /> Iniciar Sesión</Link>
+					</div>
 				</nav>
 			</div>
-		</header>
+
+			<div id="redes-contacto" className="redes-contacto d-none">
+				<a href="https://www.facebook.com/InkGridx/"  target="_blank"><FacebookIcon /></a> 
+				<a href="https://pe.linkedin.com/company/ink-grid"  target="_blank"><LinkedInIcon /></a>
+				<a href="https://www.whatsapp.com"  target="_blank"><WhatsAppIcon /></a>
+				
+			</div>
+		</header> 
 
 	);
 };

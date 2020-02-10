@@ -14,6 +14,7 @@ const SolucionesEmp = props => {
   useEffect(() => {
     document.getElementById('Idmenu').classList.add('cambiar-fondo-menu');
     document.getElementById('logo-dark').src =logoB;
+    document.getElementById('redes-contacto').classList.add('mostrar');
   }, []
   );
 
@@ -99,7 +100,7 @@ const SolucionesEmp = props => {
           <div className="row">
             {/*  */}
             {/*  */}
-            <div className="col col-12 col-sm-6 col-md-4">
+            <div className="col col-12  col-md-4">
               <div className="card-education">
                 <div className="picture">
                   <img className="img-fluid" src="https://www.fundaciontelefonica.com.ar/wp-content/uploads/2016/04/ITSitio_210316_Img_Bilinkis-1-1.png" />
@@ -124,7 +125,7 @@ const SolucionesEmp = props => {
             {/*  */}
 
 
-            <div className="col col-12 col-sm-6 col-md-4">
+            <div className="col col-12  col-md-4">
               <div className="card-education">
                 <div className="picture">
                   <img className="img-fluid" src="https://www.fundaciontelefonica.com.ar/wp-content/uploads/2016/04/ITSitio_210316_Img_Bilinkis-1-1.png" />
@@ -147,7 +148,7 @@ const SolucionesEmp = props => {
 
             {/*  */}
             {/*  */}
-            <div className="col col-12 col-sm-6 offset-sm-3 offset-md-0 col-md-4">
+            <div className="col col-12   col-md-4">
               <div className="card-education">
                 <div className="picture">
                   <img className="img-fluid" src="https://www.fundaciontelefonica.com.ar/wp-content/uploads/2016/04/ITSitio_210316_Img_Bilinkis-1-1.png" />
