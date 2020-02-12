@@ -293,25 +293,6 @@ nav {
     margin-right: .4rem;
    margin-bottom: .4rem;
 }
-.contactanos{
-    position: absolute;
-    background-color: #fff;
-    top:30px;
-    right:5px;
-    margin-right:10%;
-    font-weight: 700;
-    color:rgb(58, 58, 204); 
-    -webkit-box-shadow: 0px 10px 13px -7px #000000, -32px 41px 26px 20px rgba(127,127,127,0); 
-box-shadow: 0px 10px 13px -7px #000000, -32px 41px 26px 20px rgba(127,127,127,0); 
-}
-.contactanos span{
-    font-weight: 500;
-}
-@media screen and (max-width: 850px) {
-    .contactanos{
-        top:20px;
-    }
-}
 
 .cambiar-fondo-menu{
   background-color:#001e34;
@@ -375,26 +356,29 @@ border-radius: 20%;
 }
 
 
-
-/*  */
-/*  */
-/*  */
-.icon-usuario-header{
+nav .sesionUser{
   position: absolute;
-  top:-5px;
+  background-color: #051C2C;
+  top:40px;
+  right:5px;
+  margin-right:3%;
+  font-weight: 500;
+  color: white!important;
+  -webkit-box-shadow: 0px 10px 13px -7px #000000, -32px 41px 26px 20px rgba(127,127,127,0); 
+  box-shadow: 0px 10px 13px -7px #000000, -32px 41px 26px 20px rgba(127,127,127,0); 
+  max-width: 100% !important;
+  border-radius: 5px;
+  padding: 2px;
+
 }
 
-.icon-usuario-header a{
-  text-decoration: none;
+nav .sesionUser a{
+  font-size: 15px;
 }
 
-.icon-usuario-header a .MuiSvgIcon-root{
-  font-size: 35px;
-}
-
-@media screen and (max-width: 851px) {
-  .icon-usuario-header{
-    top:2rem;
+@media screen and (max-width: 851px){
+  nav .sesionUser{
+    top:68px;
+    margin-right:3%;
   }
-  
 }

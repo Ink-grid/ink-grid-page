@@ -1,3 +1,7 @@
+
+body{
+	overflow-x: hidden;
+}
 .footer-top {
   background-color: #F0F0F0;
   font-size: 30px;
@@ -63,7 +67,8 @@
 	}
 }
 
-
+/*  */
+/*  */
 .footer-botton .logo-ink img{
 	width: 150px;
 	height: 100px;
@@ -97,6 +102,8 @@
 	font-size:35px ;
 }
 
+/*  */
+/*  */
 
 .menu-footer ul{
 	display: flex;

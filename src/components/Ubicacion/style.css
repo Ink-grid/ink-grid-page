@@ -1,7 +1,15 @@
-
+.ubicacion{
+    margin:30px auto;
+}
 .ubicacion h1{
-    color: #051C2C;
-    margin: 15px auto;
+    color: blue;
+    font-weight: bold;
+    font-size: 35px;
+}
+@media (max-width:576px){
+    .ubicacion h1{
+        font-size: 25px;
+    }
 }
 .ubicacion .info-direccion{
     background-color: #051C2C;

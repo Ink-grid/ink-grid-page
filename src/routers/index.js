@@ -14,7 +14,7 @@ import Turismo from '../pages/Turismo';
 import Home from '../pages/home';
 import Nosotros from '../pages/Nosotros';
 import Contacto from '../components/contacto';
-
+import InCompany from '../components/InCompany';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
 const Ruote = () => {
@@ -33,6 +33,7 @@ const Ruote = () => {
 					<Route path='/tecnologia' component={Tecnologia} />
 					<Route path='/transporte' component={Transporte} />
 					<Route path='/turismo' component={Turismo} />
+					<Route path='/InCompany' component={InCompany} />
 					<Route path='/nosotros' component={Nosotros} />
 					<Route path='/contacto' component={Contacto} />
 					

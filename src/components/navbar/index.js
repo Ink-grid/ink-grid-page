@@ -25,9 +25,10 @@ import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import WhatsAppIcon from '@material-ui/icons/WhatsApp';
 import FacebookIcon from "@material-ui/icons/Facebook";
 import User from '@material-ui/icons/PermIdentity';
+import BusinessIcon from '@material-ui/icons/Business';
 
 const Navbar = () => {
-	
+
 
 	const menuR = () => {
 		let menu = document.getElementById('Idmenu');
@@ -35,9 +36,9 @@ const Navbar = () => {
 		//
 		menu.classList.toggle("mostrar-menu");
 		header.classList.toggle("fijar-header");
-		
+
 	};
-	
+
 	const Cmenu = () => {
 		let menu = document.getElementById('Idmenu');
 		let header = document.getElementById('header-m');
@@ -52,31 +53,19 @@ const Navbar = () => {
 				<nav>
 					<div class="menu-icons" onClick={menuR} id="hamburguesa">
 						<MenuIcon className="hamburguesa" />
-						
+
 					</div>
-					<Link to="/" className="logo" onClick={Cmenu}> <img src={logo} id="logo-dark"/> </Link>
+					<Link to="/" className="logo" onClick={Cmenu}> <img src={logo} id="logo-dark" /> </Link>
 
 
 
 
 					<ul class="nav-list" id="Idmenu">
 						<li>
-							<Link to="/"><Home />Nosotros <ArrowDropDownSharpIcon /></Link>
-							<ul class="sub-menu">
-								<div className="row">
-									<div className="col-6">
-										<li onClick={Cmenu}> <Link to="/empresa">Conócenos</Link> </li>
-										<li onClick={Cmenu}> <Link to="/educacion">Reserva</Link> </li>
-										<li onClick={Cmenu}> <Link to="/educacion">Comentarios</Link> </li>
-
-									</div>
-									
-
-								</div>
-							</ul>
+							<Link to="/"><Home /> Nosotros</Link>
 						</li>
 						<li>
-							<Link to="/"><Servicio />Portafolio <ArrowDropDownSharpIcon /></Link>
+							<Link to="#"><Servicio />Portafolio <ArrowDropDownSharpIcon /></Link>
 							{/* <!-- 11111 --> */}
 							<ul class="sub-menu">
 								<div className="row">
@@ -95,7 +84,7 @@ const Navbar = () => {
 									<div className="col-4 col12">
 										<li onClick={Cmenu}> <Link to="/tecnologia"><Tecnologia />Tecnología</Link> </li>
 										<li onClick={Cmenu}> <Link to="/logistica"><LyE />Logística y Exportación</Link> </li>
-								
+
 									</div>
 
 								</div>
@@ -105,48 +94,35 @@ const Navbar = () => {
 						</li>
 
 						<li>
-							<Link to="/educacion">In Company <ArrowDropDownSharpIcon /></Link>
-							<ul class="sub-menu">
-								<div className="row">
-									<div className="col-4 col-lg-12">
-										<li onClick={Cmenu}> <Link to="/educacion">opcion 1</Link> </li>
-										<li onClick={Cmenu}> <Link to="/educacion">opcion 2</Link> </li>
-									</div>
-								</div>
-
-							</ul>
+							<Link onClick={Cmenu} to="/InCompany"><BusinessIcon />In Company </Link>
+							
 						</li>
-						<li  onClick={Cmenu}>
-						<Link to="/servicios">BPO <ArrowDropDownSharpIcon /></Link>
+						<li onClick={Cmenu}>
+							<Link to="/servicios">BPO <ArrowDropDownSharpIcon /></Link>
 						</li>
-						<li  onClick={Cmenu}>
+						<li onClick={Cmenu}>
 							<a href="#">Blog</a>
 						</li>
 
-						{/*  */}
-						<li  className="icon-usuario">
-						<Link to="/servicios"><User /></Link>
-						</li>
-						{/*  */}
+
 					</ul>
 
-					<div className="contactanos py-4 px-2 d-none d-md-block">
-					LLÁMANOS : <span>+51 962-711-999</span>
+					<div className="sesionUser  py-4 px-2  d-md-block">
+						LLÁMANOS : <span>+51 962-711-999</span>
+						
 					</div>
 
-					<div className="icon-usuario-header">
-					<Link to="/login" className="user"> <User /> Iniciar Sesión</Link>
-					</div>
+
 				</nav>
 			</div>
 
 			<div id="redes-contacto" className="redes-contacto d-none">
-				<a href="https://www.facebook.com/InkGridx/"  target="_blank"><FacebookIcon /></a> 
-				<a href="https://pe.linkedin.com/company/ink-grid"  target="_blank"><LinkedInIcon /></a>
-				<a href="https://www.whatsapp.com"  target="_blank"><WhatsAppIcon /></a>
-				
+				<a href="https://www.facebook.com/InkGridx/" target="_blank"><FacebookIcon /></a>
+				<a href="https://pe.linkedin.com/company/ink-grid" target="_blank"><LinkedInIcon /></a>
+				<a href="https://www.whatsapp.com" target="_blank"><WhatsAppIcon /></a>
+
 			</div>
-		</header> 
+		</header>
 
 	);
 };

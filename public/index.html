@@ -78,10 +78,11 @@
 		var contactos = $(".redes-contacto");
 		$(window).scroll(function () {
 			var href = $(location).attr('href')
-			var scroll = $(window).scrollTop();
-			var altura = $(window).height();
+			
 			
 			if (href.trim()=="http://localhost:3000/") {
+				let scroll = $(window).scrollTop();
+				let altura = $(window).height();
 				if (scroll >= altura) {
 					contactos.addClass("mostrar");
 				} else {
@@ -89,6 +90,7 @@
 				}
 			} else {
 				contactos.addClass("mostrar");
+				
 			}
 
 		});
