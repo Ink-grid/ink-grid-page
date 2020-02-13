@@ -2,6 +2,7 @@
 
 import React from 'react';
 import SolucionesEmp from '../../components/SolucionesEmp/';
+import Portafolio from '../../components/Portafolio/';
 
 const Mineria = () => {
 	const data = {
@@ -52,10 +53,12 @@ const Mineria = () => {
 
 	return (
 		<div style={{ textAlign: 'center' }}>
-			<br></br>
-			<br></br>
-			<br></br>
-			<SolucionesEmp datas={data}></SolucionesEmp>
+			<Portafolio
+				titulo='MINERIA'
+				descripcion='¡ Actualmente el mundo de la tecnologia esta en constante crecimiento que involucran los sectores mas importantes del mercado, como es la EDUCACIÓN, descubre nuestras soluciones en el sector educativo !'
+				img='https://image.freepik.com/foto-gratis/excavadores-estan-trabajando-duro-cielo-atardecer_51530-912.jpg'
+				insights={[1, 2]}
+			/>
 		</div>
 	);
 };

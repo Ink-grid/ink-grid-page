@@ -1,9 +1,10 @@
 /** @format */
 
 import React from 'react';
-import SolucionesEmp from '../../components/SolucionesEmp/';
+import Portafolio from '../../components/Portafolio/';
+//import SolucionesEmp from '../../components/SolucionesEmp/';
 
-const Educación = () => { 
+const Educación = () => {
 	const data = {
 		title: 'EDUCACIÓN',
 		insights1: [
@@ -49,12 +50,57 @@ const Educación = () => {
 		]
 	};
 
+	const insights = [
+		{
+			name: 'MATRICULAS',
+			img:
+				'https://d1zv66c6p7f9ox.cloudfront.net/fotoweb/fotonoticia_20180524115902_640.jpg'
+		},
+		{
+			name: 'POSICIONAMIENTO EN EL RANKING EDUCATIVO',
+			img:
+				'https://assets.estrategiasdeinversion.net/uploads/noticias_redaccion/Portada2/ibex_mab_15_frente_a_ibex_35.jpg'
+		},
+		{
+			name: 'MEJORA DEL SISTEMA DE ENSEÑANZA',
+			img:
+				'https://www.bbva.com/wp-content/uploads/2015/12/bbva-educacion-e1464704439593.jpg'
+		},
+		{
+			name: 'ENTRENAMIENTO A DOCENTES Y GESTORES EDUCATIVOS',
+			img:
+				'https://image.freepik.com/vector-gratis/presentacion-docente-aula_7130-34.jpg'
+		},
+		{
+			name: 'MEJORA DE LA CURVA DE APRENDIZAJE',
+			img:
+				'https://149350819.v2.pressablecdn.com/wp-content/uploads/abstract-artificial-intelligence.png'
+		},
+		{
+			name: 'EXPLOTACION DE TECNOLOGIAS APLICADAS AL ENTORNO EDUCATIVO',
+			img:
+				'https://image.freepik.com/foto-gratis/disenador-grafico-utilizando-brazos-robotica-pantalla-digital_117023-517.jpg'
+		},
+		{
+			name: 'EFICIENCIAS E2E',
+			img:
+				'https://www.isotools.org/wp-content/uploads/2019/08/Enfoque-basado-en-procesos.jpg'
+		},
+		{
+			name: 'MADUREZ Y DESARROLLO INSTITUCIONAL',
+			img:
+				'https://www.esan.edu.pe/apuntes-empresariales/2019/03/04/1500x844_modelo_madurez_organizacion.jpg'
+		}
+	];
+
 	return (
 		<div style={{ textAlign: 'center' }}>
-			<br></br>
-			<br></br>
-			<br></br>
-			<SolucionesEmp datas={data}></SolucionesEmp>
+			<Portafolio
+				titulo='EDUCACIÓN'
+				descripcion='¡ Actualmente el mundo de la tecnologia esta en constante crecimiento que involucran los sectores mas importantes del mercado, como es la EDUCACIÓN, descubre nuestras soluciones en el sector educativo !'
+				img='https://es-static.z-dn.net/files/da8/444a5d51612418e2ea0c3b76d81dbbd1.jpg'
+				insights={insights}
+			/>
 		</div>
 	);
 };

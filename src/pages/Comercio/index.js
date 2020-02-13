@@ -1,9 +1,9 @@
 /** @format */
 
 import React from 'react';
-import SolucionesEmp from '../../components/SolucionesEmp/';
+import Portafolio from '../../components/Portafolio/';
 
-const Comercio = () => { 
+const Comercio = () => {
 	const data = {
 		title: 'COMERCIO Y SERVICIOS',
 		insights1: [
@@ -13,7 +13,6 @@ const Comercio = () => {
 		insights2: [
 			'Enriquecimiento del rendimiento del capital financiero.',
 			'Adaptabilidad a los altos estándares del mercado múltiple.'
-			
 		],
 		insights3: [
 			'Decisiones analíticas para el aumento de ingresos.',
@@ -47,10 +46,12 @@ const Comercio = () => {
 
 	return (
 		<div style={{ textAlign: 'center' }}>
-			<br></br>
-			<br></br>
-			<br></br>
-			<SolucionesEmp datas={data}></SolucionesEmp>
+			<Portafolio
+				titulo='COMERCIO Y SERVICIOS'
+				descripcion='¡ Actualmente el mundo de la tecnologia esta en constante crecimiento que involucran los sectores mas importantes del mercado, como es la EDUCACIÓN, descubre nuestras soluciones en el sector educativo !'
+				img='https://image.freepik.com/foto-gratis/dedo-presionando-boton-red-social-pantalla-tactil_1112-489.jpg'
+				insights={[]}
+			/>
 		</div>
 	);
 };

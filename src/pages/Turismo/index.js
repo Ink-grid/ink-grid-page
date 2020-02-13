@@ -1,9 +1,9 @@
 /** @format */
 
 import React from 'react';
-import SolucionesEmp from '../../components/SolucionesEmp/';
+import Portafolio from '../../components/Portafolio/';
 
-const Turismo = () => { 
+const Turismo = () => {
 	const data = {
 		title: 'TURISMO Y EXPORTACIÓN',
 		insights1: [
@@ -15,7 +15,6 @@ const Turismo = () => {
 			'Identificación oportuna del mercado turístico.',
 			'Impulso de la competitividad del sector turístico.',
 			' Visión tecnológica para viajes.'
-			
 		],
 		insights3: [
 			'Desarrollo de perspectivas y pronósticos del mercado.',
@@ -55,10 +54,12 @@ const Turismo = () => {
 
 	return (
 		<div style={{ textAlign: 'center' }}>
-			<br></br>
-			<br></br>
-			<br></br>
-			<SolucionesEmp datas={data}></SolucionesEmp>
+			<Portafolio
+				titulo='TURISMO'
+				descripcion='¡ Actualmente el mundo de la tecnologia esta en constante crecimiento que involucran los sectores mas importantes del mercado, como es la EDUCACIÓN, descubre nuestras soluciones en el sector educativo !'
+				img='https://image.freepik.com/foto-gratis/turistas-perdidos-playa_23-2147643229.jpg'
+				insights={[]}
+			/>
 		</div>
 	);
 };
