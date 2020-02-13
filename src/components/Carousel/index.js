@@ -12,7 +12,7 @@ const Carousel = props => {
 	useEffect(() => {
 		document.getElementById('Idmenu').classList.remove('cambiar-fondo-menu');
 		document.getElementById('logo-dark').src = logo;
-		document.getElementById('redes-contacto').classList.remove('mostrar');
+		//document.getElementById('redes-contacto').classList.remove('mostrar');
 	}, []);
 	return (
 		<React.Fragment>
@@ -25,6 +25,7 @@ const Carousel = props => {
 						right: '0%',
 						height: '70%',
 						width: '50%',
+						backgroundSize: 'cover',
 						backgroundImage:
 							"url('https://www.mckinsey.com//pe/~/media/McKinsey/Locations/South%20America/Peru/Overview/Peru_Hero_GettyImages-665404151_1080.ashx')"
 					}}></div>
