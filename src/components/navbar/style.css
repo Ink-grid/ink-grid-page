@@ -61,9 +61,15 @@ nav {
 .nav-list {
 	display: flex;
 	background-color: transparent; /* color  menu */
-	border-radius: 15px;
+	border-radius: 0px;
 }
-
+.nav-list:before {
+	 width: 10px; 
+     height: 10px; 
+     border-left: 100px solid #f0ad4e;
+     border-top: 50px solid transparent;
+     border-bottom: 50px solid transparent; 
+}
 /* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
 /* anima menu */
 
@@ -152,6 +158,9 @@ nav {
 }
 /* menu 3 col */
 @media screen and (max-width: 850px) {
+	.logo img {
+		margin-left: 18px;
+	}
 	.nav-list li:hover > .sub-menu {
 		width: 95%;
 	}
@@ -160,9 +169,39 @@ nav {
 	}
 	.nav-list {
 		border-radius: 0px;
+		
+	}
+	/* ultimos cambios */
+	.nav-list:before{
+	content: '';
+	position: absolute;
+	top: -2.5rem;
+	right: 7%;
+	border: 1.2rem solid transparent;
+	border-bottom-color: #fff;
+	}
+	.nav-list:after{
+		content: 'Ink Grid';
+		position: absolute;
+		top: -4.5rem;
+		/* left: 10rem; */
+		right: 30%;
+		color:white;
+		font-size: 30px;
+	}
+	/*  */
+
+}
+
+@media screen and (max-width: 600px) {
+	.nav-list:before{
+		right: 10%;
 	}
 }
 @media screen and (max-width: 360px) {
+	.nav-list:before{
+		right: 12%;
+	}
 	.nav-list li:hover > .sub-menu {
 		width: 100%;
 	}

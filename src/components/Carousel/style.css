@@ -1,7 +1,7 @@
 /** @format */
 
 .portada-home {
-	/* background-color: blue; */
+	/* background-color: #353A69; */
 	height: 100vh; /* % - vh*/
 	width: 100vw;
 	margin: 0;
@@ -13,24 +13,42 @@
 	width: 100vw;
 }
 
-.contenedor-texto {
-	/* position: absolute; */
-	/* bottom: 30%; */
-	/*top: 15%; /* tamaño contenido*/
-}
-@media (max-width: 764px) {
+/* .contenedor-texto {
+	position: absolute; 
+} */
+@media (min-width: 501px) and (max-width: 764px) {
 	.contenedor-texto {
 		top: 6% !important; /* tamaño contenido*/
+	}
+	.contenedor-texto h1 {
+		font-size: 60px !important;
+	}
+	.portada-home > div {
+		/* bottom:20% !important; */
+		width: 100%;
 	}
 }
 @media (min-width: 764px) {
 	.contenedor-texto {
 		top: 8%; /* tamaño contenido*/
 	}
+	
 }
 @media (max-width: 500px) {
-	.contenedor-texto {
-		top: 5%; /* tamaño contenido*/
+	.portada-home > div {
+		/* bottom:30% !important; */
+		width: 100%;
+	}
+	.portada-home > div .contenedor-texto {
+		top: 30%!important; /* tamaño contenido*/
+		bottom:30% !important;
+		text-align: center;
+
+	}
+	.contenedor-texto h1 {
+		font-size: 50px !important;
+		display: block;
+		width: auto;
 	}
 }
 
@@ -62,7 +80,7 @@
 	}
 }
 .contenedor-texto .logo img {
-	height: 45vh important; /* % - vh*/
+	height: 45vh !important; /* % - vh*/
 	width: 30vw !important;
 }
 /* scroll texto */
@@ -224,7 +242,7 @@
 .descripcion1 {
 	line-height: 200%;
 	width: 60%;
-	font-size: 15px;
+	font-size: 18px;
 }
 @media (max-width: 768px) {
 	.descripcion1 {
@@ -239,7 +257,7 @@
 }
 .datos-genericos div .datosEspecificos h1 {
 	font-size: 80px;
-	color: blue;
+	color: #353A69;
 }
 .datos-genericos div .datosEspecificos p {
 	font-weight: 500;
@@ -333,13 +351,20 @@
 	text-align: center;
 	width: 50%;
 	margin: 0 auto !important;
-	color: blue;
+	color: #353A69;
 	font-weight: 800;
 	/* clip-path: polygon(90% 0, 100% 49%, 100% 49%, 90% 100%, 2% 100%, 6% 49%, 0 0); */
+}
+@media (max-width: 768px) {
+	.servicios {
+		width: 75%;
+		font-size: 30px;
+	}
 }
 @media (max-width: 650px) {
 	.servicios {
 		width: 95%;
+		font-size: 25px;
 	}
 }
 
@@ -404,10 +429,13 @@
 	.sobresalir {
 		justify-content: start;
 	}
+	.servicios {
+		font-size: 22px;
+	}
 }
 
 .nosotros h1 {
-	color: blue;
+	color: #353A69;
 	font-weight: bold;
 	font-size: 35px;
 }
@@ -427,6 +455,13 @@
 	max-width: 100%;
 	opacity: 0.8;
 	transition: all 0.2s ease-in-out;
+}
+.nosotros .row >div:nth-child(2) img{
+	width: 70% !important;
+	max-width: 70% !important;
+	/* background-color:red; */
+	display: block;
+	margin: auto;
 }
 .nosotros .row .logos:hover {
 	opacity: 1;

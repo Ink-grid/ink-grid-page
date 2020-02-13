@@ -43,7 +43,7 @@ const Carousel = props => {
 								<h1 className='text-left text-light'>Ink Grid </h1>
 								<p
 									style={{ fontSize: '20px' }}
-									className='d-none d-sm-block contenido-texto text-justify pt-3 pl-3'>
+									className='d-none d-sm-block contenido-texto text-justify-center pt-3 pl-3'>
 									Trabajamos con las más exitosas compañías de Perú para
 									conducir un crecimiento de largo plazo, transformar las
 									operaciones y las organizaciones, así como nutrir el talento.
