@@ -1,5 +1,5 @@
 
-body{
+html,body{
 	overflow-x: hidden;
 }
 .footer-top {
@@ -30,7 +30,7 @@ body{
 }
  .footer-contact {
   color: white;
-  background-color: blue;
+  background-color: #353A69;
   font-size: 20px;
   width: 100px;
   max-width: 20%;
@@ -41,9 +41,9 @@ body{
   font-size: 20px;
 }
  .footer-contact:hover {
-  color: blue;
+  color: #353A69;
   background-color: white;
-  border: 1.5px solid blue;
+  border: 1.5px solid #353A69;
   cursor: pointer;
   -webkit-box-shadow: 1px -1px 12px -1px #000000;
   box-shadow: 1px -1px 12px -1px #000000;
@@ -119,8 +119,8 @@ body{
 	border-bottom: 2px solid white;
 }
 .menu-footer ul li:hover {
-	color:blue;
-	border-bottom: 2px solid blue;
+	color:#353A69;
+	border-bottom: 2px solid #353A69;
 	cursor: pointer;
 	
 
@@ -141,11 +141,11 @@ body{
 	transition:all .1s ease-in-out ;
 }
 .iconos-footer .MuiSvgIcon-root:hover{
-	background-color: blue;
+	background-color: #353A69;
 	cursor: pointer;
 	margin-top: -4px;
-	-webkit-box-shadow: 1px -1px 12px -1px blue;
-	box-shadow: 1px -1px 12px -1px blue;
+	-webkit-box-shadow: 1px -1px 12px -1px #353A69;
+	box-shadow: 1px -1px 12px -1px #353A69;
 }
 
 .menu-footer div:nth-child(1) {

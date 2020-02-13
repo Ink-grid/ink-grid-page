@@ -1,116 +1,111 @@
-.in-company .banner {
-  height: 100%;
+.in-company .banner-padre {
+  height: 100vh;
+  width: 100vw;
+}
+.in-company .banner-padre .banner {
   width: 100%;
+  height: 100%;
+}
+.in-company .banner-padre .banner img {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   clip-path: polygon(100% 0, 100% 71%, 73% 52%, 0 99%, 0 0);
 }
-.in-company .banner img {
-  width: 100%;
-}
 
-.in-company .titulo-in {
+.in-company .banner-padre .contenido-padre {
   position: absolute;
-  z-index: 999;
-  top: 60%;
-  right: 10%;
   color: #000;
-  font-size: 30px;
-}
-.in-company .titulo-in span {
-  font-weight: bold;
-  font-size: 35px;
-}
-.in-company .contenido-padre {
+  left: 89%;
+  top: 95%;
+  transform: translate(-89%, -95%);
+  -webkit-transform: translate(-89%, -95%);
   width: 50%;
-
-  margin: auto;
+  text-align: center;
 }
-.in-company .contenido-descr {
-  line-height: 22px;
-  font-size: 20px;
+.in-company .contenido-padre .titulo-in h1 {
+  font-size: 28px;
+}
+
+.in-company .contenido-padre .titulo-in h1 span {
+  font-weight: bold;
+  font-size: 33px;
+}
+.in-company .contenido-padre p {
+  font-size: 18px;
+}
+@media screen and (min-width: 852px) and (max-width: 890px) {
+  .in-company .banner-padre .contenido-padre {
+    left: 89%;
+    top: 100%;
+    transform: translate(-89%, -100%);
+    -webkit-transform: translate(-89%, -100%);
+  }
 }
 @media screen and (max-width: 851px) {
-  .in-company .banner {
+  .in-company .banner-padre .banner img {
     clip-path: none;
   }
-  .in-company .titulo-in {
-    position: absolute;
-    top: 30%;
-    right: 5%;
-    padding: 15px;
-    background-color: #fff;
-    font-size: 25px;
-  }
-
-  .in-company .contenido-descr {
-    line-height: 20px;
-    font-size: 17px;
-  }
-  .in-company .titulo-in span {
-    font-size: 30px;
-  }
-  .in-company .contenido-padre {
+  .in-company .banner-padre .contenido-padre {
+    left: 50%;
+    top: 70%;
+    transform: translate(-50%, -70%);
+    -webkit-transform: translate(-50%, -80%);
     width: 70%;
   }
-}
-@media screen and (max-width: 576px) {
-  .in-company .titulo-in {
-    position: relative;
-    text-align: center;
-    margin-top: -10px;
-    font-size: 10px !important;
-  }
-  .in-company .titulo-in h1 {
-    font-size: 15px;
-  }
-  .in-company .contenido-padre {
-    width: 90%;
-  }
-  .in-company .contenido-descr {
-    line-height: 18px;
-    font-size: 14px;
+  .in-company .banner-padre .contenido-padre .titulo-in h1 {
+    background-color: #fff !important;
+
+    display: block;
+    padding: 15px;
+
+    -webkit-box-shadow: 0px 7px 18px 4px #b0b0b0;
+    box-shadow: 0px 7px 18px 4px #b0b0b0;
   }
 
-  .in-company .titulo-in span {
-    font-size: 20px;
+  .in-company .banner-padre .contenido-padre div p{
+    background-color: #fff !important;
+    padding: 20px;
   }
-  .in-company .mostrarLinea {
-    display: block !important;
+}
+
+@media screen and (max-width: 576px) {
+  .in-company .banner-padre .contenido-padre {
+    width: 90%;
   }
 }
 
 .in-company .objetivos {
-   background-color: #001e34; 
+  background-color: #001e34;
 }
 
-.in-company .objetivos .container h2{
-    display:inline-block;
-    background-color: #fff;
-    position: relative;
-    top:10px;
-    font-size: 30px;
-    padding: 10px 20px;
+.in-company .objetivos .container h2 {
+  display: inline-block;
+  background-color: #fff;
+  position: relative;
+  top: 10px;
+  font-size: 30px;
+  padding: 10px 20px;
 }
-.in-company .objetivos .container p{
-    color: #fff;
-    font-size: 20px;
-    padding: 50px;
+.in-company .objetivos .container p {
+  color: #fff;
+  font-size: 20px;
+  padding: 50px;
 }
 @media screen and (max-width: 851px) {
-    .in-company .objetivos .container h2{
-        font-size: 25px;
-    }
-    .in-company .objetivos .container p{
-        font-size: 17px;
-    }
+  .in-company .objetivos .container h2 {
+    font-size: 23px;
+  }
+  .in-company .objetivos .container p {
+    font-size: 16px;
+  }
 }
 @media screen and (max-width: 576px) {
-    .in-company .objetivos .container h2{
-        font-size: 20px;
-    }
-    .in-company .objetivos .container p{
-        font-size: 14px;
-        padding: 30px;
-    }
+  .in-company .objetivos .container h2 {
+    font-size: 18px;
+  }
+  .in-company .objetivos .container p {
+    font-size: 13px;
+    /* padding: 30px; */
+  }
 }
-

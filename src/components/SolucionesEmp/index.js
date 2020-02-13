@@ -14,7 +14,7 @@ const SolucionesEmp = props => {
   useEffect(() => {
     document.getElementById('Idmenu').classList.add('cambiar-fondo-menu');
     document.getElementById('logo-dark').src =logoB;
-    document.getElementById('redes-contacto').classList.add('mostrar');
+    // document.getElementById('redes-contacto').classList.add('mostrar');
   }, []
   );
 
