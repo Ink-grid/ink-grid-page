@@ -47,7 +47,7 @@ const Comercio = () => {
 	return (
 		<div style={{ textAlign: 'center' }}>
 			<Portafolio
-				titulo='COMERCIO Y SERVICIOS'
+				titulo='COMERCIO Y SERV.'
 				descripcion='¡ Actualmente el mundo de la tecnologia esta en constante crecimiento que involucran los sectores mas importantes del mercado, como es la EDUCACIÓN, descubre nuestras soluciones en el sector educativo !'
 				img='https://image.freepik.com/foto-gratis/dedo-presionando-boton-red-social-pantalla-tactil_1112-489.jpg'
 				insights={[]}

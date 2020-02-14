@@ -1,9 +1,9 @@
 /** @format */
 
 import React from 'react';
-import SolucionesEmp from '../../components/SolucionesEmp/';
+import Portafolio from '../../components/Portafolio/';
 
-const Tecnologia = () => { 
+const Tecnologia = () => {
 	const data = {
 		title: 'TECNOLOGÍA',
 		insights1: [
@@ -14,7 +14,6 @@ const Tecnologia = () => {
 			'Servicios digitales analíticos y empresariales para incrementar ganancias.',
 			'Blockchain como tecnología sólida de crecimiento.',
 			'Herramientas de análisis para ayudar a impulsar la inversión.'
-			
 		],
 		insights3: [
 			'Implementación de AI para la fuerza de ventas y generación de valor.',
@@ -55,10 +54,12 @@ const Tecnologia = () => {
 
 	return (
 		<div style={{ textAlign: 'center' }}>
-			<br></br>
-			<br></br>
-			<br></br>
-			<SolucionesEmp datas={data}></SolucionesEmp>
+			<Portafolio
+				titulo='TECNOLOGIA'
+				descripcion='¡ Actualmente el mundo de la tecnologia esta en constante crecimiento que involucran los sectores mas importantes del mercado, como es la EDUCACIÓN, descubre nuestras soluciones en el sector educativo !'
+				img='https://image.freepik.com/foto-gratis/joven-empresario-teniendo-muchas-ideas_23-2148320019.jpg'
+				insights={[]}
+			/>
 		</div>
 	);
 };

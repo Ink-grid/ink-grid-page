@@ -1,9 +1,9 @@
 /** @format */
 
 import React from 'react';
-import SolucionesEmp from '../../components/SolucionesEmp/';
+import Portafolio from '../../components/Portafolio/';
 
-const Transporte = () => { 
+const Transporte = () => {
 	const data = {
 		title: 'TRANSPORTE',
 		insights1: [
@@ -15,7 +15,6 @@ const Transporte = () => {
 			'Incremento emergente del modelo comercial.',
 			'Gestión de la industria transportista en constante evolución.',
 			'Economía empresarial de servicios personalizados.'
-			
 		],
 		insights3: [
 			'Escalas mejoradas para absorber ganancias en la oferta y la demanda.',
@@ -50,10 +49,12 @@ const Transporte = () => {
 
 	return (
 		<div style={{ textAlign: 'center' }}>
-			<br></br>
-			<br></br>
-			<br></br>
-			<SolucionesEmp datas={data}></SolucionesEmp>
+			<Portafolio
+				titulo='TRANSPORTE'
+				descripcion='¡ Actualmente el mundo de la tecnologia esta en constante crecimiento que involucran los sectores mas importantes del mercado, como es la EDUCACIÓN, descubre nuestras soluciones en el sector educativo !'
+				img='https://image.freepik.com/foto-gratis/transporte-logistica-buque-carga-contenedores-avion-carga_37416-103.jpg'
+				insights={[]}
+			/>
 		</div>
 	);
 };

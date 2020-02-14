@@ -39,31 +39,21 @@ const Portafolio = props => {
 
 	return (
 		<div className='in-company'>
-			<div className='banner'>
-				<img
-					style={{ height: '550px' }}
-					className='img-fluid'
-					src={props.img}
-					alt='Ink-Grid'
-				/>
-			</div>
-			<div
-				className='titulo-in'
-				style={
-					props.titulo === 'COMERCIO Y SERVICIOS'
-						? { textAlign: 'center' }
-						: null
-				}>
-				<h1>
-					TRANSFORMACIÓN DIGITAL<span> {props.titulo}</span>
-				</h1>
-			</div>
-			<hr className='w-100 d-none mostrarLinea'></hr>
-			<div className='mb-5 mt-1 contenido-padre'>
-				<p className=' contenido-descr text-center container'>
-					{props.descripcion}
-				</p>
-				<br />
+			<div className='banner-padre '>
+				<div className='banner'>
+					<img className='img-fluid' src={props.img} alt='Ink-Grid' />
+				</div>
+				<div className='contenido-padre'>
+					<div className='titulo-in my-5'>
+						<h1>
+							TRANSFORMACIÓN DIGITAL<span> {props.titulo}</span>
+						</h1>
+					</div>
+					<hr className='w-100 d-none mostrarLinea'></hr>
+					<div className='mb-5 mt-1'>
+						<p className='text-center container mt-5'>{props.descripcion}</p>
+					</div>
+				</div>
 			</div>
 			<Divider />
 			<Container maxWidth='lg'>

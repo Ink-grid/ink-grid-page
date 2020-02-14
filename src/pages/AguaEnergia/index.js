@@ -1,9 +1,9 @@
 /** @format */
 
 import React from 'react';
-import SolucionesEmp from '../../components/SolucionesEmp/';
+import Portafolio from '../../components/Portafolio/';
 
-const AguaEnergia = () => { 
+const AguaEnergia = () => {
 	const data = {
 		title: 'AGUA Y ENERGÍA',
 		insights1: [
@@ -13,9 +13,8 @@ const AguaEnergia = () => {
 		insights2: [
 			'Logística para enfrentar la competencia de los recursos hídricos entre los sectores económicos.',
 			'Modelos comerciales diseñados para acelerar el Retorno	de la Inversión.'
-			
 		],
-		insights3: [	
+		insights3: [
 			'Sintetización Operativa y procesos centrales para la reducción de costos y complejidad orientada al aumento de ingresos monetarios.',
 			'Automatización en los procesos críticos del tratamiento hídrico.'
 		],
@@ -45,10 +44,12 @@ const AguaEnergia = () => {
 
 	return (
 		<div style={{ textAlign: 'center' }}>
-			<br></br>
-			<br></br>
-			<br></br>
-			<SolucionesEmp datas={data}></SolucionesEmp>
+			<Portafolio
+				titulo='AGUA Y ENERGIA'
+				descripcion='¡ Actualmente el mundo de la tecnologia esta en constante crecimiento que involucran los sectores mas importantes del mercado, como es la EDUCACIÓN, descubre nuestras soluciones en el sector educativo !'
+				img='https://image.freepik.com/foto-gratis/planta-energia-principal-ideas-energia-ahorro-energia_42416-208.jpg'
+				insights={[]}
+			/>
 		</div>
 	);
 };

@@ -1,9 +1,9 @@
 /** @format */
 
 import React from 'react';
-import SolucionesEmp from '../../components/SolucionesEmp/';
+import Portafolio from '../../components/Portafolio/';
 
-const Logistica = () => { 
+const Logistica = () => {
 	const data = {
 		title: 'LOGISTICA Y EXPORTACIÓN',
 		insights1: [
@@ -14,7 +14,6 @@ const Logistica = () => {
 		insights2: [
 			'Soluciones innovadoras para resolver desafíos complejos en el negocio de importación y exportación',
 			'Modernización de aplicaciones para obtener ahorros de infraestructura '
-			
 		],
 		insights3: [
 			'Regulaciones de soporte y requisitos de cumplimiento',
@@ -51,10 +50,12 @@ const Logistica = () => {
 
 	return (
 		<div style={{ textAlign: 'center' }}>
-			<br></br>
-			<br></br>
-			<br></br>
-			<SolucionesEmp datas={data}></SolucionesEmp>
+			<Portafolio
+				titulo='LOGISTICA Y EXP.'
+				descripcion='¡ Actualmente el mundo de la tecnologia esta en constante crecimiento que involucran los sectores mas importantes del mercado, como es la EDUCACIÓN, descubre nuestras soluciones en el sector educativo !'
+				img='https://image.freepik.com/foto-gratis/empresario-mostrar-contenedor-exportacion-pantalla-mapa-digital-mundial_35761-336.jpg'
+				insights={[]}
+			/>
 		</div>
 	);
 };
