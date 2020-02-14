@@ -101,6 +101,12 @@
 	.in-company .objetivos .container p {
 		font-size: 16px;
 	}
+	.in-company .temas h1{
+		font-size: 23px;
+	}
+	.in-company .temas .container .col-10 div h3{
+		font-size: 16px;
+	}
 }
 @media screen and (max-width: 576px) {
 	.in-company .objetivos .container h2 {
@@ -110,4 +116,36 @@
 		font-size: 13px;
 		/* padding: 30px; */
 	}
+	.in-company .temas h1{
+		font-size: 18px;
+	}
+	.in-company .temas .container .col-10 div h3{
+		font-size: 13px;
+	}
 }
+
+/*  */
+.in-company .temas{
+	margin-bottom: 30px;
+}
+.in-company .temas h1{
+	padding: 15px 10px;
+	margin:50px 0;
+}
+
+.in-company .temas .container .col-10{
+	cursor: pointer;
+	
+}
+.in-company .temas .container .col-10 img{
+	transition: all .4s  ease-in-out;
+}
+.in-company .temas .container .col-10:hover img{
+	filter: hue-rotate(118deg) invert(100%);
+-webkit-filter: hue-rotate(118deg) invert(100%);
+}
+.in-company .temas .container .col-10 div h3{
+
+	font-size: 15px;
+	font-weight: 400;
+} 
