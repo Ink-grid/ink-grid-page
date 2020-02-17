@@ -17,52 +17,71 @@ const Carousel = props => {
 	return (
 		<React.Fragment>
 			{/* Portada Home */}
-			<div className='portada-home bg-dark'>
-				<div
-					style={{
-						position: 'absolute',
-						bottom: '0%',
-						right: '0%',
-						height: '70%',
-						width: '50%',
-						backgroundSize: 'cover',
-						backgroundImage:
-							"url('https://www.mckinsey.com//pe/~/media/McKinsey/Locations/South%20America/Peru/Overview/Peru_Hero_GettyImages-665404151_1080.ashx')"
-					}}></div>
-				{/* <img
-					width='200'
-					src='https://www.mckinsey.com//pe/~/media/McKinsey/Locations/South%20America/Peru/Overview/Peru_Hero_GettyImages-665404151_1080.ashx'
-					alt='Ink Grid'
-        /> */}
-
-				<div style={{ position: 'absolute', bottom: '10%' }}>
-					<div className='row contenedor-texto container'>
-						<div className='col-10 col-md-6 pl-3 pl-lg-5 py-4 border-contenido my-0'>
-							<div className='container text-left '>
-								<span>Bienvenido a </span>
-								<h1 className='text-left text-light'>Ink Grid </h1>
-								<p
-									style={{ fontSize: '20px' }}
-									className='d-none d-sm-block contenido-texto text-justify-center pt-3 pl-3'>
-									Trabajamos con las más exitosas compañías de Perú para
-									conducir un crecimiento de largo plazo, transformar las
-									operaciones y las organizaciones, así como nutrir el talento.
-								</p>
+			<div class='parallax-slider'>
+				<div class='slider-wrapper'>
+					<div class='slide slide1 slide-active'>
+						<div class='content'>
+							<div class='container'>
+								<div class='col-md-6 caption' style={{ color: '#ffffff' }}>
+									<br></br>
+									<br></br>
+									<br></br>
+									<div className='visible'>
+										<p className='posicionarTE'>Te </p>
+										<ul className='content-ul'>
+											<li className='content-li'>enseñamos</li>
+											<li className='content-li'>capacitamos</li>
+											<li className='content-li'>motivamos</li>
+											<li className='content-li'>valoramos ...</li>
+										</ul>
+									</div>
+									<br></br>
+									<br></br>
+									<span>Bienvenido a </span>
+									<h1 className='text-left text-light'>Ink Grid </h1>
+									<p
+										style={{ fontSize: '20px' }}
+										className='d-none d-sm-block contenido-texto text-justify-center pt-3 pl-3'>
+										Trabajamos con las más exitosas compañías de Perú para
+										conducir un crecimiento de largo plazo, transformar las
+										operaciones y las organizaciones, así como nutrir el
+										talento.
+									</p>
+								</div>
 							</div>
 						</div>
-						<div className='content col-12 col-sm-10 d-none  mover-texto'>
-							<div className='visible'>
-								<p className='posicionarTE'>Te </p>
-								<ul className='content-ul'>
-									<li className='content-li'>enseñamos</li>
-									<li className='content-li'>capacitamos</li>
-									<li className='content-li'>motivamos</li>
-									<li className='content-li'>valoramos ...</li>
-								</ul>
-							</div>
-						</div>
-						{/*  */}
 					</div>
+					<div class='slide slide2'>
+						<div class='content'>
+							<div class='container'>
+								<div class='col-md-6 caption'>
+									<h1>Lorem ipsum dolor sit</h1>
+									<p>
+										Curabitur blandit felis massa, et dapibus mi pretium nec.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class='slide slide3'>
+						<div class='content'>
+							<div class='container'>
+								<div class='col-md-6 caption'>
+									<h1>Lorem ipsum dolor sit</h1>
+									<p>
+										Curabitur blandit felis massa, et dapibus mi pretium nec.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class='slide-indicator'>
+					<ol>
+						<li class='active'></li>
+						<li></li>
+						<li></li>
+					</ol>
 				</div>
 			</div>
 			{/* Portada Home */}
