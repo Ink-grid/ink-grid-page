@@ -16,6 +16,7 @@ import Nosotros from '../pages/Nosotros';
 import Contacto from '../components/contacto';
 import InCompany from '../components/InCompany';
 import Modulos from '../components/InCompany/Modulos';
+import Coworking from '../pages/Coworking/';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
 const Ruote = () => {
@@ -37,6 +38,7 @@ const Ruote = () => {
 					<Route path='/InCompany' component={InCompany} />
 					<Route path='/nosotros' component={Nosotros} />
 					<Route path='/contacto' component={Contacto} />
+					<Route path='/coworking' component={Coworking} />
 					<Route path='/cursos/modulos/:id' component={Modulos} />
 					{/* <Route path='/blogs' component={BLogs} />
 					<Route path='/login' component={Login} />

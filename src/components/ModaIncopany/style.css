@@ -1,0 +1,8 @@
+/** @format */
+
+.rotate {
+	-webkit-transform: rotate(-90deg) !important;
+	-moz-transform: rotate(-90deg) !important;
+	-ms-transform: rotate(-90deg) !important;
+	transform: rotate(-90deg) !important;
+}
