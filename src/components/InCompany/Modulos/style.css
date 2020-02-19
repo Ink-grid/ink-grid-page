@@ -1,0 +1,36 @@
+
+.modulos{
+
+}
+.banner-modulos{
+    height: 50vh;
+    width: 100vw;
+    background-color: rgb(91, 92, 86);
+}
+.modulos .sesiones {
+    margin: 20px 0;
+}
+.modulos .sesiones a{
+    text-decoration: none;
+    color:black;
+}
+
+.modulos .sesiones a > div{
+    border-top: 7px solid #353A69;
+    margin:10px 0;
+    padding: 10px 0;
+}
+
+.modulos .sesiones a div span:before{
+    background-color: #353A69;
+    position: absolute;
+    /* top: 40px; */
+    left: 15px;
+    width: 10px;
+    height: 10px;
+    content: '';
+    border-radius: 60%;
+}
+.modulos .sesiones a div span{
+    margin-left: 30px;
+}

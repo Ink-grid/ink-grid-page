@@ -34,6 +34,34 @@ const InCompany = () => {
 			correo: 'safcha@pucp.pe'
 		}
 	]
+
+	const temaTD = [
+        {
+            Nsesion: 'Sesión 1',
+            tema: 'Gestión Humana por Competencias'
+        },
+        {
+            Nsesion: 'Sesión 2',
+            tema: 'Gestión Humana por Competencias'
+        },
+        {
+            Nsesion: 'Sesión 3',
+            tema: 'Gestión Humana por Competencias'
+        },
+        {
+            Nsesion: 'Sesión 4',
+            tema: 'Gestión Humana por Competencias'
+        },
+        {
+            Nsesion: 'Sesión 3',
+            tema: 'Gestión Humana por Competencias'
+        },
+        {
+            Nsesion: 'Sesión 4',
+            tema: 'Gestión Humana por Competencias'
+        }
+    ]
+
 	useEffect(() => {
 		document.getElementById('Idmenu').classList.add('cambiar-fondo-menu');
 		document.getElementById('logo-dark').src = logoB;
@@ -90,7 +118,10 @@ const InCompany = () => {
 					<div class='container mb-5 pb-5'>
 						<div class='row'>
 							<div class='offset-1 offset-sm-0 col-10 col-sm-6 col-lg-4'>
-								<Link to="/transformacion-digital">
+								<Link to={{
+									pathname: 'cursos/modulos/transformacion-digital',
+									state: {temaTD}
+								}}>
 									<img src="https://img.icons8.com/material-rounded/64/000000/change.png" />
 									<div class='mx-auto mb-5 mb-lg-0 mb-lg-3'>
 										<h3>TRANSFORMACIÓN DIGITAL</h3>
@@ -99,7 +130,7 @@ const InCompany = () => {
 								</Link>
 							</div>
 							<div class='offset-1 offset-sm-0 col-10 col-sm-6 col-lg-4'>
-							<Link to="/direccion-estrategica">
+							<Link to="cursos/modulos/direccion-estrategica">
 								<img src="https://img.icons8.com/ios-filled/50/000000/strategy-board.png" />
 								<div class='mx-auto mb-5 mb-lg-0 mb-lg-3'>
 									<h3>DIRECCIÓN ESTRATÉGICA DE VENTAS Y CULTURA CRM</h3>
@@ -109,7 +140,7 @@ const InCompany = () => {
 							</div>
 
 							<div class='offset-1 offset-sm-0 col-10 col-sm-6 col-lg-4'>
-							<Link to="/cybersecurity">
+							<Link to="cursos/modulos/cybersecurity">
 								<img src="https://img.icons8.com/wired/64/000000/hacking.png" />
 								<div class='mx-auto mb-5 mb-lg-0 mb-lg-3'>
 									<h3>CYBERSECURITY Y ETHICAL HACKING</h3>
@@ -118,7 +149,7 @@ const InCompany = () => {
 								</Link>
 							</div>
 							<div class='offset-1 offset-sm-0 col-10 col-sm-6 col-lg-4'>
-							<Link to="/gestion-portafolio">
+							<Link to="cursos/modulos/gestion-portafolio">
 								<img src="https://img.icons8.com/material-rounded/48/000000/project.png" />
 								<div class='mx-auto mb-5 mb-lg-0 mb-lg-3'>
 									<h3>DIRECCIÓN DE PROYECTOS Y GESTIÓN DE PORTAFOLIOS</h3>
@@ -127,7 +158,7 @@ const InCompany = () => {
 								</Link>
 							</div>
 							<div class='offset-1 offset-sm-0 col-10 col-sm-6 col-lg-4'>
-								<Link to="/ciencia-datos">
+								<Link to="cursos/modulos/ciencia-datos">
 								<img src="https://img.icons8.com/ios/50/000000/google-analytics-logo.png" />
 								<div class='mx-auto mb-5 mb-lg-0 mb-lg-3'>
 									<h3>CIENCIA DE DATOS Y BUSINESS ANALYTICS </h3>
@@ -136,7 +167,7 @@ const InCompany = () => {
 								</Link>
 							</div>
 							<div class='offset-1 offset-sm-0 col-10 col-sm-6 col-lg-4'>
-								<Link to="/rpa">
+								<Link to="cursos/modulos/rpa">
 								<img src="https://img.icons8.com/wired/64/000000/process.png" />
 								<div class='mx-auto mb-5 mb-lg-0 mb-lg-3'>
 									<h3>RPA DENTRO DE LA GESTIÓN Y GOBIERNO DE LOS PROCESOS</h3>
@@ -145,7 +176,7 @@ const InCompany = () => {
 								</Link>
 							</div>
 							<div class='offset-1 offset-sm-0 offset-lg-2 col-10 col-sm-6 col-lg-4'>
-								<Link to="/talento-humano">
+								<Link to="cursos/modulos/talento-humano">
 								<img src="https://img.icons8.com/pastel-glyph/64/000000/books.png" />
 								<div class='mx-auto mb-5 mb-lg-0 mb-lg-3'>
 									<h3>
@@ -157,7 +188,7 @@ const InCompany = () => {
 								</Link>
 							</div>
 							<div class='offset-1 offset-sm-0 col-10 col-sm-6 col-lg-4'>
-								<Link to="/omnicanall">
+								<Link to="cursos/modulos/omnicanall">
 								<img src="https://img.icons8.com/carbon-copy/100/000000/omnichannel.png" />
 								<div class='mx-auto mb-5 mb-lg-0 mb-lg-3'>
 									<h3>BLOCKCHAIN Y MARKETING OMNICANALL</h3>
