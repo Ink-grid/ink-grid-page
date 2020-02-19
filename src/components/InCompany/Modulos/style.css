@@ -1,27 +1,46 @@
 
-.modulos{
-
+.modulos > div{
+    width: 80% !important;
+    margin: auto;
 }
 .banner-modulos{
     height: 50vh;
     width: 100vw;
     background-color: rgb(91, 92, 86);
 }
+
+.banner-modulos h1{
+    /* display: block; */
+    position: relative;
+    top:70%;
+    margin-left: 20px;
+    background-color: #fff;
+    width: 80%;
+    height: 70px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-weight: 450;
+}
 .modulos .sesiones {
     margin: 20px 0;
 }
-.modulos .sesiones a{
+.modulos .sesiones{
     text-decoration: none;
     color:black;
 }
-
-.modulos .sesiones a > div{
+.modulos .sesiones h1{
+    font-weight: 400;
+}
+.modulos .sesiones > div{
     border-top: 7px solid #353A69;
     margin:10px 0;
     padding: 10px 0;
 }
 
-.modulos .sesiones a div span:before{
+.modulos .sesiones div span:before{
     background-color: #353A69;
     position: absolute;
     /* top: 40px; */
@@ -31,6 +50,25 @@
     content: '';
     border-radius: 60%;
 }
-.modulos .sesiones a div span{
+.modulos .sesiones div span{
     margin-left: 30px;
+    font-size: 13px;
+}
+@media (max-width:750px){
+    .modulos > div{
+        width: 85% !important;
+        margin: auto;
+    }
+}
+@media (max-width:650px){
+    .banner-modulos h1{
+        font-size: 15px ;
+    }
+    .modulos > div{
+        width: 90% !important;
+        margin: auto;
+    }
+    .modulos .sesiones h1{
+        font-weight: 300;
+    }
 }

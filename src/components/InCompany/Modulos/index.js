@@ -1,44 +1,40 @@
-import React, { useEffect } from 'react';
+import React, { useEffect,useState } from 'react';
 import './style.css';
-import { Link } from 'react-router-dom';
 
 const modulos = (props) => {
 
-    // useEffect(() => {
-    // 	// window.localStorage.
-    // }, []);
-
-    console.log(props);
-
+   
 
     return (
         <React.Fragment>
             <div className="banner-modulos">
-
+                <h1>{props.location.state[0].titulo} </h1>
             </div>
             <div className="container modulos">
 
-                <div className="row">
+                <div className="row container">
                     {
-                        props.location.state.temaTD.map((sesion,index) => (
-                        
-                        <div key={index} className="col-6 col-sm-4 col-md-3 sesiones">
-                            <Link>
-                                <h1>{sesion.Nsesion}</h1>
-                                <div>
-                                    <span>{sesion.tema}</span>
+                        props.location.state.filter((e, index) => index !== 0).map(
+                            (datos, index) => (
+
+                                <div key={index} className="col-12  col-md-6  sesiones">
+
+                                    <h1>{datos.NTema}</h1>
+                                    <div>
+                                        <span>{datos.tema}</span>
+                                    </div>
+
                                 </div>
-                            </Link>
-                        </div>
-                    ))
+                            )
+                        )
                     }
 
                 </div>
             </div>
         </React.Fragment>
     );
-};
 
+};
 export default modulos;
 
 
