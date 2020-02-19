@@ -10,11 +10,27 @@ import ChevronRight from '@material-ui/icons/ChevronRight';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import TwitterIcon from '@material-ui/icons/Twitter';
 import FacebookIcon from '@material-ui/icons/Facebook';
+import Swal from 'sweetalert2';
+import { database } from '../../services/firebase';
 
-const Footer = () => {
+const Footer = props => {
+	const sendEmail = async e => {
+		e.preventDefault();
+		const form = new FormData(e.target);
+		const data = {
+			correo: form.get('correo')
+		};
+		await database.ref('Model/cotactos-inkgrid/correos').push(data);
+		await Swal.fire(
+			'¡Éxito!',
+			'gracias por subscribirte, pronto te enviaremos noticias',
+			'success'
+		);
+	};
+
 	return (
 		<div className='footer'>
-			<div className='row footer-top  text-center'>
+			<div id='contacto' className='row footer-top  text-center'>
 				<div className='col-12 col-md-7 footer-title'>
 					Contáctate con Ink-Grid
 				</div>
@@ -32,10 +48,17 @@ const Footer = () => {
 				</div>
 				<div className='my-5 my-md-0 col-md-6 suscribete'>
 					<div className='texto'>SUBSCRIBE TO OUR LATEST INSIGHTS</div>
-					<input className='mt-4 email' placeholder='Email Adress' />
-					<div className='footer-contact btn ml-3'>
-						<ChevronRight />
-					</div>
+					<form onSubmit={sendEmail}>
+						<input
+							required
+							className='mt-4 email'
+							name='correo'
+							placeholder='Email Adress'
+						/>
+						<button className='footer-contact btn ml-3'>
+							<ChevronRight />
+						</button>
+					</form>
 				</div>
 			</div>
 

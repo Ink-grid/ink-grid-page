@@ -141,9 +141,12 @@ const Navbar = () => {
 							</Link>
 						</li>
 						<li onClick={Cmenu}>
-							<Link to='/servicios'>
+							<Link to='/#'>
 								BPO <ArrowDropDownSharpIcon />
 							</Link>
+						</li>
+						<li onClick={Cmenu}>
+							<Link to='/coworking'>COWORKING</Link>
 						</li>
 						<li onClick={Cmenu}>
 							<a href='#'>Blog</a>

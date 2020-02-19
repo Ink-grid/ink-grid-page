@@ -8,7 +8,28 @@ import DoneOutlineIcon from '@material-ui/icons/DoneOutline';
 import nevado from '../../../src/img/nevado.png';
 import cpa from '../../../src/img/cpa.png';
 import expro from '../../../src/img/expro.png';
+import Items from './items';
+
 const Carousel = props => {
+	const data = [
+		{
+			titulo: 'FORMACIÓN IN COMPANY',
+			descri:
+				'El único programa de formación organizacional a tu medida, dirigido para las empresas que quieran liderar el cambio.',
+			img:
+				'https://firebasestorage.googleapis.com/v0/b/ink-grid.appspot.com/o/CALADO%20IN%20COMPANY.png?alt=media&token=dfc41592-0d83-41fd-9d5f-8a537e83bb5e',
+			href: '/incompany'
+		},
+		{
+			titulo: 'TRANSFORMACIÓN DIGITAL MINERIA',
+			descri:
+				'Cómo el gigante de la minería del cobre Freeport-McMoRan desbloqueó el rendimiento del siguiente nivel, con nuestra ayuda',
+			img:
+				'https://firebasestorage.googleapis.com/v0/b/ink-grid.appspot.com/o/minería%20calada.png?alt=media&token=ce43fc9a-8951-48cc-9694-da8b2e91ab06',
+			href: '/mineria'
+		}
+	];
+
 	useEffect(() => {
 		document.getElementById('Idmenu').classList.remove('cambiar-fondo-menu');
 		document.getElementById('logo-dark').src = logo;
@@ -19,7 +40,9 @@ const Carousel = props => {
 			{/* Portada Home */}
 			<div class='parallax-slider'>
 				<div class='slider-wrapper'>
-					<div class='slide slide1 slide-active'>
+					<div
+						class='slide bg-dark slide-active'
+						style={{ position: 'relative' }}>
 						<div class='content'>
 							<div class='container'>
 								<div class='col-md-6 caption' style={{ color: '#ffffff' }}>
@@ -36,12 +59,10 @@ const Carousel = props => {
 										</ul>
 									</div>
 									<br></br>
-									<br></br>
-									<span>Bienvenido a </span>
-									<h1 className='text-left text-light'>Ink Grid </h1>
-									<p
-										style={{ fontSize: '20px' }}
-										className='d-none d-sm-block contenido-texto text-justify-center pt-3 pl-3'>
+									<h1>
+										Bienvenido a <br /> Ink-Grid
+									</h1>
+									<p style={{ fontSize: '25px' }}>
 										Trabajamos con las más exitosas compañías de Perú para
 										conducir un crecimiento de largo plazo, transformar las
 										operaciones y las organizaciones, así como nutrir el
@@ -50,38 +71,30 @@ const Carousel = props => {
 								</div>
 							</div>
 						</div>
+						<div
+							style={{
+								position: 'absolute',
+								bottom: '0%',
+								right: '0%',
+								height: '70%',
+								width: '50%',
+								backgroundRepeat: 'no-repeat',
+								backgroundPosition: 'center center',
+								backgroundSize: 'contain',
+								backgroundImage:
+									"url('https://www.mckinsey.com//pe/~/media/McKinsey/Locations/South%20America/Peru/Overview/Peru_Hero_GettyImages-665404151_1080.ashx')"
+							}}></div>
 					</div>
-					<div class='slide slide2'>
-						<div class='content'>
-							<div class='container'>
-								<div class='col-md-6 caption'>
-									<h1>Lorem ipsum dolor sit</h1>
-									<p>
-										Curabitur blandit felis massa, et dapibus mi pretium nec.
-									</p>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class='slide slide3'>
-						<div class='content'>
-							<div class='container'>
-								<div class='col-md-6 caption'>
-									<h1>Lorem ipsum dolor sit</h1>
-									<p>
-										Curabitur blandit felis massa, et dapibus mi pretium nec.
-									</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class='slide-indicator'>
-					<ol>
-						<li class='active'></li>
-						<li></li>
-						<li></li>
-					</ol>
+
+					{data.map((ele, index) => (
+						<Items
+							key={index}
+							titulo={ele.titulo}
+							descri={ele.descri}
+							img={ele.img}
+							href={ele.href}
+						/>
+					))}
 				</div>
 			</div>
 			{/* Portada Home */}
