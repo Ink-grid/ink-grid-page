@@ -145,12 +145,342 @@ const InCompany = () => {
 				'https://firebasestorage.googleapis.com/v0/b/ink-grid.appspot.com/o/Blockchain%20y%20marketing%20omnicanal.png?alt=media&token=f6d3ad22-c4ea-4421-91d7-ae4568ac96b0',
 			isLink: true
 		}
-	];
+	]
+
+	const temasTD = [
+		{
+			titulo: "TRANSFORMACION DIGITAL"
+		},
+        {
+            NTema: 'Tema 1',
+            tema: 'Cultura Digital'
+        },
+        {
+            NTema: 'Tema 2',
+            tema: 'Artificial Inteligence'
+        },
+        {
+            NTema: 'Tema 3',
+            tema: 'Cloud Computing'
+		},
+		{
+            NTema: 'Tema 4',
+            tema: 'Blog Chain'
+        },
+        {
+            NTema: 'Tema 5',
+            tema: 'Big Data'
+        },
+        {
+            NTema: 'Tema 6',
+            tema: 'RPA'
+        },
+        {
+            NTema: 'Tema 7',
+            tema: 'Disciplinas Ágiles'
+		},
+		{
+            NTema: 'Tema 8',
+            tema: 'Cybersecurity'
+		},
+		{
+            NTema: 'Tema 9',
+            tema: 'Casos de usos especializados'
+        }
+	]
+
+	const temasDE = [
+		{
+			titulo:'DIRECCIÓN ESTRATÉGICA DE VENTAS Y CULTURA CRM'
+		},
+        {
+            NTema: 'Tema 1',
+            tema: 'Gestión del cambio y comportamiento del consumidor'
+        },
+        {
+            NTema: 'Tema 2',
+            tema: 'Gestión del ciclo de Vida de la Venta'
+        },
+        {
+            NTema: 'Tema 3',
+            tema: 'Gestión de oportunidades de Ventas y Cierre de Negociaciones'
+        },
+        {
+            NTema: 'Tema 4',
+            tema: 'Contrataciones con el Estado'
+        },
+        {
+            NTema: 'Tema 5',
+            tema: 'Inteligencia competitiva y Benchmarking Estratégico'
+        },
+        {
+            NTema: 'Tema 6',
+            tema: 'Inteligencia  de Negocios y Análisis de Predictivos en Ventas'
+		},
+		{
+            NTema: 'Tema 7',
+            tema: 'Tecnología Cloud Formulación Estrátegica Omnicanal y Enfoque CRM'
+		},
+		{
+            NTema: 'Tema 8',
+            tema: 'Gestión del Talento Humano en Ventas'
+		},
+		{
+			NTema:'Tema 9',
+			tema:'Casos de usos especializados'
+		}
+	]
+	
+	const temasCyberS = [
+		{
+			titulo:'CYBERSECURITY Y ETHICAL HACKING'
+		},
+        {
+            NTema: 'Tema 1',
+            tema: 'Introducción a la Seguridad Informática'
+        },
+        {
+            NTema: 'Tema 2',
+            tema: 'Ethical Hacking'
+        },
+        {
+            NTema: 'Tema 3',
+            tema: 'Hacking para Penterter'
+        },
+        {
+            NTema: 'Tema 4',
+            tema: 'Introducción a la Seguridad en Aplicaciones Web'
+        },
+        {
+            NTema: 'Tema 5',
+            tema: 'Hacking en Aplicaciones Web'
+        },
+        {
+            NTema: 'Tema 6',
+            tema: 'Protección de Datos Personales'
+		},
+		{
+            NTema: 'Tema 7',
+            tema: 'Gestión de la Ciber Seguridad'
+		},
+		{
+            NTema: 'Tema 8',
+            tema: 'Implementación ISO 27001 y SOC con OSSIM'
+		},
+		{
+			NTema:'Tema 9',
+			tema:'Análisis de Gestión de Riesgo'
+		}
+    ]
+
+	const temasDP = [
+		{
+			titulo : 'DIRECCIÓN DE PROYECTOS Y GESTIÓN DE PORTAFOLIOS'
+		},
+        {
+            NTema: 'Tema 1',
+            tema: 'Diseño y Gestión de Bussines Case Marco Valt'
+        },
+        {
+            NTema: 'Tema 2',
+            tema: 'Modelo Organizacional - Empresas Proyectizadas'
+        },
+        {
+            NTema: 'Tema 3',
+            tema: 'Marcos de Referencia y tipos de Metodologías'
+        },
+        {
+            NTema: 'Tema 4',
+            tema: 'Lean Project'
+        },
+        {
+            NTema: 'Tema 5',
+            tema: 'Gestión de Proyectos con SCRUM'
+        },
+        {
+            NTema: 'Tema 6',
+            tema: 'Gestión de Proyectos con enfoque PMBOOK 6'
+		},
+		{
+            NTema: 'Tema 7',
+            tema: 'Herramientas de Gestión y Centro de Costos de Proyectos'
+		},
+		{
+            NTema: 'Tema 8',
+            tema: 'Dirección de Equipos de Proyectos Múltiples Enfoques'
+		},
+		{
+			NTema:'Tema 9',
+			tema:'Aseguramiento de Riesgo de Proyectos con R'
+		}
+	]
+	const temasCD = [
+		{titulo:'CIENCIA DE DATOS Y BUSINESS ANALYTICS'},
+        {
+            NTema: 'Tema 1',
+            tema: 'Captura e Ingesta de Data,SQL SemiSQL , NoSQL'
+        },
+        {
+            NTema: 'Tema 2',
+            tema: 'BigData Analytics - BDA'
+        },
+        {
+            NTema: 'Tema 3',
+            tema: 'Análisis de Casos e Inteligencia de Negocio'
+        },
+        {
+            NTema: 'Tema 4',
+            tema: 'Diseño de Proyectos de Big Data Aplicado'
+        },
+        {
+            NTema: 'Tema 5',
+            tema: 'Revisión de Herramientas para Big Data:Apache, Hadoop, MongoDB, Apache Spark, Python ,Apache Cassandra , Lenguaje R'
+        },
+        {
+            NTema: 'Tema 6',
+            tema: 'Analítica Descriptiva, Analítica Predictiva y Analítica Prescriptiva'
+		},
+		{
+            NTema: 'Tema 7',
+            tema: 'Aplicaciones de Deep Learning y Machine Learning'
+		},
+		{
+            NTema: 'Tema 8',
+            tema: 'Gobierno de los Datos y Modelos optimizados en Big Data'
+		},
+		{
+			NTema:'Tema 9',
+			tema:'Inteligencia de Negocio y Casos de Usos en Big Data'
+		}
+	]
+	
+	const temasRPA = [
+		{titulo: 'RPA DENTRO DE LA GESTIÓN Y GOBIERNO DE LOS PROCESOS'},
+        {
+            NTema: 'Tema 1',
+            tema: 'Modelo de Madurez para el gobierno de Procesos'
+        },
+        {
+            NTema: 'Tema 2',
+            tema: 'Las fuentes de desperdicio y Diagnostico de Rendimiento de Procesos'
+        },
+        {
+            NTema: 'Tema 3',
+            tema: 'BPM y Workflow de Producción'
+        },
+        {
+            NTema: 'Tema 4',
+            tema: 'Herramientas y Prácticas para el modelado de mejora de Procesos'
+        },
+        {
+            NTema: 'Tema 5',
+            tema: 'Optmización de Procesos con Lean Six Sigma'
+        },
+        {
+            NTema: 'Tema 6',
+            tema: 'Indicadores de control de Procesos Formulación e Implementación'
+		},
+		{
+            NTema: 'Tema 7',
+            tema: 'Fundamento de Automatización RPA'
+		},
+		{
+            NTema: 'Tema 8',
+            tema: 'Procesos Robotizables'
+		},
+		{
+			NTema:'Tema 9',
+			tema:'Creación de Bots para Optimizar componentes del flujo de Valor'
+		}
+	]
+
+	const temasGC = [
+		{titulo: 'GESTIÓN DEL CONOCIMIENTO, LIDERAZGO Y CUADRO DE MANDO EN LA DIRECCIÓN DEL TALENTO HUMANO'},
+        {
+            NTema: 'Tema 1',
+            tema: 'Modelos de Liderazgo Organizacional y Enfoques de Madurez'
+        },
+        {
+            NTema: 'Tema 2',
+            tema: 'Gestión de los Grupos de Interés'
+        },
+        {
+            NTema: 'Tema 3',
+            tema: 'Cultura CRM y Gestión de la Carga de Trabajo'
+        },
+        {
+            NTema: 'Tema 4',
+            tema: 'Estrategias basadas en Social CRM'
+        },
+        {
+            NTema: 'Tema 5',
+            tema: 'Liderazgo de Equipos de Trabajos en enfoques Ágiles'
+        },
+        {
+            NTema: 'Tema 6',
+            tema: 'Funciones del Knowledge Brokering'
+		},
+		{
+            NTema: 'Tema 7',
+            tema: 'Herramientas de Colaboración y Comunicaciones Efectiva'
+		},
+		{
+            NTema: 'Tema 8',
+            tema: 'Modelo de Gobierno e Indicadores de Rendimiento'
+		},
+		{
+			NTema:'Tema 9',
+			tema:'Dinámicas: Resolución de Problemas de casos de uso especificos'
+		}
+	]
+
+	const temasBM = [
+		{titulo: 'BLOCKCHAIN Y MARKETING OMNICANALL'},
+        {
+            NTema: 'Tema 1',
+            tema: 'Introducción en BlockChain'
+        },
+        {
+            NTema: 'Tema 2',
+            tema: 'SmartContract'
+        },
+        {
+            NTema: 'Tema 3',
+            tema: 'IoTA y DAO'
+        },
+        {
+            NTema: 'Tema 4',
+            tema: 'Roadmap y Blue Print en Blockchain'
+        },
+        {
+            NTema: 'Tema 5',
+            tema: 'Diseño de Estrategias Omnicanal'
+        },
+        {
+            NTema: 'Tema 6',
+            tema: 'Tecnología y arquitectura Omnicanal'
+		},
+		{
+            NTema: 'Tema 7',
+            tema: 'Estrategias de Ventas por el canal de escrito'
+		},
+		{
+            NTema: 'Tema 8',
+            tema: 'Asistentes Virtuales y Automatización de respuestas'
+		},
+		{
+			NTema:'Tema 9',
+			tema:'Diseño y Puesta en Operaciones de campañas Ominicanal'
+		}
+	]
 
 	useEffect(() => {
 		//document.getElementById('Idmenu').classList.add('cambiar-fondo-menu');
 		//document.getElementById('logo-dark').src = logoB;
 		//document.getElementById("redes-contacto").classList.add("mostrar");
+		// return () => {
+		// 	alert('fsdf');
+		// };
 	}, []);
 
 	return (
@@ -180,8 +510,12 @@ const InCompany = () => {
 					<div class='container mb-5 pb-5'>
 						<div class='row'>
 							<div class='offset-1 offset-sm-0 col-10 col-sm-6 col-lg-4'>
-								<Link to='/transformacion-digital'>
-									<img src='https://img.icons8.com/material-rounded/64/000000/change.png' />
+								<Link to=
+								{{
+									pathname: 'cursos/modulos/transformacion-digital',
+									state: temasTD.map(e => e)
+								}}>
+									<img src="https://img.icons8.com/material-rounded/64/000000/change.png" />
 									<div class='mx-auto mb-5 mb-lg-0 mb-lg-3'>
 										<h3>TRANSFORMACIÓN DIGITAL</h3>
 										<hr className='w-100 d-block d-sm-none'></hr>
@@ -189,70 +523,98 @@ const InCompany = () => {
 								</Link>
 							</div>
 							<div class='offset-1 offset-sm-0 col-10 col-sm-6 col-lg-4'>
-								<Link to='/direccion-estrategica'>
-									<img src='https://img.icons8.com/ios-filled/50/000000/strategy-board.png' />
+								<Link to=
+									{{
+										pathname: 'cursos/modulos/direccion-estrategica',
+										state: temasDE.map(e => e)
+									}}> 
+									<img src="https://img.icons8.com/ios-filled/50/000000/strategy-board.png" />
 									<div class='mx-auto mb-5 mb-lg-0 mb-lg-3'>
 										<h3>DIRECCIÓN ESTRATÉGICA DE VENTAS Y CULTURA CRM</h3>
-										<hr className='w-100 d-block d-sm-none'></hr>
+										<hr className="w-100 d-block d-sm-none"></hr>
 									</div>
 								</Link>
 							</div>
 
 							<div class='offset-1 offset-sm-0 col-10 col-sm-6 col-lg-4'>
-								<Link to='/cybersecurity'>
-									<img src='https://img.icons8.com/wired/64/000000/hacking.png' />
-									<div class='mx-auto mb-5 mb-lg-0 mb-lg-3'>
-										<h3>CYBERSECURITY Y ETHICAL HACKING</h3>
-										<hr className='w-100 d-block d-sm-none'></hr>
-									</div>
+							<Link to=
+								{{
+									pathname: 'cursos/modulos/cybersecurity',
+									state: temasCyberS.map(e => e)
+								}}> 
+								<img src="https://img.icons8.com/wired/64/000000/hacking.png" />
+								<div class='mx-auto mb-5 mb-lg-0 mb-lg-3'>
+									<h3>CYBERSECURITY Y ETHICAL HACKING</h3>
+									<hr className="w-100 d-block d-sm-none"></hr>
+								</div>
 								</Link>
 							</div>
 							<div class='offset-1 offset-sm-0 col-10 col-sm-6 col-lg-4'>
-								<Link to='/gestion-portafolio'>
-									<img src='https://img.icons8.com/material-rounded/48/000000/project.png' />
-									<div class='mx-auto mb-5 mb-lg-0 mb-lg-3'>
-										<h3>DIRECCIÓN DE PROYECTOS Y GESTIÓN DE PORTAFOLIOS</h3>
-										<hr className='w-100 d-block d-sm-none'></hr>
-									</div>
+							<Link to=
+									{{
+										pathname: 'cursos/modulos/gestion-portafolio',
+										state: temasDP.map(e => e)
+									}}> 
+								<img src="https://img.icons8.com/material-rounded/48/000000/project.png" />
+								<div class='mx-auto mb-5 mb-lg-0 mb-lg-3'>
+									<h3>DIRECCIÓN DE PROYECTOS Y GESTIÓN DE PORTAFOLIOS</h3>
+									<hr className="w-100 d-block d-sm-none"></hr>
+								</div>
 								</Link>
 							</div>
 							<div class='offset-1 offset-sm-0 col-10 col-sm-6 col-lg-4'>
-								<Link to='/ciencia-datos'>
-									<img src='https://img.icons8.com/ios/50/000000/google-analytics-logo.png' />
-									<div class='mx-auto mb-5 mb-lg-0 mb-lg-3'>
-										<h3>CIENCIA DE DATOS Y BUSINESS ANALYTICS </h3>
-										<hr className='w-100 d-block d-sm-none'></hr>
-									</div>
+							<Link to=
+									{{
+										pathname: 'cursos/modulos/gestion-portafolio',
+										state: temasCD.map(e => e)
+									}}> 
+								<img src="https://img.icons8.com/ios/50/000000/google-analytics-logo.png" />
+								<div class='mx-auto mb-5 mb-lg-0 mb-lg-3'>
+									<h3>CIENCIA DE DATOS Y BUSINESS ANALYTICS </h3>
+									<hr className="w-100 d-block d-sm-none"></hr>
+								</div>
 								</Link>
 							</div>
 							<div class='offset-1 offset-sm-0 col-10 col-sm-6 col-lg-4'>
-								<Link to='/rpa'>
-									<img src='https://img.icons8.com/wired/64/000000/process.png' />
-									<div class='mx-auto mb-5 mb-lg-0 mb-lg-3'>
-										<h3>RPA DENTRO DE LA GESTIÓN Y GOBIERNO DE LOS PROCESOS</h3>
-										<hr className='w-100 d-block d-sm-none'></hr>
-									</div>
+							<Link to=
+									{{
+										pathname: 'cursos/modulos/rpa',
+										state: temasRPA.map(e => e)
+									}}> 
+								<img src="https://img.icons8.com/wired/64/000000/process.png" />
+								<div class='mx-auto mb-5 mb-lg-0 mb-lg-3'>
+									<h3>RPA DENTRO DE LA GESTIÓN Y GOBIERNO DE LOS PROCESOS</h3>
+									<hr className="w-100 d-block d-sm-none"></hr>
+								</div>
 								</Link>
 							</div>
 							<div class='offset-1 offset-sm-0 offset-lg-2 col-10 col-sm-6 col-lg-4'>
-								<Link to='/talento-humano'>
-									<img src='https://img.icons8.com/pastel-glyph/64/000000/books.png' />
-									<div class='mx-auto mb-5 mb-lg-0 mb-lg-3'>
-										<h3>
-											GESTIÓN DEL CONOCIMIENTO, LIDERAZGO Y CUADRO DE MANDO EN
-											LA DIRECCIÓN DEL TALENTO HUMANO
-										</h3>
-										<hr className='w-100 d-block d-sm-none'></hr>
-									</div>
+							<Link to=
+									{{
+										pathname: 'cursos/modulos/talento-humano',
+										state: temasGC.map(e => e)
+									}}> 
+								<img src="https://img.icons8.com/pastel-glyph/64/000000/books.png" />
+								<div class='mx-auto mb-5 mb-lg-0 mb-lg-3'>
+									<h3>
+										GESTIÓN DEL CONOCIMIENTO, LIDERAZGO Y CUADRO DE MANDO EN LA
+										DIRECCIÓN DEL TALENTO HUMANO
+								</h3>
+									<hr className="w-100 d-block d-sm-none"></hr>
+								</div>
 								</Link>
 							</div>
 							<div class='offset-1 offset-sm-0 col-10 col-sm-6 col-lg-4'>
-								<Link to='/omnicanall'>
-									<img src='https://img.icons8.com/carbon-copy/100/000000/omnichannel.png' />
-									<div class='mx-auto mb-5 mb-lg-0 mb-lg-3'>
-										<h3>BLOCKCHAIN Y MARKETING OMNICANALL</h3>
-										<hr className='w-100 d-block d-sm-none'></hr>
-									</div>
+							<Link to=
+									{{
+										pathname: 'cursos/modulos/omnicanall',
+										state: temasBM.map(e => e)
+									}}> 
+								<img src="https://img.icons8.com/carbon-copy/100/000000/omnichannel.png" />
+								<div class='mx-auto mb-5 mb-lg-0 mb-lg-3'>
+									<h3>BLOCKCHAIN Y MARKETING OMNICANALL</h3>
+									<hr className="w-100 d-block d-sm-none"></hr>
+								</div>
 								</Link>
 							</div>
 						</div>
@@ -278,6 +640,7 @@ const InCompany = () => {
 						))}
 					</div>
 				</section>
+
 			</div>
 		</div>
 	);
