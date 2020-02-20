@@ -56,6 +56,7 @@ const Contacto = () => {
 
 		return () => {
 			document.getElementById('contacto').style.display = '';
+			document.getElementById('logo-dark').src = logo;
 		};
 	}, []);
 	return (

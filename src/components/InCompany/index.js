@@ -1,14 +1,15 @@
 /** @format */
 
 import React, { useEffect } from 'react';
-import { makeStyles } from '@material-ui/core/styles';
 import { Link } from 'react-router-dom';
 import ModalIncopany from '../ModaIncopany/';
-import logoB from '../../../src/logo-dark.png';
+import { useMediaQuery } from '../../services/useServices';
 
 import './style.css';
 
 const InCompany = () => {
+	const isRowBased = useMediaQuery('(min-width: 500px)');
+
 	const data = [
 		{
 			url:
@@ -78,7 +79,9 @@ const InCompany = () => {
 				'https://firebasestorage.googleapis.com/v0/b/ink-grid.appspot.com/o/CALADO%20IN%20COMPANY.png?alt=media&token=dfc41592-0d83-41fd-9d5f-8a537e83bb5e'
 		},
 		{
-			titulo: 'Transformación digital',
+			titulo: isRowBased
+				? 'Transformación digital'
+				: 'Transforma- ción. digital',
 			//descri: 'El ',
 			href: '/prueba',
 			img:
@@ -98,7 +101,7 @@ const InCompany = () => {
 			//descri: 'El ',
 			href: '/prueba',
 			img:
-				'https://firebasestorage.googleapis.com/v0/b/ink-grid.appspot.com/o/Direcci%C3%B3n%20de%20proyectos%20y%20gesti%C3%B3n%20de%20portafolios.png?alt=media&token=2124dd36-4b02-467e-9c54-966e5f338161',
+				'https://firebasestorage.googleapis.com/v0/b/ink-grid.appspot.com/o/Direcci%C3%B3n%20de%20proyectos%20y%20gesti%C3%B3n%20de%20portafolios%20PNG.png?alt=media&token=6024185b-2650-48b2-a0a0-aa6f37b970dc',
 			isLink: true
 		},
 		{
@@ -152,7 +155,7 @@ const InCompany = () => {
 
 	return (
 		<div className='in-company'>
-			<ModalIncopany data={dataModal} />
+			<ModalIncopany isRowBased={isRowBased} data={dataModal} />
 
 			{/*  */}
 			<div className='contenedor  px-5'>

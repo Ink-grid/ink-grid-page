@@ -23,17 +23,21 @@ const Items = props => {
 				</div>
 			</div>
 			<div
-				style={{
-					position: 'absolute',
-					bottom: '0%',
-					right: '0%',
-					height: '70%',
-					width: '50%',
-					backgroundRepeat: 'no-repeat',
-					backgroundPosition: 'center center',
-					backgroundSize: 'contain',
-					backgroundImage: `url(${props.img})`
-				}}></div>
+				style={
+					props.isRowBased
+						? {
+								position: 'absolute',
+								bottom: '0%',
+								right: '0%',
+								height: '70%',
+								width: '50%',
+								backgroundRepeat: 'no-repeat',
+								backgroundPosition: 'center center',
+								backgroundSize: 'contain',
+								backgroundImage: `url(${props.img})`
+						  }
+						: null
+				}></div>
 		</div>
 	);
 };

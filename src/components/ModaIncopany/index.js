@@ -36,18 +36,22 @@ const ModalIncompany = props => {
 						</div>
 						<div
 							className='rotate'
-							style={{
-								transform: 'scaleX(-1)',
-								position: 'absolute',
-								bottom: '0%',
-								right: '0%',
-								height: '70%',
-								width: '50%',
-								backgroundRepeat: 'no-repeat',
-								backgroundPosition: 'center center',
-								backgroundSize: 'contain',
-								backgroundImage: `url(${ele.img})`
-							}}></div>
+							style={
+								props.isRowBased
+									? {
+											transform: 'scaleX(-1)',
+											position: 'absolute',
+											bottom: '0%',
+											right: '0%',
+											height: '70%',
+											width: '50%',
+											backgroundRepeat: 'no-repeat',
+											backgroundPosition: 'center center',
+											backgroundSize: 'contain',
+											backgroundImage: `url(${ele.img})`
+									  }
+									: null
+							}></div>
 					</div>
 				))}
 			</div>

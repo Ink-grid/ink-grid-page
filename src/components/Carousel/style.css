@@ -213,7 +213,7 @@
 
 .descripcion1 {
 	line-height: 200%;
-	width: 60%;
+	width: 90%;
 	font-size: 18px;
 }
 @media (max-width: 768px) {
@@ -321,7 +321,7 @@
 	background-color: white;
 	font-size: 35px;
 	text-align: center;
-	width: 50%;
+	width: 85%;
 	margin: 0 auto !important;
 	color: #353a69;
 	font-weight: 800;
@@ -499,6 +499,19 @@
 	display: inline-block;
 	width: 100vw;
 	height: 100vh;
+	flex-shrink: 0;
+	transition: 0.9s ease-in-out transform;
+	backface-visibility: hidden;
+}
+
+.slide2 {
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	display: inline-block;
+	width: 50%;
+	height: 50%;
 	flex-shrink: 0;
 	transition: 0.9s ease-in-out transform;
 	backface-visibility: hidden;
