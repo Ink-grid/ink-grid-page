@@ -52,20 +52,6 @@ const InCompany = () => {
 			nombre: 'Alarcón , Enrique',
 			especialidad: 'Transformacion Digital / Banca y Finanzas',
 			correo: 'dnakandare@gmail.com'
-		},
-		{
-			url:
-				'https://media-exp1.licdn.com/dms/image/C4D03AQGD3_J0_gnecw/profile-displayphoto-shrink_800_800/0?e=1587600000&v=beta&t=fDfCG7aDjnr_Kb3vhX5-LYf9ppUFsSuaG8VZMiV-Myo',
-			nombre: 'Castellanos, Marco',
-			especialidad: 'Cyber Security',
-			correo: 'marco_castellanos@hotmail.com'
-		},
-		{
-			url:
-				'https://media-exp1.licdn.com/dms/image/C4E03AQGuO9Cke0aEKQ/profile-displayphoto-shrink_800_800/0?e=1587600000&v=beta&t=X3Abj-xcV_v5an9_FIJmpQJcNXdd61bTiPleXvP6tgA',
-			nombre: 'Limas, Gustavo',
-			especialidad: 'B2B BUSINESS DEVELOPER',
-			correo: 'limasgg@outlook.com'
 		}
 	];
 
@@ -82,7 +68,8 @@ const InCompany = () => {
 			titulo: isRowBased
 				? 'Transformación digital'
 				: 'Transforma- ción. digital',
-			//descri: 'El ',
+			descri:
+				'Capacita tu fuerza laboral para liderar el cambio, con los expertos en la industria 4.0',
 			href: '/cursos/modulos/transformacion-digital',
 			img:
 				'https://firebasestorage.googleapis.com/v0/b/ink-grid.appspot.com/o/Transformación%20Digital.png?alt=media&token=bfd922c7-5dd1-44e5-9e5f-27db7829ea28',
@@ -90,15 +77,17 @@ const InCompany = () => {
 		},
 		{
 			titulo: 'Cybersecurity y Ethical Hacking',
-			//descri: 'El ',
+			descri:
+				'Diseña la mejor estrategia para alcanzar el gobierno y una sólida gestión de tus activos organizacionales.',
 			href: '/cursos/modulos/cybersecurity',
 			img:
 				'https://firebasestorage.googleapis.com/v0/b/ink-grid.appspot.com/o/Cybersecurity%20y%20ethical%20hacking.png?alt=media&token=6c8da4d4-536c-4853-b2b1-259c1cc66297',
 			isLink: true
 		},
 		{
-			titulo: 'Dirección de proyectos y gestión de portafolios',
-			//descri: 'El ',
+			titulo: 'Dirección de proyectos',
+			descri:
+				'Crea un valor continuo e incremental aplicando las mejoras practicas para la gestión de proyectos.',
 			href: '/cursos/modulos/gestion-portafolio',
 			img:
 				'https://firebasestorage.googleapis.com/v0/b/ink-grid.appspot.com/o/Direcci%C3%B3n%20de%20proyectos%20y%20gesti%C3%B3n%20de%20portafolios%20PNG.png?alt=media&token=6024185b-2650-48b2-a0a0-aa6f37b970dc',
@@ -106,7 +95,8 @@ const InCompany = () => {
 		},
 		{
 			titulo: 'Dirección estratégica de ventas y cultura CRM',
-			//descri: 'El ',
+			descri:
+				'Fortalece las capacidades de tu fuerza de ventas; convierte transacciones en Loyalty.',
 			href: '/cursos/modulos/direccion-estrategica',
 			img:
 				'https://firebasestorage.googleapis.com/v0/b/ink-grid.appspot.com/o/Direcci%C3%B3n%20estrat%C3%A9gica%20de%20ventas%20y%20cultura%20CRM.png?alt=media&token=6f6076db-3bf4-4aa9-8972-7c3cdb4e9773',
@@ -114,7 +104,7 @@ const InCompany = () => {
 		},
 		{
 			titulo: 'Ciencia de datos y Business analytics',
-			//descri: 'El ',
+			descri: 'Obten el mas alto valor de tus datos; aprende como ...',
 			href: '/cursos/modulos/bussines-analytics',
 			img:
 				'https://firebasestorage.googleapis.com/v0/b/ink-grid.appspot.com/o/Ciencia%20de%20datos%20y%20Business%20analytics.png?alt=media&token=dd52b688-571a-44d2-990e-c69b7aeb01a6',
@@ -131,7 +121,8 @@ const InCompany = () => {
 		// },
 		{
 			titulo: 'RPA dentro de la gestión y gobierno de los procesos.',
-			//descri: 'El ',
+			descri:
+				'Simplifica tu flujo de valor y obtén eficiencias sin impactar la calidad de tus operaciones. ',
 			href: '/cursos/modulos/rpa',
 			img:
 				'https://firebasestorage.googleapis.com/v0/b/ink-grid.appspot.com/o/RPA%20dentro%20de%20la%20gesti%C3%B3n%20y%20gobierno%20de%20los%20procesos.png?alt=media&token=d7165fd6-46e9-4af7-b106-be12f3e9a087',
@@ -139,7 +130,8 @@ const InCompany = () => {
 		},
 		{
 			titulo: 'Blockchain y marketing omnicanal.',
-			//descri: 'El ',
+			descri:
+				'Gestiona el activo relacional con la mejor estrategia del marketing digital',
 			href: '/cursos/modulos/omnicanall',
 			img:
 				'https://firebasestorage.googleapis.com/v0/b/ink-grid.appspot.com/o/Blockchain%20y%20marketing%20omnicanal.png?alt=media&token=f6d3ad22-c4ea-4421-91d7-ae4568ac96b0',
@@ -152,81 +144,83 @@ const InCompany = () => {
 			titulo: 'TRANSFORMACION DIGITAL'
 		},
 		{
-			NTema: 'Tema 1',
+			NTema: 'Módulo 1 (14 : 00 Hs.)',
 			tema: 'Cultura Digital'
 		},
 		{
-			NTema: 'Tema 2',
+			NTema: 'Módulo 2 (14 Hs.)',
 			tema: 'Artificial Inteligence'
 		},
 		{
-			NTema: 'Tema 3',
+			NTema: 'Módulo 3 (14 Hs.)',
 			tema: 'Cloud Computing'
 		},
 		{
-			NTema: 'Tema 4',
+			NTema: 'Módulo 4 (14 Hs.)',
 			tema: 'Blog Chain'
 		},
 		{
-			NTema: 'Tema 5',
+			NTema: 'Módulo 5 (14 Hs.)',
 			tema: 'Big Data'
 		},
 		{
-			NTema: 'Tema 6',
+			NTema: 'Módulo 6 (14 Hs.)',
 			tema: 'RPA'
 		},
 		{
-			NTema: 'Tema 7',
+			NTema: 'Módulo 7 (14 Hs.)',
 			tema: 'Disciplinas Ágiles'
 		},
 		{
-			NTema: 'Tema 8',
+			NTema: 'Módulo 8 (14 Hs.)',
 			tema: 'Cybersecurity'
 		},
 		{
-			NTema: 'Tema 9',
+			NTema: 'Módulo 9 (14 Hs.)',
 			tema: 'Casos de usos especializados'
 		}
 	];
+
+	// const d = { nombre, email, empresa, cargo, celular };
 
 	const temasDE = [
 		{
 			titulo: 'DIRECCIÓN ESTRATÉGICA DE VENTAS Y CULTURA CRM'
 		},
 		{
-			NTema: 'Tema 1',
+			NTema: 'Módulo 1 (14 : 00 Hs.) ',
 			tema: 'Gestión del cambio y comportamiento del consumidor'
 		},
 		{
-			NTema: 'Tema 2',
+			NTema: 'Módulo 2 (14 : 00 Hs.)',
 			tema: 'Gestión del ciclo de Vida de la Venta'
 		},
 		{
-			NTema: 'Tema 3',
+			NTema: 'Módulo 3 (14 : 00 Hs.)',
 			tema: 'Gestión de oportunidades de Ventas y Cierre de Negociaciones'
 		},
 		{
-			NTema: 'Tema 4',
+			NTema: 'Módulo 4 (14 : 00 Hs.)',
 			tema: 'Contrataciones con el Estado'
 		},
 		{
-			NTema: 'Tema 5',
+			NTema: 'Módulo 5 (14 : 00 Hs.)',
 			tema: 'Inteligencia competitiva y Benchmarking Estratégico'
 		},
 		{
-			NTema: 'Tema 6',
+			NTema: 'Módulo 6 (14 : 00 Hs.)',
 			tema: 'Inteligencia  de Negocios y Análisis de Predictivos en Ventas'
 		},
 		{
-			NTema: 'Tema 7',
+			NTema: 'Módulo 7 (14 : 00 Hs.)',
 			tema: 'Tecnología Cloud Formulación Estrátegica Omnicanal y Enfoque CRM'
 		},
 		{
-			NTema: 'Tema 8',
+			NTema: 'Módulo 8 (14 : 00 Hs.)',
 			tema: 'Gestión del Talento Humano en Ventas'
 		},
 		{
-			NTema: 'Tema 9',
+			NTema: 'Módulo 9 (14 : 00 Hs.)',
 			tema: 'Casos de usos especializados'
 		}
 	];
@@ -236,39 +230,39 @@ const InCompany = () => {
 			titulo: 'CYBERSECURITY Y ETHICAL HACKING'
 		},
 		{
-			NTema: 'Tema 1',
+			NTema: 'Módulo 1 (14 : 00 Hs.)',
 			tema: 'Introducción a la Seguridad Informática'
 		},
 		{
-			NTema: 'Tema 2',
+			NTema: 'Módulo 2 (14 : 00 Hs.)',
 			tema: 'Ethical Hacking'
 		},
 		{
-			NTema: 'Tema 3',
+			NTema: 'Módulo 3 (14 : 00 Hs.)',
 			tema: 'Hacking para Penterter'
 		},
 		{
-			NTema: 'Tema 4',
+			NTema: 'Módulo 4 (14 : 00 Hs.)',
 			tema: 'Introducción a la Seguridad en Aplicaciones Web'
 		},
 		{
-			NTema: 'Tema 5',
+			NTema: 'Módulo 5 (14 : 00 Hs.)',
 			tema: 'Hacking en Aplicaciones Web'
 		},
 		{
-			NTema: 'Tema 6',
+			NTema: 'Módulo 6 (14 : 00 Hs.)',
 			tema: 'Protección de Datos Personales'
 		},
 		{
-			NTema: 'Tema 7',
+			NTema: 'Módulo 7 (14 : 00 Hs.)',
 			tema: 'Gestión de la Ciber Seguridad'
 		},
 		{
-			NTema: 'Tema 8',
+			NTema: 'Módulo 8 (14 : 00 Hs.)',
 			tema: 'Implementación ISO 27001 y SOC con OSSIM'
 		},
 		{
-			NTema: 'Tema 9',
+			NTema: 'Módulo 9 (14 : 00 Hs.)',
 			tema: 'Análisis de Gestión de Riesgo'
 		}
 	];
@@ -278,80 +272,80 @@ const InCompany = () => {
 			titulo: 'DIRECCIÓN DE PROYECTOS Y GESTIÓN DE PORTAFOLIOS'
 		},
 		{
-			NTema: 'Tema 1',
+			NTema: 'Módulo 1 (14 : 00 Hs.)',
 			tema: 'Diseño y Gestión de Bussines Case Marco Valt'
 		},
 		{
-			NTema: 'Tema 2',
+			NTema: 'Módulo 2 (14 : 00 Hs.)',
 			tema: 'Modelo Organizacional - Empresas Proyectizadas'
 		},
 		{
-			NTema: 'Tema 3',
+			NTema: 'Módulo 3 (14 : 00 Hs.)',
 			tema: 'Marcos de Referencia y tipos de Metodologías'
 		},
 		{
-			NTema: 'Tema 4',
+			NTema: 'Módulo 4 (14 : 00 Hs.)',
 			tema: 'Lean Project'
 		},
 		{
-			NTema: 'Tema 5',
+			NTema: 'Módulo 5 (14 : 00 Hs.)',
 			tema: 'Gestión de Proyectos con SCRUM'
 		},
 		{
-			NTema: 'Tema 6',
+			NTema: 'Módulo 6 (14 : 00 Hs.)',
 			tema: 'Gestión de Proyectos con enfoque PMBOOK 6'
 		},
 		{
-			NTema: 'Tema 7',
+			NTema: 'Módulo 7 (14 : 00 Hs.)',
 			tema: 'Herramientas de Gestión y Centro de Costos de Proyectos'
 		},
 		{
-			NTema: 'Tema 8',
+			NTema: 'Módulo 8 (14 : 00 Hs.)',
 			tema: 'Dirección de Equipos de Proyectos Múltiples Enfoques'
 		},
 		{
-			NTema: 'Tema 9',
+			NTema: 'Módulo 9 (14 : 00 Hs.)',
 			tema: 'Aseguramiento de Riesgo de Proyectos con R'
 		}
 	];
 	const temasCD = [
 		{ titulo: 'CIENCIA DE DATOS Y BUSINESS ANALYTICS' },
 		{
-			NTema: 'Tema 1',
+			NTema: 'Módulo 1 (14 : 00 Hs.)',
 			tema: 'Captura e Ingesta de Data,SQL SemiSQL , NoSQL'
 		},
 		{
-			NTema: 'Tema 2',
+			NTema: 'Módulo 2 (14 : 00 Hs.)',
 			tema: 'BigData Analytics - BDA'
 		},
 		{
-			NTema: 'Tema 3',
+			NTema: 'Módulo 3 (14 : 00 Hs.)',
 			tema: 'Análisis de Casos e Inteligencia de Negocio'
 		},
 		{
-			NTema: 'Tema 4',
+			NTema: 'Módulo 4 (14 : 00 Hs.)',
 			tema: 'Diseño de Proyectos de Big Data Aplicado'
 		},
 		{
-			NTema: 'Tema 5',
+			NTema: 'Módulo 5 (14 : 00 Hs.)',
 			tema:
 				'Revisión de Herramientas para Big Data:Apache, Hadoop, MongoDB, Apache Spark, Python ,Apache Cassandra , Lenguaje R'
 		},
 		{
-			NTema: 'Tema 6',
+			NTema: 'Módulo 6 (14 : 00 Hs.)',
 			tema:
 				'Analítica Descriptiva, Analítica Predictiva y Analítica Prescriptiva'
 		},
 		{
-			NTema: 'Tema 7',
+			NTema: 'Módulo 7 (14 : 00 Hs.)',
 			tema: 'Aplicaciones de Deep Learning y Machine Learning'
 		},
 		{
-			NTema: 'Tema 8',
+			NTema: 'Módulo 8 (14 : 00 Hs.)',
 			tema: 'Gobierno de los Datos y Modelos optimizados en Big Data'
 		},
 		{
-			NTema: 'Tema 9',
+			NTema: 'Módulo 9 (14 : 00 Hs.)',
 			tema: 'Inteligencia de Negocio y Casos de Usos en Big Data'
 		}
 	];
@@ -359,40 +353,40 @@ const InCompany = () => {
 	const temasRPA = [
 		{ titulo: 'RPA DENTRO DE LA GESTIÓN Y GOBIERNO DE LOS PROCESOS' },
 		{
-			NTema: 'Tema 1',
+			NTema: 'Módulo 1 (14 : 00 Hs.)',
 			tema: 'Modelo de Madurez para el gobierno de Procesos'
 		},
 		{
-			NTema: 'Tema 2',
+			NTema: 'Módulo 2 (14 : 00 Hs.)',
 			tema:
 				'Las fuentes de desperdicio y Diagnostico de Rendimiento de Procesos'
 		},
 		{
-			NTema: 'Tema 3',
+			NTema: 'Módulo 3 (14 : 00 Hs.)',
 			tema: 'BPM y Workflow de Producción'
 		},
 		{
-			NTema: 'Tema 4',
+			NTema: 'Módulo 4 (14 : 00 Hs.)',
 			tema: 'Herramientas y Prácticas para el modelado de mejora de Procesos'
 		},
 		{
-			NTema: 'Tema 5',
+			NTema: 'Módulo 5 (14 : 00 Hs.)',
 			tema: 'Optmización de Procesos con Lean Six Sigma'
 		},
 		{
-			NTema: 'Tema 6',
+			NTema: 'Módulo 6 (14 : 00 Hs.)',
 			tema: 'Indicadores de control de Procesos Formulación e Implementación'
 		},
 		{
-			NTema: 'Tema 7',
+			NTema: 'Módulo 7 (14 : 00 Hs.)',
 			tema: 'Fundamento de Automatización RPA'
 		},
 		{
-			NTema: 'Tema 8',
+			NTema: 'Módulo 8 (14 : 00 Hs.)',
 			tema: 'Procesos Robotizables'
 		},
 		{
-			NTema: 'Tema 9',
+			NTema: 'Módulo 9 (14 : 00 Hs.)',
 			tema: 'Creación de Bots para Optimizar componentes del flujo de Valor'
 		}
 	];
@@ -403,39 +397,39 @@ const InCompany = () => {
 				'GESTIÓN DEL CONOCIMIENTO, LIDERAZGO Y CUADRO DE MANDO EN LA DIRECCIÓN DEL TALENTO HUMANO'
 		},
 		{
-			NTema: 'Tema 1',
+			NTema: 'Módulo 1 (14 : 00 Hs.)',
 			tema: 'Modelos de Liderazgo Organizacional y Enfoques de Madurez'
 		},
 		{
-			NTema: 'Tema 2',
+			NTema: 'Módulo 2 (14 : 00 Hs.)',
 			tema: 'Gestión de los Grupos de Interés'
 		},
 		{
-			NTema: 'Tema 3',
+			NTema: 'Módulo 3 (14 : 00 Hs.)',
 			tema: 'Cultura CRM y Gestión de la Carga de Trabajo'
 		},
 		{
-			NTema: 'Tema 4',
+			NTema: 'Módulo 4 (14 : 00 Hs.)',
 			tema: 'Estrategias basadas en Social CRM'
 		},
 		{
-			NTema: 'Tema 5',
+			NTema: 'Módulo 5 (14 : 00 Hs.)',
 			tema: 'Liderazgo de Equipos de Trabajos en enfoques Ágiles'
 		},
 		{
-			NTema: 'Tema 6',
+			NTema: 'Módulo 6 (14 : 00 Hs.)',
 			tema: 'Funciones del Knowledge Brokering'
 		},
 		{
-			NTema: 'Tema 7',
+			NTema: 'Módulo 7 (14 : 00 Hs.)',
 			tema: 'Herramientas de Colaboración y Comunicaciones Efectiva'
 		},
 		{
-			NTema: 'Tema 8',
+			NTema: 'Módulo 8 (14 : 00 Hs.)',
 			tema: 'Modelo de Gobierno e Indicadores de Rendimiento'
 		},
 		{
-			NTema: 'Tema 9',
+			NTema: 'Módulo 9 (14 : 00 Hs.)',
 			tema: 'Dinámicas: Resolución de Problemas de casos de uso especificos'
 		}
 	];
@@ -443,39 +437,39 @@ const InCompany = () => {
 	const temasBM = [
 		{ titulo: 'BLOCKCHAIN Y MARKETING OMNICANALL' },
 		{
-			NTema: 'Tema 1',
+			NTema: 'Módulo 1 (14 : 00 Hs.)',
 			tema: 'Introducción en BlockChain'
 		},
 		{
-			NTema: 'Tema 2',
+			NTema: 'Módulo 2 (14 : 00 Hs.)',
 			tema: 'SmartContract'
 		},
 		{
-			NTema: 'Tema 3',
+			NTema: 'Módulo 3 (14 : 00 Hs.)',
 			tema: 'IoTA y DAO'
 		},
 		{
-			NTema: 'Tema 4',
+			NTema: 'Módulo 4 (14 : 00 Hs.)',
 			tema: 'Roadmap y Blue Print en Blockchain'
 		},
 		{
-			NTema: 'Tema 5',
+			NTema: 'Módulo 5 (14 : 00 Hs.)',
 			tema: 'Diseño de Estrategias Omnicanal'
 		},
 		{
-			NTema: 'Tema 6',
+			NTema: 'Módulo 6 (14 : 00 Hs.)',
 			tema: 'Tecnología y arquitectura Omnicanal'
 		},
 		{
-			NTema: 'Tema 7',
+			NTema: 'Módulo 7 (14 : 00 Hs.)',
 			tema: 'Estrategias de Ventas por el canal de escrito'
 		},
 		{
-			NTema: 'Tema 8',
+			NTema: 'Módulo 8 (14 : 00 Hs.)',
 			tema: 'Asistentes Virtuales y Automatización de respuestas'
 		},
 		{
-			NTema: 'Tema 9',
+			NTema: 'Módulo 9 (14 : 00 Hs.)',
 			tema: 'Diseño y Puesta en Operaciones de campañas Ominicanal'
 		}
 	];
@@ -484,6 +478,7 @@ const InCompany = () => {
 		//document.getElementById('Idmenu').classList.add('cambiar-fondo-menu');
 		//document.getElementById('logo-dark').src = logoB;
 		//document.getElementById("redes-contacto").classList.add("mostrar");
+		document.getElementById('contacto').style.display = 'none';
 		// return () => {
 		// 	alert('fsdf');
 		// };
@@ -511,7 +506,7 @@ const InCompany = () => {
 				{/*  */}
 
 				{/*  */}
-				<section class='temas  text-center bg-light'>
+				<section id='temas_tacticos' class='temas text-center bg-light'>
 					<h1>Temas estratégicos, tácticos y operacionales</h1>
 					<div class='container mb-5 pb-5'>
 						<div class='row'>
@@ -633,14 +628,14 @@ const InCompany = () => {
 						{/*  */}
 
 						{data.map((profe, index) => (
-							<div className='col-12 col-sm-6 col-md-4'>
+							<div index={index} className='col-12 col-sm-6 col-md-4'>
 								<div>
 									<img src={profe.url} alt='Ink Grid' />
 								</div>
 								<div className='datos'>
 									<h1>{profe.nombre}</h1>
 									<h2>{profe.especialidad}</h2>
-									<span>{profe.correo}</span>
+									{/* <span>{profe.correo}</span> */}
 								</div>
 							</div>
 						))}

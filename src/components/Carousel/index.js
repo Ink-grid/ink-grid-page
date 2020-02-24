@@ -149,10 +149,15 @@ const Carousel = props => {
 										Bienvenido a <br /> Ink-Grid
 									</h1>
 									<p style={{ fontSize: '25px' }}>
-										Trabajamos con las más exitosas compañías de Perú para
-										conducir un crecimiento de largo plazo, transformar las
-										operaciones y las organizaciones, así como nutrir el
-										talento.
+										Somos una firma consultora especializada en tecnologias y
+										servicios. Conformada por un conjunto de profesionales de
+										primer nivel con experiencia en proyectos de alto valor para
+										diversos sectores.
+										{/* conformada 
+										por un conjunto de profesionales de amplia trayectoria
+										en proyectos regionales y localesm aportando un alto valor para 
+										diversas industrias, basados en principios y practicas mundiales en distintas disciplinas
+										y un solido respaldo en el dominio de tecnologias 4.0 */}
 									</p>
 								</div>
 							</div>
@@ -209,14 +214,14 @@ const Carousel = props => {
 				<div className='datos-genericos container py-3'>
 					<div className='row'>
 						<div className='datosEspecificos col-12 col-md-4'>
-							<h1 className='p-3 text-center'>+10</h1>
+							<h1 className='p-3 text-center'>+3</h1>
 							<p>años</p>
 							<span>de presencia de InkGrid en Perú</span>
 							<div className='linea lineaD d-none d-md-block'></div>
 						</div>
 
 						<div className='datosEspecificos col-12 col-md-4'>
-							<h1 className='py-3 text-center'>+290</h1>
+							<h1 className='py-3 text-center'>+100</h1>
 							<p>proyectos</p>
 							<span>emprendidos por Ink Grid en Perú</span>
 						</div>
