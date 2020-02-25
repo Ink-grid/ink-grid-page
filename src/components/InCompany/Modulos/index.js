@@ -310,9 +310,9 @@ const Modulos = props => {
 							'Dinámicas: Resolución de Problemas de casos de uso especificos'
 					}
 				];
-			case 'omnicanall':
+			case 'omnicanal':
 				return [
-					{ titulo: 'BLOCKCHAIN Y MARKETING OMNICANALL' },
+					{ titulo: 'BLOCKCHAIN Y MARKETING OMNICANAL' },
 					{
 						NTema: 'Módulo 1 (14 : 00 Hs.)',
 						tema: 'Introducción en BlockChain'

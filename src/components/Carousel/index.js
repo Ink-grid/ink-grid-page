@@ -198,15 +198,20 @@ const Carousel = props => {
 				{/*  */}
 				<br />
 				<div className='descripcion1 container text-center bg-ligth text-dark'>
-					Desde que abrimos nuestra oficina en Lima en 2006, hemos trabajado con
-					grandes compañías y firmas emprendedoras de rápido crecimiento a lo
-					largo de todos los sectores clave – incluyendo banca, bienes de
-					consumo y recursos naturales, trayendo un expertise profundo en
-					estrategia de crecimiento, mejora operativa, transformación
-					organizacional, marketing y ventas, y digital. También ayudamos a
-					numerosas iniciativas pro bono que trabajan con emprendedores
-					sociales, fortaleciendo instituciones educativas en matemáticas,
-					ciencias y artes, y apoyando el empoderamiento de la mujer.
+					Nuestra compañia integra profesionales con una solida experiencia en
+					proyectos de gran alcance en diversas industrias con resultados
+					excelentes; full stack, implemetaciones de data center definidos por
+					software, soluciones de marketing omnicanal, proyectos de inteligencia
+					de negocios y big data, soluciones para core bancario, automatismo de
+					procesos, diseño e implementación para de ambientes ágiles, roadmap y
+					blueprint de programas de tansformación digital, entre otros. Nuestro
+					modelo de servicios esta basado en framework de conocimientos, marcos
+					estándares y mejores prácticas mundiales explotadas para cada
+					industrias asi como un sin numero de casos de usos estructurados: en
+					modelos de negocios, modelos análiticos, modelos organizacionales,
+					metodologias y disciplinas orientas a la industria 4.0 lo que nos
+					permite una gran velocidad a la hora de desplegar nuestro servicio con
+					el mejor ratio entre el time to market y justo a tiempo (T2M / JIT).
 				</div>
 				<br />
 				<Divider />
@@ -214,25 +219,35 @@ const Carousel = props => {
 				<div className='datos-genericos container py-3'>
 					<div className='row'>
 						<div className='datosEspecificos col-12 col-md-4'>
-							<h1 className='p-3 text-center'>+3</h1>
-							<p>años</p>
-							<span>de presencia de InkGrid en Perú</span>
+							<h1 className='p-3 text-center'>+ 25</h1>
+							<p>consultores</p>
+							<span> especializados por industrias</span>
 							<div className='linea lineaD d-none d-md-block'></div>
 						</div>
 
 						<div className='datosEspecificos col-12 col-md-4'>
-							<h1 className='py-3 text-center'>+100</h1>
+							<h1 className='py-3 text-center'>+ 100</h1>
 							<p>proyectos</p>
-							<span>emprendidos por Ink Grid en Perú</span>
+							<span>ejecutados en mercado local y regional</span>
 						</div>
 						<div className='datosEspecificos col-12 col-md-4 text-center'>
-							<h1 className='p-3 text-center'>+70</h1>
-							<p>por ciento</p>
-							<span>de las grandes corporaciones de Perú servidas</span>
+							<h1 className='p-3 text-center'>+ 15</h1>
+							<p>millones USD</p>
+							<span>
+								de eficiencias obtenidos de las diversas empresas atendidas en
+								proyectos de optimizació
+							</span>
 							<div className='linea lineaI d-none d-md-block'> </div>
+						</div>
+						<hr />
+						<div className='datosEspecificos col-12 col-md-12 text-center'>
+							<h1 className='p-3 text-center'>+ 20k</h1>
+							<p>procesos</p>
+							<span>mapeados, diseñados y optimizados.</span>
 						</div>
 					</div>
 				</div>
+				<hr />
 
 				<div className='servicios p-3 m-5'>
 					Diseñamos y Operamos Soluciones Empresariales para mejorar tus Activos

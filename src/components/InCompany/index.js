@@ -608,7 +608,7 @@ const InCompany = () => {
 							<div class='offset-1 offset-sm-0 col-10 col-sm-6 col-lg-4'>
 								<Link
 									to={{
-										pathname: 'cursos/modulos/omnicanall',
+										pathname: 'cursos/modulos/omnicanal',
 										state: temasBM.map(e => e)
 									}}>
 									<img src='https://img.icons8.com/carbon-copy/100/000000/omnichannel.png' />
